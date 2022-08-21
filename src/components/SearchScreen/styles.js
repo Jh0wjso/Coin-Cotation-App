@@ -54,21 +54,25 @@ const styles = StyleSheet.create({
     },
     input:{
         width:"70%",
-        borderRadius: 10,
+        //borderRadius: 10,
+        borderBottomLeftRadius: 10,
+        borderTopLeftRadius: 10,
         backgroundColor:"#f6f6f6",
         height: 40,
         margin:12,
+        marginRight: 0,
         paddingLeft:10,
         justifyContent: 'flex-start',
         flexDirection: "row"
     },
     searchButton:{
-        backgroundColor: '#fff',
+        backgroundColor: '#f6f6f6',
         height: 40,
         alignItems: "center",
         justifyContent: "center",
         width: '15%',
-        borderRadius: 10
+        borderTopRightRadius: 10,
+        borderBottomRightRadius: 10
     },
     suggestions:{
         flexDirection: 'row',

@@ -23,9 +23,9 @@ export default function SearchScreen(){
                         placeholder="bitcoin"
                         keyboardType="visible-password"
                     />
-                    <TouchableOpacity style={styles.searchButton}>
-                        <Ionicons name={'search'} style={styles.searchIcon} size={25} color={'#800000'} />
-                    </TouchableOpacity>
+                    <View style={styles.searchButton}>
+                        <Ionicons name={'search'} style={styles.searchIcon} size={25} color={'gray'} />
+                    </View>
                 </View>
                 <View style={styles.suggestions}>
                     <TouchableOpacity style={styles.btnSuggestion} >

@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
         marginTop: 20,
         flexDirection: "column",
         marginRight: 10,
-        marginLeft: 10
+        marginLeft: 10,
     },
     contentTextCoins:{
         flexDirection: 'row',
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
         height: 'auto',
         width: '45%',
         margin: 10,
-        borderRadius: 5,
+        borderRadius: 15,
     },
     coincontainer:{
         flexDirection: 'row'
@@ -128,7 +128,13 @@ const styles = StyleSheet.create({
         color: '#fff',
         fontStyle: "italic",
         fontWeight: 'bold'
-    }
+    },
+    infoText:{
+        fontStyle: 'italic',
+        fontSize: 12,
+        fontWeight: '600',
+        color: 'gray'
+    },
 });
 
 export default styles;

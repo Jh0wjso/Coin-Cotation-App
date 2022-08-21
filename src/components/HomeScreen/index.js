@@ -11,6 +11,7 @@ export default function HomeScreen(){
     const [lastLiteCoinValue, setlastLiteCoinValue] = useState();
 
     var date = new Date();
+    var month = date.getMonth() + 1;
     /**/ 
 
     async function coinInfos(){
@@ -93,11 +94,12 @@ export default function HomeScreen(){
                         </Text>
                     </TouchableOpacity>
                 </View>
+                <Text style={styles.infoText}>Press one for more infos.</Text>
                 <View style={styles.coincontainer}>
                     <TouchableOpacity style={styles.cardCoin}>
                         <Text style={styles.dateToday}>
-                            {date.getDate() < 10 ? '0'+date.getDate() : date.getDate()}
-                            .{date.getMonth() < 10 ? '0'+date.getMonth() : date.getMonth()}
+                            {date.getMonth() < 10 ? '0'+month : date.month}              
+                            .{date.getDate() < 10 ? '0'+date.getDate() : date.getDate()}
                             .{date.getFullYear()}
                         </Text>
                         <View style={styles.nameLogoCoin}>
@@ -108,8 +110,8 @@ export default function HomeScreen(){
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.cardCoin}>
                         <Text style={styles.dateToday}>
-                            {date.getDate() < 10 ? '0'+date.getDate() : date.getDate()}
-                            .{date.getMonth() < 10 ? '0'+date.getMonth() : date.getMonth()}
+                            {date.getMonth() < 10 ? '0'+month : date.month}              
+                            .{date.getDate() < 10 ? '0'+date.getDate() : date.getDate()}
                             .{date.getFullYear()}
                         </Text>
                         <View style={styles.nameLogoCoin}>
@@ -122,9 +124,9 @@ export default function HomeScreen(){
                 <View style={styles.coincontainer}>
                     <TouchableOpacity style={styles.cardCoin}>
                         <Text style={styles.dateToday}>
-                            {date.getDate() < 10 ? '0'+date.getDate() : date.getDate()}
-                            .{date.getMonth() < 10 ? '0'+date.getMonth() : date.getMonth()}
-                            .{date.getFullYear()}
+                            {date.getMonth() < 10 ? '0'+month : date.month}              
+                            /{date.getDate() < 10 ? '0'+date.getDate() : date.getDate()}
+                            /{date.getFullYear()}
                         </Text>
                         <View style={styles.nameLogoCoin}>
                             <Ionicons name={'cash-outline'} size={30} color={'#fff'}/>
@@ -134,8 +136,8 @@ export default function HomeScreen(){
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.cardCoin}>
                         <Text style={styles.dateToday}>
-                            {date.getDate() < 10 ? '0'+date.getDate() : date.getDate()}
-                            .{date.getMonth() < 10 ? '0'+date.getMonth() : date.getMonth()}
+                            {date.getMonth() < 10 ? '0'+month : date.month}              
+                            .{date.getDate() < 10 ? '0'+date.getDate() : date.getDate()}
                             .{date.getFullYear()}
                         </Text>
                         <View style={styles.nameLogoCoin}>

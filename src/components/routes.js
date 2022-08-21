@@ -42,7 +42,13 @@ export default function Routes(){
                     paddingBottom: 5,
                     paddingLeft: 5,
                     paddingRight: 5,
-                    backgroundColor: '#800000'
+                    backgroundColor: '#800000',
+                    margin: 5,
+                    //borderRadius: 10,
+                    marginBottom: 0,
+                    borderTopRightRadius: 10,
+                    borderTopLeftRadius: 10,
+                    height: 50
                 },
                 headerShown: false,
                 tabBarItemStyle:{
