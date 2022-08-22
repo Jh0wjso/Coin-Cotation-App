@@ -74,7 +74,10 @@ const styles = StyleSheet.create({
         borderRadius: 50
     },
     cardCoinsContainer:{
-        marginTop: 20,
+        marginTop: 10,
+        paddingTop: 10,
+        borderTopWidth: 1,
+        borderColor: 'gray',
         flexDirection: "column",
         marginRight: 10,
         marginLeft: 10,
@@ -98,12 +101,16 @@ const styles = StyleSheet.create({
         padding: 10,
         backgroundColor: '#800000',
         height: 'auto',
-        width: '45%',
+        width: '90%',
         margin: 10,
         borderRadius: 15,
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between'
     },
     coincontainer:{
-        flexDirection: 'row'
+        flexDirection: 'column',
+        alignItems: 'center'
     },
     dateToday:{
         fontWeight: 'bold',
@@ -113,14 +120,14 @@ const styles = StyleSheet.create({
     nameLogoCoin:{
         flexDirection: "row",
         alignItems: 'center',
-        justifyContent: "space-between",
-        margin: 10
+        justifyContent: "flex-start",
     },
     coinName:{
         fontSize: 15,
         color: '#fff',
         fontWeight: 'bold',
-        fontStyle: "italic"
+        fontStyle: "italic",
+        marginLeft: 5
     },
     coinValue:{
         fontSize: 20,
@@ -132,7 +139,6 @@ const styles = StyleSheet.create({
     infoText:{
         fontStyle: 'italic',
         fontSize: 12,
-        fontWeight: '600',
         color: 'gray'
     },
 });

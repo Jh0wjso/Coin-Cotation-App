@@ -3,7 +3,7 @@ import { View, Text, StatusBar, TouchableOpacity, Button } from "react-native";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import styles from './styles';
 
-export default function HomeScreen(){
+export default function HomeScreen({ navigation }){
 
     const [lastBitCoinValue, setlastBitCoinSale] = useState();
     const [lastEthereumValue, setlastEthereumValue] = useState();
@@ -94,55 +94,58 @@ export default function HomeScreen(){
                         </Text>
                     </TouchableOpacity>
                 </View>
-                <Text style={styles.infoText}>Press one for more infos.</Text>
+                <Text style={styles.infoText}>Press for more informations.</Text>
                 <View style={styles.coincontainer}>
-                    <TouchableOpacity style={styles.cardCoin}>
-                        <Text style={styles.dateToday}>
-                            {date.getMonth() < 10 ? '0'+month : date.month}              
-                            .{date.getDate() < 10 ? '0'+date.getDate() : date.getDate()}
-                            .{date.getFullYear()}
-                        </Text>
-                        <View style={styles.nameLogoCoin}>
-                            <Ionicons name={'cash-outline'} size={30} color={'#fff'}/>
-                            <Text style={styles.coinName}>Bitcoin</Text>
+                    <TouchableOpacity 
+                        onPress={() => navigation.navigate('GenericCoinScreen')}
+                        style={styles.cardCoin}
+                    >
+                        <View>
+                            <Text style={styles.dateToday}>
+                                {date.getMonth() < 10 ? '0'+month : date.month}              
+                                .{date.getDate() < 10 ? '0'+date.getDate() : date.getDate()}
+                                .{date.getFullYear()}
+                            </Text>
+                            <View style={styles.nameLogoCoin}>
+                                <Ionicons name={'cash-outline'} size={30} color={'#fff'}/>
+                                <Text style={styles.coinName}>Bitcoin</Text>
+                            </View>
                         </View>
                         <Text style={styles.coinValue}>$ {lastBitCoinValue}.00</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.cardCoin}>
-                        <Text style={styles.dateToday}>
-                            {date.getMonth() < 10 ? '0'+month : date.month}              
-                            .{date.getDate() < 10 ? '0'+date.getDate() : date.getDate()}
-                            .{date.getFullYear()}
-                        </Text>
-                        <View style={styles.nameLogoCoin}>
-                            <Ionicons name={'cash-outline'} size={30} color={'#fff'}/>
-                            <Text style={styles.coinName}>Ethereum</Text>
+                    
+                    <TouchableOpacity 
+                        onPress={() => navigation.navigate('GenericCoinScreen')}
+                        style={styles.cardCoin}
+                    >
+                        <View>
+                            <Text style={styles.dateToday}>
+                                {date.getMonth() < 10 ? '0'+month : date.month}              
+                                .{date.getDate() < 10 ? '0'+date.getDate() : date.getDate()}
+                                .{date.getFullYear()}
+                            </Text>
+                            <View style={styles.nameLogoCoin}>
+                                <Ionicons name={'cash-outline'} size={30} color={'#fff'}/>
+                                <Text style={styles.coinName}>Ethereum</Text>
+                            </View>
                         </View>
                         <Text style={styles.coinValue}>$ {lastEthereumValue}</Text>
                     </TouchableOpacity>
-                </View>
-                <View style={styles.coincontainer}>
-                    <TouchableOpacity style={styles.cardCoin}>
-                        <Text style={styles.dateToday}>
-                            {date.getMonth() < 10 ? '0'+month : date.month}              
-                            /{date.getDate() < 10 ? '0'+date.getDate() : date.getDate()}
-                            /{date.getFullYear()}
-                        </Text>
-                        <View style={styles.nameLogoCoin}>
-                            <Ionicons name={'cash-outline'} size={30} color={'#fff'}/>
-                            <Text style={styles.coinName}>Tether</Text>
-                        </View>
-                        <Text style={styles.coinValue}>$ {lastTetherValue}</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={styles.cardCoin}>
-                        <Text style={styles.dateToday}>
-                            {date.getMonth() < 10 ? '0'+month : date.month}              
-                            .{date.getDate() < 10 ? '0'+date.getDate() : date.getDate()}
-                            .{date.getFullYear()}
-                        </Text>
-                        <View style={styles.nameLogoCoin}>
-                            <Ionicons name={'cash-outline'} size={30} color={'#fff'}/>
-                            <Text style={styles.coinName}>LiteCoin</Text>
+
+                    <TouchableOpacity 
+                        onPress={() => navigation.navigate('GenericCoinScreen')}
+                        style={styles.cardCoin}
+                    >
+                        <View>
+                            <Text style={styles.dateToday}>
+                                {date.getMonth() < 10 ? '0'+month : date.month}              
+                                .{date.getDate() < 10 ? '0'+date.getDate() : date.getDate()}
+                                .{date.getFullYear()}
+                            </Text>
+                            <View style={styles.nameLogoCoin}>
+                                <Ionicons name={'cash-outline'} size={30} color={'#fff'}/>
+                                <Text style={styles.coinName}>LiteCoin</Text>
+                            </View>
                         </View>
                         <Text style={styles.coinValue}>$ {lastLiteCoinValue}</Text>
                     </TouchableOpacity>

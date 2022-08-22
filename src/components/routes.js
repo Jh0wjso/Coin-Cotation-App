@@ -2,10 +2,9 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
-import HomeScreen from "./HomeScreen";
-//import MarketsScreen from "./MarketsScreen";
 import SearchScreen from "./SearchScreen";
 import UserSreen from './UserScreen';
+import HomeScreenStack from "./HomeScreenStack";
 
 const BottomTab = createBottomTabNavigator();
 
@@ -23,8 +22,6 @@ export default function Routes(){
 
                     if (route.name === 'Inicial')
                         iconName = 'home-outline'
-/*                    else if (route.name === 'Compar')
-                        iconName = 'logo-bitcoin'*/
                     else if (route.name === 'Procurar')
                         iconName = 'search-outline'  
                     else if (route.name === 'Login')
@@ -33,31 +30,14 @@ export default function Routes(){
                     return <Ionicons name={iconName} size={20} color={color} />;
                 },
                 tabBarActiveTintColor: '#fff',
-                tabBarInactiveTintColor: '#800000',
-                tabBarActiveBackgroundColor: '#800000',
-                tabBarInactiveBackgroundColor: '#800000',
-                tabBarInactiveBackgroundColor: '#fff',
-                tabBarStyle: {
-                    paddingTop: 5,
-                    paddingBottom: 5,
-                    paddingLeft: 5,
-                    paddingRight: 5,
-                    backgroundColor: '#800000',
-                    margin: 5,
-                    //borderRadius: 10,
-                    marginBottom: 0,
-                    borderTopRightRadius: 10,
-                    borderTopLeftRadius: 10,
-                    height: 50
-                },
+                tabBarInactiveTintColor: 'black',
+                tabBarActiveBackgroundColor: '#6968687e',
+                tabBarInactiveBackgroundColor: '#6968687e',
+                tabBarInactiveBackgroundColor: '#6968687e',
                 headerShown: false,
-                tabBarItemStyle:{
-                    borderRadius: 5,
-                    margin: 2
-                }
             })}
         >
-            <BottomTab.Screen name="Inicial" component={HomeScreen}/>
+            <BottomTab.Screen name="Inicial" component={HomeScreenStack}/>
             <BottomTab.Screen name="Procurar" component={SearchScreen}/>
             <BottomTab.Screen name="Login" component={UserSreen} />
         </BottomTab.Navigator>
