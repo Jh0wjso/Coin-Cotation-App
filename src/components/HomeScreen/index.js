@@ -7,7 +7,6 @@ export default function HomeScreen({ navigation }){
 
     const [lastBitCoinValue, setlastBitCoinSale] = useState();
     const [lastEthereumValue, setlastEthereumValue] = useState();
-    const [lastTetherValue, setlastTetherValue] = useState();
     const [lastLiteCoinValue, setlastLiteCoinValue] = useState();
 
     var date = new Date();
@@ -18,7 +17,6 @@ export default function HomeScreen({ navigation }){
 
         const bitcoinResponse = await fetch(`https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd`);
         const ethereumcoinResponse = await fetch(`https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd`);
-        const tethercoinResponse = await fetch(`https://api.coingecko.com/api/v3/simple/price?ids=tether&vs_currencies=usd`);
         const litecoinResponse = await fetch(`https://api.coingecko.com/api/v3/simple/price?ids=litecoin&vs_currencies=usd`);
 
         const bitcoinResponseJson = await bitcoinResponse.json();
@@ -28,10 +26,6 @@ export default function HomeScreen({ navigation }){
         const ethereumcoinResponseJson = await ethereumcoinResponse.json();
         const ethereumcoinValueResponse = ethereumcoinResponseJson.ethereum.usd;
         setlastEthereumValue(ethereumcoinValueResponse);
-
-        const tethercoinResponseJson = await tethercoinResponse.json();
-        const tethercoinValueResponse = tethercoinResponseJson.tether.usd;
-        setlastTetherValue(tethercoinValueResponse);
 
         const litecoinResponseJson = await litecoinResponse.json();
         const litecoinValueResponse = litecoinResponseJson.litecoin.usd;

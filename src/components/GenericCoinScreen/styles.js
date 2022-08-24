@@ -8,7 +8,10 @@ const styles = StyleSheet.create({
     },
     header:{
         width: '100%',
-        padding: 10
+        padding: 10,
+        justifyContent: "space-between",
+        flexDirection: "row",
+        alignItems: "center"
     },
 });
 

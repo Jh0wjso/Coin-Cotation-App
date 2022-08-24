@@ -31,9 +31,9 @@ export default function Routes(){
                 },
                 tabBarActiveTintColor: '#fff',
                 tabBarInactiveTintColor: 'black',
-                tabBarActiveBackgroundColor: '#6968687e',
-                tabBarInactiveBackgroundColor: '#6968687e',
-                tabBarInactiveBackgroundColor: '#6968687e',
+                tabBarActiveBackgroundColor: '#f30202e0',
+                tabBarInactiveBackgroundColor: '#f30202e0',
+                tabBarInactiveBackgroundColor: '#f30202e0',
                 headerShown: false,
             })}
         >
