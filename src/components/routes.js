@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
@@ -31,9 +31,9 @@ export default function Routes(){
                 },
                 tabBarActiveTintColor: '#fff',
                 tabBarInactiveTintColor: 'black',
-                tabBarActiveBackgroundColor: '#f30202e0',
-                tabBarInactiveBackgroundColor: '#f30202e0',
-                tabBarInactiveBackgroundColor: '#f30202e0',
+                tabBarActiveBackgroundColor: '#800000',
+                tabBarInactiveBackgroundColor: '#800000',
+                tabBarInactiveBackgroundColor: '#800000b7',
                 headerShown: false,
             })}
         >
@@ -41,5 +41,28 @@ export default function Routes(){
             <BottomTab.Screen name="Procurar" component={SearchScreen}/>
             <BottomTab.Screen name="Login" component={UserSreen} />
         </BottomTab.Navigator>
+    );
+}*/
+
+import React from "react";
+import { createStackNavigator } from "@react-navigation/stack";
+
+import HomeScreen from "./HomeScreen";
+import GenericCoinScreen from "./GenericCoinScreen";
+import HomeScreenStack from "./HomeScreenStack";
+
+const Stack = createStackNavigator();
+
+export default function Routes(){
+    return(
+        <Stack.Navigator
+            initialRouteName="HomeScreenStack"
+            screenOptions={{
+                headerShown: false
+            }}
+        >
+            <Stack.Screen name="HomeScreenStack" component={HomeScreenStack}/>
+            <Stack.Screen name="GenericCoinScreen" component={GenericCoinScreen}/>
+        </Stack.Navigator>
     );
 }

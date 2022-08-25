@@ -49,7 +49,6 @@ export default function HomeScreen({ navigation }){
                 <View style={styles.headerContent}>
                     <View style={styles.logoName}>
                         <Ionicons name={'logo-bitcoin'} style={styles.coinIcon} size={25} color={'#fff'} />
-                        <Text style={styles.tittleScreen}>CoinCotation</Text>
                     </View>
                     <TouchableOpacity
                     style={styles.buttonNotify}
@@ -60,17 +59,19 @@ export default function HomeScreen({ navigation }){
                         <Ionicons name={'refresh-outline'} style={styles.userIcon} size={25} color={'#fff'} />
                     </TouchableOpacity>
                 </View>
+                <View style={styles.welcomeMessageContent}>
+                    <Text style={styles.messageUser}>Hi, User.</Text>
+                    <Text style={styles.messageWelcome}>Welcome Back!</Text>   
+                </View> 
             </View>
             <View style={styles.welcomeContent}>
-                <Text style={styles.messageUser}>Hi, User.</Text>
-                <Text style={styles.messageWelcome}>Welcome Back!</Text>
             </View>
             <View style={styles.card}>
                 <View style={styles.contentText}>
-                    <Text style={styles.messageUser}>
+                    <Text style={styles.message2User}>
                         Hello!
                     </Text>
-                    <Text style={styles.messageWelcome}>
+                    <Text style={styles.messageWelcome2USer}>
                         See cotation from coins.
                     </Text>
                 </View>

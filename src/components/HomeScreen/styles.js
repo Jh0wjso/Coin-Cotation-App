@@ -37,13 +37,14 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     messageUser:{
-        color: '#800000',
+        color: '#ffffff',
         fontSize: 25,
         fontWeight: 'bold'
     },
     messageWelcome:{
-        color: '#4F4F4F',
+        color: '#ffffff',
         fontWeight: 'bold',
+        fontStyle: "italic",
         fontSize: 13
     },
     welcomeContent:{
@@ -57,12 +58,9 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         marginRight: 25,
         marginLeft: 25,
-        borderWidth: 2,
         marginTop: 10,
-        borderRadius: 5,
         paddingLeft: 10,
-        borderColor: '#800000',
-        height: 90
+        height: 90,
     },
     contentText:{
         justifyContent: "center",
@@ -141,6 +139,23 @@ const styles = StyleSheet.create({
         fontSize: 12,
         color: 'gray'
     },
+    welcomeMessageContent:{
+        justifyContent: "flex-start",
+        margin: 20,
+        marginTop: 5
+    },
+    message2User:{
+        color: '#800000',
+        fontSize: 30,
+        fontWeight: 'bold',
+        fontStyle: "italic"
+    },
+    messageWelcome2USer:{
+        color: '#800000',
+        fontWeight: 'bold',
+        fontStyle: "italic",
+        fontSize: 13
+    }
 });
 
 export default styles;
