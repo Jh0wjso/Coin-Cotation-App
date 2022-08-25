@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
     suggestions:{
         flexDirection: 'row',
         justifyContent: 'space-around',
-        paddingBottom: 15,
+        padding: 12,
         alignItems: 'center',
         width: '70%'
     },

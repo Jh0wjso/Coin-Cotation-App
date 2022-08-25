@@ -58,7 +58,8 @@ const styles = StyleSheet.create({
     },
     cardInfo:{
         flexDirection: "row",
-        justifyContent: "space-between"
+        justifyContent: "space-between",
+        padding: 3
     },
     moneyIcon:{
         alignItems: "center",
@@ -66,14 +67,14 @@ const styles = StyleSheet.create({
     },
     typeInfo:{
         fontWeight: "bold",
-        fontSize: 25,
+        fontSize: 20,
         fontStyle: "italic",
         color: "#383737",
         justifyContent: "center"
     },
     valueCoin:{
         fontWeight: "bold",
-        fontSize: 25,
+        fontSize: 15,
         fontStyle: "italic",
         color: "#383737",
         justifyContent: "center"

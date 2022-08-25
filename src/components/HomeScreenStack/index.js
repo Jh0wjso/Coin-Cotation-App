@@ -1,25 +1,3 @@
-/*import React from "react";
-import { createStackNavigator } from "@react-navigation/stack";
-
-import HomeScreen from "../HomeScreen";
-import GenericCoinScreen from "../GenericCoinScreen";
-
-const Stack = createStackNavigator();
-
-export default function HomeScreenStack(){
-    return(
-        <Stack.Navigator
-            initialRouteName="HomeScreen"
-            screenOptions={{
-                headerShown: false
-            }}
-        >
-            <Stack.Screen name="HomeScreen" component={HomeScreen}/>
-            <Stack.Screen name="GenericCoinScreen" component={GenericCoinScreen}/>
-        </Stack.Navigator>
-    );
-}*/
-
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -54,7 +32,6 @@ export default function HomeScreenStack(){
                 tabBarActiveTintColor: '#fff',
                 tabBarInactiveTintColor: 'black',
                 tabBarActiveBackgroundColor: '#800000',
-                tabBarInactiveBackgroundColor: '#800000',
                 tabBarInactiveBackgroundColor: '#800000',
                 headerShown: false,
             })}

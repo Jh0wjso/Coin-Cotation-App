@@ -3,31 +3,52 @@ import { View, Text, TouchableOpacity, StatusBar } from "react-native";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import styles from "./styles";
 
-export default function GenericCoinScreen({ navigation }){
+export default function GenericCoinScreen({ navigation, route }){
 
-    const [lastCoinValue, setlastCoinSale] = useState();
-    const [lastMarketCap, setLastMarketCap] = useState();
+    const [lastCoinSale, setlastCoinSale] = useState();
+    const [highCoinSale, setHighCoinSale] = useState();
+    const [last24Vol, setLast24Vol] = useState();
+    const [openValue, setOpenValue] = useState();
 
-    var date = new Date();
-    var month = date.getMonth() + 1;
-    /**/ 
+    let date = new Date();
+    let month = date.getMonth() + 1;
+
+    function returnHour(){
+        return <Text>
+                {date.getHours()}:
+                {date.getMinutes()}:
+                {date.getSeconds()}
+            </Text>
+    }
+
+    function returnDate(){
+        return <Text> {date.getDate() < 10 ? '0'+date.getDate() : date.getDate()}
+        /{date.getMonth() < 10 ? '0'+month : date.month}    
+        /{date.getFullYear()} </Text>
+    }
 
     async function coinInfos(){
+        const mercadoBitCoinResonse = await fetch(`https://www.mercadobitcoin.net/api/${route.params.domainName}/ticker/`);
+        const mercadoBitCoinResonseJson = await mercadoBitCoinResonse.json();
 
-        const coinResponse = await fetch(`https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true`);
-        const coinResponseJson = await coinResponse.json();
-        const lastCoinValueResponse = coinResponseJson.bitcoin.usd;
+        const lastCoinValueResponse = mercadoBitCoinResonseJson.ticker.last;
         setlastCoinSale(lastCoinValueResponse);
 
-/*        const bitcoinHistoyResponse = await fetch(`https://api.coingecko.com/api/v3/coins/bitcoin/history?date=30-12-2017`);
-        const bitcoinHistoyResponseJson = bitcoinHistoyResponse.json();
-        const bitcoinHistoyValueResponse = bitcoinHistoyResponseJson.id;
-        console.log(bitcoinHistoyValueResponse.json());*/
+        const lastMarketCapResponse = mercadoBitCoinResonseJson.ticker.high;
+        setHighCoinSale(lastMarketCapResponse);
+
+        const last24VolResponse = mercadoBitCoinResonseJson.ticker.vol;
+        setLast24Vol(last24VolResponse);
+
+        const last24ChangeResponse = mercadoBitCoinResonseJson.ticker.open;
+        setOpenValue(last24ChangeResponse);
 
     }
 
     function refresh(){
         coinInfos();
+        returnDate();
+        returnHour();
         alert('Valores atualizados');
     }
 
@@ -54,18 +75,18 @@ export default function GenericCoinScreen({ navigation }){
                 <View style={styles.basicInfos}>
                     <View style={styles.nameContainer}>
                         <Text style={styles.nameCoinHeader}>
-                            Coin Name
+                            Mais Infos
                         </Text>
                         <Text style={styles.disclaimer}>
-                            Last Cotation Hour
+                            Hora e data da cotação
                         </Text>
                     </View>
                     <View style={styles.dateHourContent}>
                         <Text style={styles.hour}>
-                            18:33
+                            {returnHour()}
                         </Text>
                         <Text style={styles.date}>
-                            24/08/2002
+                            {returnDate()}
                         </Text>
                     </View>
                 </View>
@@ -78,10 +99,34 @@ export default function GenericCoinScreen({ navigation }){
                 
                <View style={styles.cardInfo}>
                     <Text style={styles.typeInfo}>
-                        Cotation
+                        Ultima Venda
                     </Text>
                     <Text style={styles.valueCoin}>
-                        $ {lastCoinValue}.00
+                        R$ {parseFloat(lastCoinSale).toFixed(2).replace('.', ',')}
+                    </Text>
+               </View>
+               <View style={styles.cardInfo}>
+                    <Text style={styles.typeInfo}>
+                        Maior Venda/Hoje
+                    </Text>
+                    <Text style={styles.valueCoin}>
+                        R$ {parseFloat(highCoinSale).toFixed(2).replace('.', ',')}
+                    </Text>
+               </View>
+               <View style={styles.cardInfo}>
+                    <Text style={styles.typeInfo}>
+                        Valor Abertura
+                    </Text>
+                    <Text style={styles.valueCoin}>
+                        R$ {parseFloat(openValue).toFixed(2).replace('.', ',')}
+                    </Text>
+               </View>
+               <View style={styles.cardInfo}>
+                    <Text style={styles.typeInfo}>
+                        Volume
+                    </Text>
+                    <Text style={styles.valueCoin}>
+                        {parseFloat(last24Vol).toFixed(2).replace('.', ',')}
                     </Text>
                </View>
             </View>

@@ -1,10 +1,9 @@
 import React from "react";
-import { View, StatusBar, Text, TouchableOpacity, Pressable, Keyboard } from "react-native";
-import { TextInput } from "react-native";
+import { View, StatusBar, Text, TouchableOpacity, Pressable, Keyboard, TextInput } from "react-native";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import styles from "./styles";
 
-export default function SearchScreen(){
+export default function SearchScreen({ navigation }){
     return(
         <Pressable onPress={Keyboard.dismiss} style={styles.container}>
             <StatusBar backgroundColor='#B22222'barStyle={"light-content"} />
@@ -28,13 +27,33 @@ export default function SearchScreen(){
                     </View>
                 </View>
                 <View style={styles.suggestions}>
-                    <TouchableOpacity style={styles.btnSuggestion} >
+                    <TouchableOpacity
+                        onPress={() => navigation.navigate('GenericCoinScreen',
+                            {
+                                domainName: 'BTC'
+                            }
+                        )}
+                    >
                         <Text style={styles.textSuggestion}>bitcoin</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.btnSuggestion} >
+
+                    <TouchableOpacity
+                        onPress={() => navigation.navigate('GenericCoinScreen',
+                            {
+                                domainName: 'ETH'
+                            }
+                        )}
+                    >
                         <Text style={styles.textSuggestion}>ethetreum</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.btnSuggestion} >
+
+                    <TouchableOpacity
+                        onPress={() => navigation.navigate('GenericCoinScreen',
+                            {
+                                domainName: 'LTC'
+                            }
+                        )}
+                    >
                         <Text style={styles.textSuggestion}>litecoin</Text>
                     </TouchableOpacity>
                 </View>
@@ -47,4 +66,4 @@ export default function SearchScreen(){
             </View>
         </Pressable>
     );
-};
+}
