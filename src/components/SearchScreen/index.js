@@ -61,7 +61,7 @@ export default function SearchScreen({ navigation }){
             <View style={styles.disclaimerContariner}>
                 <Ionicons name={'search'} style={styles.searchIcon} size={150} color={'gray'} />
                 <Text style={styles.disclaimerText}>
-                    Here you choose the crypto you want see the infos in.
+                    Aqui você aprocura a moeda que você deseja.
                 </Text>
             </View>
         </Pressable>

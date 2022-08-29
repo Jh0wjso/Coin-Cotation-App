@@ -54,7 +54,6 @@ const styles = StyleSheet.create({
     },
     input:{
         width:"70%",
-        //borderRadius: 10,
         borderBottomLeftRadius: 10,
         borderTopLeftRadius: 10,
         backgroundColor:"#f6f6f6",

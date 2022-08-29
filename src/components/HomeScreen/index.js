@@ -53,9 +53,13 @@ export default function HomeScreen({ navigation }){
             <StatusBar backgroundColor='#B22222'barStyle={"light-content"} />
             <View style={styles.header}>
                 <View style={styles.headerContent}>
+                    
                     <View style={styles.logoName}>
                         <Ionicons name={'logo-bitcoin'} style={styles.coinIcon} size={25} color={'#fff'} />
                     </View>
+
+                    <Text style={styles.messageUser}>CoinCotation</Text>
+
                     <TouchableOpacity
                     style={styles.buttonNotify}
                     onPress={() => {
@@ -65,8 +69,8 @@ export default function HomeScreen({ navigation }){
                         <Ionicons name={'refresh-outline'} style={styles.userIcon} size={25} color={'#fff'} />
                     </TouchableOpacity>
                 </View>
+
                 <View style={styles.welcomeMessageContent}>
-                    <Text style={styles.messageUser}>Oi!</Text>
                     <Text style={styles.messageWelcome}>Bem vindo de volta!</Text>   
                 </View> 
             </View>
@@ -74,9 +78,6 @@ export default function HomeScreen({ navigation }){
             </View>
             <View style={styles.card}>
                 <View style={styles.contentText}>
-                    <Text style={styles.message2User}>
-                        Olá!
-                    </Text>
                     <Text style={styles.messageWelcome2USer}>
                         Veja informações da sua moeda preferida.
                     </Text>
@@ -95,12 +96,13 @@ export default function HomeScreen({ navigation }){
                         </Text>
                     </TouchableOpacity>
                 </View>
-                <Text style={styles.infoText}>Aperte na moeda para mais informações.</Text>
+                <Text style={styles.infoText}>Aperte no card para mais informações.</Text>
                 <View style={styles.coincontainer}>
                     <TouchableOpacity 
                         onPress={() => navigation.navigate('GenericCoinScreen',
                             {
-                                domainName: 'BTC'
+                                domainName: 'BTC',
+                                name: 'Bitcoin'
                             }
                         )}
                         style={styles.cardCoin}
@@ -120,7 +122,8 @@ export default function HomeScreen({ navigation }){
                     <TouchableOpacity 
                         onPress={() => navigation.navigate('GenericCoinScreen',
                         {
-                            domainName: 'ETH'
+                            domainName: 'ETH',
+                            name: 'Ethereum'
                         }
                         )}
                         style={styles.cardCoin}
@@ -140,7 +143,8 @@ export default function HomeScreen({ navigation }){
                     <TouchableOpacity 
                         onPress={() => navigation.navigate('GenericCoinScreen',
                         {
-                            domainName: 'LTC'
+                            domainName: 'LTC',
+                            name: 'LiteCoin'
                         }
                         )}
                         style={styles.cardCoin}

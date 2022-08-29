@@ -83,9 +83,11 @@ export default function GenericCoinScreen({ navigation, route }){
                     </View>
                     <View style={styles.dateHourContent}>
                         <Text style={styles.hour}>
+                            <Ionicons name={'alarm-outline'} style={styles.userIcon} size={15} color={'#fff'} />
                             {returnHour()}
                         </Text>
                         <Text style={styles.date}>
+                            <Ionicons name={'calendar-outline'} style={styles.userIcon} size={15} color={'#fff'} />
                             {returnDate()}
                         </Text>
                     </View>
@@ -93,8 +95,13 @@ export default function GenericCoinScreen({ navigation, route }){
             </View>
 
             <View style={styles.mainContentet}>
-                <View style={styles.moneyIcon}>
-                    <Ionicons name={'cash-outline'}  size={100} color={'#B22222'} />
+                <View style={styles.coinNameContent}>
+                    <Text style={styles.coinName}>
+                        {route.params.name}
+                    </Text>
+                    <Text style={styles.initialsCoin}>
+                        ({route.params.domainName})
+                    </Text>
                 </View>
                 
                <View style={styles.cardInfo}>
@@ -103,6 +110,7 @@ export default function GenericCoinScreen({ navigation, route }){
                     </Text>
                     <Text style={styles.valueCoin}>
                         R$ {parseFloat(lastCoinSale).toFixed(2).replace('.', ',')}
+                        
                     </Text>
                </View>
                <View style={styles.cardInfo}>
@@ -121,7 +129,7 @@ export default function GenericCoinScreen({ navigation, route }){
                         R$ {parseFloat(openValue).toFixed(2).replace('.', ',')}
                     </Text>
                </View>
-               <View style={styles.cardInfo}>
+               <View style={styles.cardInfoLast}>
                     <Text style={styles.typeInfo}>
                         Volume
                     </Text>
@@ -129,6 +137,12 @@ export default function GenericCoinScreen({ navigation, route }){
                         {parseFloat(last24Vol).toFixed(2).replace('.', ',')}
                     </Text>
                </View>
+               <TouchableOpacity 
+                    style={styles.helpContent}
+                    onPress = {() => navigation.navigate('InfoScreen')}
+               >
+                    <Ionicons name={'help-circle-outline'} style={styles.userIcon} size={40} color={'gray'} />
+               </TouchableOpacity>
             </View>
         </View>
     )

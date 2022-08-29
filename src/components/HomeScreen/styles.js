@@ -137,18 +137,13 @@ const styles = StyleSheet.create({
     infoText:{
         fontStyle: 'italic',
         fontSize: 12,
-        color: 'gray'
+        color: 'gray',
+        marginBottom: 10
     },
     welcomeMessageContent:{
         justifyContent: "flex-start",
         margin: 20,
         marginTop: 5
-    },
-    message2User:{
-        color: '#800000',
-        fontSize: 30,
-        fontWeight: 'bold',
-        fontStyle: "italic"
     },
     messageWelcome2USer:{
         color: '#800000',

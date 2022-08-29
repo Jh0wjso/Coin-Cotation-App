@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     },
     hour:{
         color: "#ffffff",
-        fontWeight: "bold"
+        fontWeight: "bold",
     },
     date:{
 
@@ -52,32 +52,60 @@ const styles = StyleSheet.create({
     },
     mainContentet:{
         flex: 1,
-        justifyContent: "center",
         backgroundColor: "#ffffff",
-        padding: 25,
+        padding: 20,
+        paddingTop: 60,
+    },
+    coinNameContent:{
+        justifyContent: "space-between",
+        alignItems: "center",
+        flexDirection: "row",
+        marginBottom: 5
     },
     cardInfo:{
         flexDirection: "row",
         justifyContent: "space-between",
-        padding: 3
-    },
-    moneyIcon:{
         alignItems: "center",
-        marginBottom: 35
+        padding: 3,
+        marginTop: 10,
+        paddingTop: 10,
+        marginBottom: 10,
+        paddingBottom: 10,
+        borderBottomWidth: 0.5,
+        borderColor: '#55555577'
     },
     typeInfo:{
         fontWeight: "bold",
-        fontSize: 20,
-        fontStyle: "italic",
-        color: "#383737",
+        fontSize: 17,
+        padding: 10,
+        color: "gray",
         justifyContent: "center"
     },
     valueCoin:{
         fontWeight: "bold",
-        fontSize: 15,
-        fontStyle: "italic",
+        fontSize: 18,
         color: "#383737",
         justifyContent: "center"
+    },
+    coinName:{
+        fontSize: 30
+    },
+    initialsCoin:{
+        fontSize: 15,
+        color: "#383737",
+        fontWeight: "300"
+    },
+    cardInfoLast:{
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+        padding: 3,
+        marginTop: 10
+    },
+    helpContent:{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center"
     }
 });
 
