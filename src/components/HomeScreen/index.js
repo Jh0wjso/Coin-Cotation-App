@@ -102,7 +102,7 @@ export default function HomeScreen({ navigation }){
                         onPress={() => navigation.navigate('GenericCoinScreen',
                             {
                                 domainName: 'BTC',
-                                name: 'Bitcoin'
+                                name: 'bitcoin'
                             }
                         )}
                         style={styles.cardCoin}
@@ -123,7 +123,7 @@ export default function HomeScreen({ navigation }){
                         onPress={() => navigation.navigate('GenericCoinScreen',
                         {
                             domainName: 'ETH',
-                            name: 'Ethereum'
+                            name: 'ethereum'
                         }
                         )}
                         style={styles.cardCoin}
@@ -144,7 +144,7 @@ export default function HomeScreen({ navigation }){
                         onPress={() => navigation.navigate('GenericCoinScreen',
                         {
                             domainName: 'LTC',
-                            name: 'LiteCoin'
+                            name: 'liteCoin'
                         }
                         )}
                         style={styles.cardCoin}
