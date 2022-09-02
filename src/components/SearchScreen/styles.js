@@ -62,13 +62,18 @@ const styles = StyleSheet.create({
         paddingLeft:10,
         justifyContent: 'flex-start',
         flexDirection: "row",
+        width: "90%",
+        borderTopLeftRadius: 5,
+        borderBottomLeftRadius: 5
     },
     searchButton:{
         backgroundColor: '#f6f6f6',
-        height: 41,
+        height: 40,
         alignItems: "center",
         justifyContent: "center",
         width: '15%',
+        borderTopRightRadius: 5,
+        borderBottomRightRadius: 5
     },
     suggestions:{
         flexDirection: 'row',
@@ -88,7 +93,7 @@ const styles = StyleSheet.create({
     disclaimerContariner:{
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     disclaimerText:{
         fontStyle: 'italic',

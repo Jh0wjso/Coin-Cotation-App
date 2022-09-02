@@ -22,13 +22,14 @@ export default function HomeScreenStack(){
                     else if (route.name === 'Login')
                         iconName = 'person-outline'  
                     
-                    return <Ionicons name={iconName} size={20} color={color} />;
+                    return <Ionicons name={iconName} size={25} color={color} />;
                 },
                 tabBarActiveTintColor: '#fff',
                 tabBarInactiveTintColor: 'gray',
                 tabBarActiveBackgroundColor: '#800000',
                 tabBarInactiveBackgroundColor: '#800000',
                 headerShown: false,
+                tabBarShowLabel: false
             })}
         >
             <BottomTab.Screen name="Inicial" component={HomeScreen}/>

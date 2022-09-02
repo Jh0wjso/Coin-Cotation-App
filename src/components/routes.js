@@ -10,6 +10,7 @@ const Stack = createStackNavigator();
 export default function Routes(){
     return(
         <Stack.Navigator
+
             initialRouteName="HomeScreenStack"
             screenOptions={{
                 headerShown: false
