@@ -45,33 +45,30 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         backgroundColor: '#B22222',
         borderBottomLeftRadius: 20,
-        borderBottomRightRadius: 20
+        borderBottomRightRadius: 20,
+        justifyContent: "center",
+        alignItems: "center"
     },
     inputContent:{
         flexDirection: "row",
         alignItems: 'center',
         justifyContent: "center",
+        width:"80%",
+        
     },
     input:{
-        width:"70%",
-        borderBottomLeftRadius: 10,
-        borderTopLeftRadius: 10,
         backgroundColor:"#f6f6f6",
         height: 40,
-        margin:12,
-        marginRight: 0,
         paddingLeft:10,
         justifyContent: 'flex-start',
-        flexDirection: "row"
+        flexDirection: "row",
     },
     searchButton:{
         backgroundColor: '#f6f6f6',
-        height: 40,
+        height: 41,
         alignItems: "center",
         justifyContent: "center",
         width: '15%',
-        borderTopRightRadius: 10,
-        borderBottomRightRadius: 10
     },
     suggestions:{
         flexDirection: 'row',

@@ -11,7 +11,6 @@ export default function HomeScreen({ navigation }){
 
     let date = new Date();
     let month = date.getMonth() + 1;
-    /**/
 
     function returnDate(){
         return <Text> {date.getDate() < 10 ? '0'+date.getDate() : date.getDate()}
@@ -73,8 +72,6 @@ export default function HomeScreen({ navigation }){
                 <View style={styles.welcomeMessageContent}>
                     <Text style={styles.messageWelcome}>Bem vindo de volta!</Text>   
                 </View> 
-            </View>
-            <View style={styles.welcomeContent}>
             </View>
             <View style={styles.card}>
                 <View style={styles.contentText}>

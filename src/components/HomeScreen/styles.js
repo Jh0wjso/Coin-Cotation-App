@@ -6,11 +6,9 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: "column"
     },
-    tittleScreen:{
-        color: '#fff',
-        fontSize: 25,
-        marginLeft: 5,
-        fontWeight: 'bold'
+    header:{
+        backgroundColor: '#B22222',
+        width: '100%',
     },
     headerContent:{
         justifyContent: 'space-between',
@@ -21,17 +19,6 @@ const styles = StyleSheet.create({
         marginTop: 20,
         marginBottom: 10,
     },
-    header:{
-        backgroundColor: '#B22222',
-        width: '100%',
-    },
-    coinIcon:{
-        padding: 7,
-        borderRadius: 10
-    },
-    userIcon:{
-        fontWeight: "bold"
-    },
     logoName:{
         flexDirection: 'row',
         alignItems: "center",
@@ -41,16 +28,25 @@ const styles = StyleSheet.create({
         fontSize: 25,
         fontWeight: 'bold'
     },
+    buttonNotify:{
+        backgroundColor: '#B22222',
+        padding: 5,
+        borderRadius: 50
+    },
+    
+    welcomeMessageContent:{
+        justifyContent: "flex-start",
+        margin: 20,
+        marginTop: 5
+    },
     messageWelcome:{
         color: '#ffffff',
         fontWeight: 'bold',
         fontStyle: "italic",
         fontSize: 13
     },
-    welcomeContent:{
-        justifyContent: 'flex-start',
-        marginLeft: 20,
-        marginTop: 10
+    userIcon:{
+        fontWeight: "bold"
     },
     card:{
         flexDirection: "row",
@@ -66,11 +62,11 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         width: '50%',
     },
-    buttonNotify:{
-        backgroundColor: '#B22222',
-        padding: 5,
-        borderRadius: 50
+    coinIcon:{
+        padding: 7,
+        borderRadius: 10
     },
+    
     cardCoinsContainer:{
         marginTop: 10,
         paddingTop: 10,
@@ -140,11 +136,7 @@ const styles = StyleSheet.create({
         color: 'gray',
         marginBottom: 10
     },
-    welcomeMessageContent:{
-        justifyContent: "flex-start",
-        margin: 20,
-        marginTop: 5
-    },
+    
     messageWelcome2USer:{
         color: '#800000',
         fontWeight: 'bold',

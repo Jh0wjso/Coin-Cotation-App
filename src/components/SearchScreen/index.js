@@ -1,5 +1,6 @@
 import React from "react";
-import { View, StatusBar, Text, TouchableOpacity, Pressable, Keyboard, TextInput } from "react-native";
+import { View, StatusBar, Text, TouchableOpacity, Pressable, Keyboard } from "react-native";
+import AutocompleteInput from "react-native-autocomplete-input";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import styles from "./styles";
 
@@ -17,11 +18,14 @@ export default function SearchScreen({ navigation }){
             </View>
             <View style={styles.inputContainer}>
                 <View style={styles.inputContent}>
-                    <TextInput
+                    <AutocompleteInput 
+                        placeholder="Ex: bitcoin"
+                        autoCapitalize="none"
+                        autoCorrect={false}
                         style={styles.input}
-                        placeholder="bitcoin"
-                        keyboardType="visible-password"
-                    />
+                    >
+                        
+                    </AutocompleteInput>
                     <View style={styles.searchButton}>
                         <Ionicons name={'search'} style={styles.searchIcon} size={25} color={'gray'} />
                     </View>
@@ -30,7 +34,8 @@ export default function SearchScreen({ navigation }){
                     <TouchableOpacity
                         onPress={() => navigation.navigate('GenericCoinScreen',
                             {
-                                domainName: 'BTC'
+                                domainName: 'BTC',
+                                name: 'bitcoin'
                             }
                         )}
                     >
@@ -40,7 +45,8 @@ export default function SearchScreen({ navigation }){
                     <TouchableOpacity
                         onPress={() => navigation.navigate('GenericCoinScreen',
                             {
-                                domainName: 'ETH'
+                                domainName: 'ETH',
+                                name: 'ethereum'
                             }
                         )}
                     >
@@ -50,7 +56,8 @@ export default function SearchScreen({ navigation }){
                     <TouchableOpacity
                         onPress={() => navigation.navigate('GenericCoinScreen',
                             {
-                                domainName: 'LTC'
+                                domainName: 'LTC',
+                                name: 'litecoin'
                             }
                         )}
                     >

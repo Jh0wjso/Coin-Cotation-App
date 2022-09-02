@@ -11,11 +11,6 @@ const BottomTab = createBottomTabNavigator();
 export default function HomeScreenStack(){
     return(
         <BottomTab.Navigator
-            
-            tabBarOptions={{
-                showLabel: false,
-            }}
-
             screenOptions={({route}) => ({
                 tabBarIcon: ({color}) => {
                     let iconName;
