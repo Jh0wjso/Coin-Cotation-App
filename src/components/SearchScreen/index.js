@@ -5,7 +5,8 @@ import {
     Text, 
     TouchableOpacity, 
     Pressable, 
-    Keyboard
+    Keyboard,
+    Vibration
 } from "react-native";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import styles from "./styles";
@@ -15,8 +16,15 @@ import { AutocompleteDropdown } from 'react-native-autocomplete-dropdown';
 
 export default function SearchScreen({ navigation }){
     const [selectedItem, setSelectedItem] = useState(null);
+    const [errorMessage, setErrorMessage] = useState(null);
 
-    console.log(selectedItem);
+    
+
+    function alertUser(){
+        window.alert('Selecione Uma modeda!');
+        Vibration.vibrate();
+        setErrorMessage("Selecione uma moeda!")
+    }
 
     return(
         <Pressable onPress={Keyboard.dismiss} style={styles.container}>
@@ -44,7 +52,7 @@ export default function SearchScreen({ navigation }){
                     </TouchableOpacity>
 
                     <TouchableOpacity
-                        onPress={() => navigation.navigate('GenericCoinScreen',
+                        onPress= {() => navigation.navigate('GenericCoinScreen',
                             {
                                 domainName: config.ethetereum.initials,
                                 name: config.ethetereum.name
@@ -59,7 +67,8 @@ export default function SearchScreen({ navigation }){
                             {
                                 domainName: config.litecoin.initials,
                                 name: config.litecoin.name
-                            }
+                            },
+                            setErrorMessage(null)
                         )}
                     >
                         <Text style={styles.textSuggestion}>litecoin</Text>
@@ -69,24 +78,55 @@ export default function SearchScreen({ navigation }){
                 <AutocompleteDropdown
                     clearOnFocus={false}
                     closeOnBlur={true}
-                    closeOnSubmit={false}
+                    suggestionsListContainerStyle= {{
+                        backgroundColor: "#B22222"
+                    }}
+                    suggestionsListTextStyle={{
+                        color: "#ffffff",
+                        fontWeight: "bold"
+                    }}
                     onSelectItem={setSelectedItem}
                     dataSet={[
-                        { id: 'bit', title: 'Alpha' },
-                        { id: '2', title: 'Beta' },
-                        { id: '3', title: 'Gamma' },
+                        { id: 'AAVE', title: 'Aave' },
+                        { id: 'BTC', title: 'Bitcoin' },
+                        { id: 'ETH', title: 'Ethereum' },
+                        { id: 'LTC', title: 'Litecoin' },
+                        { id: 'DOGE', title: 'DogeCoin' },
+
                     ]}
+                    inputContainerStyle={{
+                        width: 250,
+                        borderTopEndRadius: 0,
+                        borderBottomRightRadius: 0,
+                        height: 40,
+                        backgroundColor: "#f6f6f6",
+                        position: "relative",
+                        marginBottom: 10
+                    }}
                 />
-                    <View style={styles.searchButton}>
-                        <Ionicons name={'search'} style={styles.searchIcon} size={25} color={'gray'} />
-                    </View>
+                    {
+                        selectedItem != null ?
+                        <TouchableOpacity 
+                        style={styles.searchButton}
+                        onPress={() => navigation.navigate('GenericCoinScreen',
+                            {
+                                domainName: selectedItem.id,
+                                name: selectedItem.title
+                            }
+                        )}
+                        >
+                            <Ionicons name={'search'} style={styles.searchIcon} size={25} color={'gray'} />
+                        </TouchableOpacity>
+                        :
+                        <TouchableOpacity 
+                            style={styles.searchButton}
+                            onPress={() => alertUser()}
+                        >
+                            <Ionicons name={'search'} style={styles.searchIcon} size={25} color={'gray'} />
+                        </TouchableOpacity>
+                    }
                 </View>
-            </View>
-            <View style={styles.disclaimerContariner}>
-                <Ionicons name={'search'} style={styles.searchIcon} size={150} color={'gray'} />
-                <Text style={styles.disclaimerText}>
-                    Aqui você aprocura a moeda que você deseja.
-                </Text>
+                <Text>{errorMessage}</Text>
             </View>
         </Pressable>
     );

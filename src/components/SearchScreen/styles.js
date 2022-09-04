@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
     container:{
         backgroundColor: '#fff',
         flex: 1,
-        flexDirection: "column",
+        flexDirection: "column"
     },
     headerContent:{
         justifyContent: 'space-between',
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
         paddingLeft:10,
         justifyContent: 'flex-start',
         flexDirection: "row",
-        width: "90%",
+        width: 450,
         borderTopLeftRadius: 5,
         borderBottomLeftRadius: 5
     },
@@ -73,7 +73,8 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         width: '15%',
         borderTopRightRadius: 5,
-        borderBottomRightRadius: 5
+        borderBottomRightRadius: 5,
+        marginBottom: 10
     },
     suggestions:{
         flexDirection: 'row',
