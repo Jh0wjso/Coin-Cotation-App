@@ -44,8 +44,8 @@ const styles = StyleSheet.create({
     inputContainer:{
         flexDirection: 'column',
         backgroundColor: '#B22222',
-        borderBottomLeftRadius: 20,
-        borderBottomRightRadius: 20,
+        borderBottomLeftRadius: 50,
+        borderBottomRightRadius: 50,
         justifyContent: "center",
         alignItems: "center"
     },
@@ -101,6 +101,13 @@ const styles = StyleSheet.create({
         fontSize: 12,
         color: 'gray',
         fontWeight: 'bold'
+    },
+    errorMessage:{
+        paddingBottom: 15,
+        fontWeight: "bold",
+        color: "#ffffff",
+        fontSize: 16,
+        fontStyle: "italic"
     }
 });
 

@@ -18,12 +18,10 @@ export default function SearchScreen({ navigation }){
     const [selectedItem, setSelectedItem] = useState(null);
     const [errorMessage, setErrorMessage] = useState(null);
 
-    
-
     function alertUser(){
-        window.alert('Selecione Uma modeda!');
+        window.alert('Selecione uma modeda!');
         Vibration.vibrate();
-        setErrorMessage("Selecione uma moeda!")
+        setErrorMessage("*Preencha o campo a cima!")
     }
 
     return(
@@ -67,8 +65,7 @@ export default function SearchScreen({ navigation }){
                             {
                                 domainName: config.litecoin.initials,
                                 name: config.litecoin.name
-                            },
-                            setErrorMessage(null)
+                            }
                         )}
                     >
                         <Text style={styles.textSuggestion}>litecoin</Text>
@@ -88,6 +85,10 @@ export default function SearchScreen({ navigation }){
                     onSelectItem={setSelectedItem}
                     dataSet={[
                         { id: 'AAVE', title: 'Aave' },
+                        { id: 'ACH', title: 'Alchemy Pay'},
+                        { id: 'ACMFT', title: 'Ac Milan'},
+                        { id: 'ADA', title: 'Cardano'},
+                        { id: 'ADS', title: 'Adshares'},
                         { id: 'BTC', title: 'Bitcoin' },
                         { id: 'ETH', title: 'Ethereum' },
                         { id: 'LTC', title: 'Litecoin' },
@@ -100,7 +101,6 @@ export default function SearchScreen({ navigation }){
                         borderBottomRightRadius: 0,
                         height: 40,
                         backgroundColor: "#f6f6f6",
-                        position: "relative",
                         marginBottom: 10
                     }}
                 />
@@ -112,7 +112,8 @@ export default function SearchScreen({ navigation }){
                             {
                                 domainName: selectedItem.id,
                                 name: selectedItem.title
-                            }
+                            },
+                            setErrorMessage(' ')
                         )}
                         >
                             <Ionicons name={'search'} style={styles.searchIcon} size={25} color={'gray'} />
@@ -126,7 +127,11 @@ export default function SearchScreen({ navigation }){
                         </TouchableOpacity>
                     }
                 </View>
-                <Text>{errorMessage}</Text>
+                <Text style={styles.errorMessage}>{errorMessage}</Text>
+            </View>
+                
+            <View>
+                
             </View>
         </Pressable>
     );
