@@ -19,13 +19,12 @@ export default function SearchScreen({ navigation }){
     const [errorMessage, setErrorMessage] = useState(null);
 
     function alertUser(){
-        window.alert('Selecione uma modeda!');
         Vibration.vibrate();
         setErrorMessage("*Preencha o campo a cima!")
     }
 
     return(
-        <Pressable onPress={Keyboard.dismiss} style={styles.container}>
+        <Pressable onPress={Keyboard.dismiss}  style={styles.container}>
             <StatusBar backgroundColor='#B22222'barStyle={"light-content"} />
             <View style={styles.header}>
                 <View style={styles.headerContent}>
@@ -72,67 +71,71 @@ export default function SearchScreen({ navigation }){
                     </TouchableOpacity>
                 </View>
                 <View style={styles.inputContent}>
-                <AutocompleteDropdown
-                    clearOnFocus={false}
-                    closeOnBlur={true}
-                    suggestionsListContainerStyle= {{
-                        backgroundColor: "#B22222"
-                    }}
-                    suggestionsListTextStyle={{
-                        color: "#ffffff",
-                        fontWeight: "bold"
-                    }}
-                    onSelectItem={setSelectedItem}
-                    dataSet={[
-                        { id: 'AAVE', title: 'Aave' },
-                        { id: 'ACH', title: 'Alchemy Pay'},
-                        { id: 'ACMFT', title: 'Ac Milan'},
-                        { id: 'ADA', title: 'Cardano'},
-                        { id: 'ADS', title: 'Adshares'},
-                        { id: 'BTC', title: 'Bitcoin' },
-                        { id: 'ETH', title: 'Ethereum' },
-                        { id: 'LTC', title: 'Litecoin' },
-                        { id: 'DOGE', title: 'DogeCoin' },
+                    <AutocompleteDropdown
+                        clearOnFocus={false}
+                        closeOnBlur={true}
+                        suggestionsListContainerStyle= {{
+                            backgroundColor: "#ffffff"
+                        }}
+                        suggestionsListTextStyle={{
+                            color: "#B22222",
+                            fontWeight: "bold"
+                        }}
+                        onSelectItem={setSelectedItem}
+                        dataSet={[
+                            { id: 'AAVE', title: 'Aave' },
+                            { id: 'ACH', title: 'Alchemy Pay'},
+                            { id: 'ACMFT', title: 'Ac Milan'},
+                            { id: 'ADA', title: 'Cardano'},
+                            { id: 'ADS', title: 'Adshares'},
+                            { id: 'AGIX', title: 'SingularityNET'},
+                            { id: 'AIOZ', title: 'Aioz'},
+                            { id: 'ALCX', title: 'Alchemix'},
+                            { id: 'ALGO', title: 'Algorand'},
+                            { id: 'ALICE', title: 'MyNeighborAlice'},
+                            { id: 'ALLFT', title: 'Alliance'},
+                            { id: 'ALPHA', title: 'Alpha Venture Dao'},
+                            { id: 'BTC', title: 'Bitcoin' },
+                            { id: 'ETH', title: 'Ethereum' },
+                            { id: 'LTC', title: 'Litecoin' },
+                            { id: 'DOGE', title: 'DogeCoin' },
 
-                    ]}
-                    inputContainerStyle={{
-                        width: 250,
-                        borderTopEndRadius: 0,
-                        borderBottomRightRadius: 0,
-                        height: 40,
-                        backgroundColor: "#f6f6f6",
-                        marginBottom: 10
-                    }}
-                />
-                    {
-                        selectedItem != null ?
-                        <TouchableOpacity 
-                        style={styles.searchButton}
-                        onPress={() => navigation.navigate('GenericCoinScreen',
-                            {
-                                domainName: selectedItem.id,
-                                name: selectedItem.title
-                            },
-                            setErrorMessage(' ')
-                        )}
-                        >
-                            <Ionicons name={'search'} style={styles.searchIcon} size={25} color={'gray'} />
-                        </TouchableOpacity>
-                        :
-                        <TouchableOpacity 
+                        ]}
+                        inputContainerStyle={{
+                            width: 250,
+                            borderTopEndRadius: 0,
+                            borderBottomRightRadius: 0,
+                            height: 40,
+                            backgroundColor: "#f6f6f6",
+                            marginBottom: 10,
+                        }}
+                    />
+                        {
+                            selectedItem != null ?
+                            <TouchableOpacity 
                             style={styles.searchButton}
-                            onPress={() => alertUser()}
-                        >
-                            <Ionicons name={'search'} style={styles.searchIcon} size={25} color={'gray'} />
-                        </TouchableOpacity>
-                    }
+                            onPress={() => navigation.navigate('GenericCoinScreen',
+                                {
+                                    domainName: selectedItem.id,
+                                    name: selectedItem.title
+                                },
+                                setErrorMessage(' ')
+                            )}
+                            >
+                                <Ionicons name={'search'} style={styles.searchIcon} size={25} color={'#ffffff'} />
+                            </TouchableOpacity>
+                            :
+                            <TouchableOpacity 
+                                style={styles.searchButton}
+                                onPress={() => alertUser()}
+                            >
+                                <Ionicons name={'search'} style={styles.searchIcon} size={25} color={'#ffffff'} />
+                            </TouchableOpacity>
+                        }
                 </View>
                 <Text style={styles.errorMessage}>{errorMessage}</Text>
             </View>
-                
-            <View>
-                
-            </View>
+            
         </Pressable>
     );
 }

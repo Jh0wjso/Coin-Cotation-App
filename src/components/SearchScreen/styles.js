@@ -2,9 +2,10 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor: '#fff',
+        backgroundColor: "#B22222",
         flex: 1,
-        flexDirection: "column"
+        flexDirection: "column",
+        alignItems: "center"
     },
     headerContent:{
         justifyContent: 'space-between',
@@ -14,10 +15,11 @@ const styles = StyleSheet.create({
         marginLeft: 20,
         marginTop: 20,
         marginBottom: 10,
+        top: 0
     },
     header:{
         backgroundColor: '#B22222',
-        width: '100%',
+        width: '100%'
     },
     logoName:{
         flexDirection: 'column',
@@ -31,7 +33,7 @@ const styles = StyleSheet.create({
 
     },
     tittleScreen:{
-        color: '#fff',
+        color: '#ffffff',
         fontSize: 30,
         fontWeight: 'bold'
     },
@@ -42,10 +44,8 @@ const styles = StyleSheet.create({
         fontStyle: 'italic'
     },
     inputContainer:{
+        flex: 1,
         flexDirection: 'column',
-        backgroundColor: '#B22222',
-        borderBottomLeftRadius: 50,
-        borderBottomRightRadius: 50,
         justifyContent: "center",
         alignItems: "center"
     },
@@ -56,18 +56,8 @@ const styles = StyleSheet.create({
         width:"80%",
         
     },
-    input:{
-        backgroundColor:"#f6f6f6",
-        height: 40,
-        paddingLeft:10,
-        justifyContent: 'flex-start',
-        flexDirection: "row",
-        width: 450,
-        borderTopLeftRadius: 5,
-        borderBottomLeftRadius: 5
-    },
     searchButton:{
-        backgroundColor: '#f6f6f6',
+        backgroundColor: '#f29407',
         height: 40,
         alignItems: "center",
         justifyContent: "center",
@@ -89,7 +79,7 @@ const styles = StyleSheet.create({
         fontSize: 15,
         borderRadius: 5,
         fontWeight: 'bold',
-        color: '#fff'
+        color: '#ffffff'
     },
     disclaimerContariner:{
         flex: 1,
