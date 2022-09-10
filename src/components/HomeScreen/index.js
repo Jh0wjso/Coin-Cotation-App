@@ -80,18 +80,12 @@ export default function HomeScreen({ navigation }){
                     </Text>
                 </View>
                 <View style={styles.imageCoin}>
-                    <Ionicons name={'logo-bitcoin'} style={styles.coinIcon} size={70} color={'#800000'} />
+                    <Ionicons name={'logo-bitcoin'} style={styles.coinIcon} size={70} color={'#ffffff'} />
                 </View>
             </View>
             <View style={styles.cardCoinsContainer}>
                 <View style={styles.contentTextCoins}>
-                    <Text style={styles.strongText}>Mais Prcuradas</Text>
-                    <TouchableOpacity
-                    >
-                        <Text style={styles.seeAllButtonText}>
-                            Ver Todas
-                        </Text>
-                    </TouchableOpacity>
+                    <Text style={styles.strongText}>Moedas em Alta</Text>
                 </View>
                 <Text style={styles.infoText}>Aperte no card para mais informações.</Text>
                 <View style={styles.coincontainer}>
@@ -102,20 +96,21 @@ export default function HomeScreen({ navigation }){
                                 name: 'bitcoin'
                             }
                         )}
-                        style={styles.cardCoin}
+                        style={styles.cardCoinTop}
                     >
                         <View>
                             <Text style={styles.dateToday}>
                                 {returnDate()}
                             </Text>
                             <View style={styles.nameLogoCoin}>
-                                <Ionicons name={'cash-outline'} size={30} color={'#fff'}/>
+                                <Ionicons name={'cash-outline'} size={30} color={'#B22222'}/>
                                 <Text style={styles.coinName}>Bitcoin</Text>
                             </View>
                         </View>
                         <Text style={styles.coinValue}>R$ {parseFloat(lastBitCoinValue).toFixed(2).replace('.', ',')}</Text>
-                    </TouchableOpacity>
-                    
+                    </TouchableOpacity>    
+
+                <View style={styles.containerBottom}>
                     <TouchableOpacity 
                         onPress={() => navigation.navigate('GenericCoinScreen',
                         {
@@ -130,7 +125,7 @@ export default function HomeScreen({ navigation }){
                                 {returnDate()}
                             </Text>
                             <View style={styles.nameLogoCoin}>
-                                <Ionicons name={'cash-outline'} size={30} color={'#fff'}/>
+                                <Ionicons name={'cash-outline'} size={30} color={'#B22222'}/>
                                 <Text style={styles.coinName}>Ethereum</Text>
                             </View>
                         </View>
@@ -151,13 +146,24 @@ export default function HomeScreen({ navigation }){
                                 {returnDate()}
                             </Text>
                             <View style={styles.nameLogoCoin}>
-                                <Ionicons name={'cash-outline'} size={30} color={'#fff'}/>
+                                <Ionicons name={'cash-outline'} size={30} color={'#B22222'}/>
                                 <Text style={styles.coinName}>LiteCoin</Text>
                             </View>
                         </View>
                         <Text style={styles.coinValue}>R$ {parseFloat(lastLiteCoinValue).toFixed(2).replace('.', ',')}</Text>
                     </TouchableOpacity>
                 </View>
+                </View>
+            </View>
+            <View style={styles.contentBtnSeeMore}>
+                <TouchableOpacity
+                style={styles.btnSeeMore}
+                >
+                    <Text style={styles.seeAllButtonText}>
+                        VER MAIS MOEDAS
+                    </Text>
+                    <Ionicons name={'chevron-forward-outline'} size={30} color={'#ffffff'}/>
+                </TouchableOpacity>
             </View>
         </View>
     );

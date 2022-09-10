@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor: '#fff',
+        backgroundColor: '#B22222',
         flex: 1,
         flexDirection: "column"
     },
@@ -36,14 +36,13 @@ const styles = StyleSheet.create({
     
     welcomeMessageContent:{
         justifyContent: "flex-start",
-        margin: 20,
-        marginTop: 5
+        marginBottom: 10,
+        marginLeft: 20
     },
     messageWelcome:{
         color: '#ffffff',
         fontWeight: 'bold',
-        fontStyle: "italic",
-        fontSize: 13
+        fontSize: 20
     },
     userIcon:{
         fontWeight: "bold"
@@ -71,7 +70,7 @@ const styles = StyleSheet.create({
         marginTop: 10,
         paddingTop: 10,
         borderTopWidth: 1,
-        borderColor: 'gray',
+        borderColor: '#ffffff',
         flexDirection: "column",
         marginRight: 10,
         marginLeft: 10,
@@ -85,30 +84,47 @@ const styles = StyleSheet.create({
     strongText:{
         fontWeight: 'bold',
         fontSize: 20,
-        color: '#800000'
+        color: '#f29407'
     },
     seeAllButtonText:{
-        color: 'gray',
-        fontWeight: 'bold'
+        color: '#ffffff',
+        fontWeight: 'bold',
+        fontStyle: "italic",
+        fontSize: 20,
     },
     cardCoin:{
         padding: 10,
-        backgroundColor: '#800000',
+        backgroundColor: '#ffffff',
         height: 'auto',
-        width: '90%',
+        width: '40%',
         margin: 10,
         borderRadius: 15,
-        flexDirection: 'row',
+        flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'space-between'
     },
+    cardCoinTop:{
+        padding: 10,
+        backgroundColor: '#ffffff',
+        height: 'auto',
+        width: '50%',
+        margin: 10,
+        borderRadius: 15,
+        flexDirection: 'column',
+        alignItems: 'center',
+    },
     coincontainer:{
         flexDirection: 'column',
-        alignItems: 'center'
+        alignItems: 'center',
+        justifyContent: "space-between"
+    },
+    containerBottom:{
+        flexDirection: "row",
     },
     dateToday:{
         fontWeight: 'bold',
-        color: '#d1cdcd',
+        color: '#B22222',
+        fontStyle: "italic",
         fontSize: 13
     },
     nameLogoCoin:{
@@ -117,31 +133,42 @@ const styles = StyleSheet.create({
         justifyContent: "flex-start",
     },
     coinName:{
-        fontSize: 15,
-        color: '#fff',
+        fontSize: 17,
+        color: '#B22222',
         fontWeight: 'bold',
-        fontStyle: "italic",
         marginLeft: 5
     },
     coinValue:{
         fontSize: 20,
         margin: 5,
-        color: '#fff',
-        fontStyle: "italic",
-        fontWeight: 'bold'
+        color: '#B22222',
+        fontWeight: '600'
     },
     infoText:{
         fontStyle: 'italic',
         fontSize: 12,
-        color: 'gray',
-        marginBottom: 10
+        color: '#ffffff',
+        marginBottom: 10,
+        fontWeight: "600"
     },
     
     messageWelcome2USer:{
-        color: '#800000',
+        color: '#ffffff',
         fontWeight: 'bold',
         fontStyle: "italic",
         fontSize: 13
+    },
+    btnSeeMore:{
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
+        borderBottomWidth: 2,
+        borderColor: "#ffffff"
+    },
+    contentBtnSeeMore:{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center"
     }
 });
 
