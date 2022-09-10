@@ -24,10 +24,10 @@ export default function HomeScreenStack(){
                     
                     return <Ionicons name={iconName} size={25} color={color} />;
                 },
-                tabBarActiveTintColor: '#fff',
+                tabBarActiveTintColor: '#B22222',
                 tabBarInactiveTintColor: 'gray',
-                tabBarActiveBackgroundColor: '#800000',
-                tabBarInactiveBackgroundColor: '#800000',
+                tabBarActiveBackgroundColor: '#ffffff',
+                tabBarInactiveBackgroundColor: '#ffffff',
                 headerShown: false,
                 tabBarShowLabel: false
             })}
