@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
     strongText:{
         fontWeight: 'bold',
         fontSize: 20,
-        color: '#f29407'
+        color: '#f7b365'
     },
     seeAllButtonText:{
         color: '#ffffff',
