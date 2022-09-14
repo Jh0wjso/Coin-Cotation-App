@@ -1,9 +1,11 @@
 import React from "react";
-import { View } from "react-native";
+import { View, StatusBar } from "react-native";
 import styles from './styles';
 
 export default function UserScreen(){
     return(
-        <View/>
+        <View style={styles.container}>
+            <StatusBar backgroundColor='#B22222'barStyle={"light-content"} />
+        </View>
     );
 };
