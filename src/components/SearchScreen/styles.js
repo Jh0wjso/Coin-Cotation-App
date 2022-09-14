@@ -95,8 +95,8 @@ const styles = StyleSheet.create({
     errorMessage:{
         paddingBottom: 15,
         fontWeight: "bold",
-        color: "#ffffff",
-        fontSize: 16,
+        color: "#e9dede",
+        fontSize: 18,
         fontStyle: "italic"
     }
 });

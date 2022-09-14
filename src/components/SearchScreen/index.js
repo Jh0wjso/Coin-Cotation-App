@@ -11,7 +11,6 @@ import {
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import styles from "./styles";
 import config from '../../config';
-
 import { AutocompleteDropdown } from 'react-native-autocomplete-dropdown';
 
 export default function SearchScreen({ navigation }){
@@ -114,6 +113,15 @@ export default function SearchScreen({ navigation }){
                             { id: config.biconomy.initials, title: config.biconomy.name },
                             { id: config.bluzelle.initials, title: config.bluzelle.name },
                             { id: config.braintrust.initials, title: config.braintrust.name },
+                            { id: config.ceek.initials, title: config.ceek.name },
+                            { id: config.chiliz.initials, title: config.chiliz.name },
+                            { id: config.clover.initials, title: config.clover.name },
+                            { id: config.compound.initials, title: config.compound.name },
+                            { id: config.coti.initials, title: config.coti.name },
+                            { id: config.curve.initials, title: config.curve.name },
+                            { id: config.cartesi.initials, title: config.cartesi.name },
+                            { id: config.civic.initials, title: config.civic.name },
+                            { id: config.convex.initials, title: config.convex.name },
                             //
                             { id: config.corinthians.initials, title: config.corinthians.name },
                             { id: config.palmeiras.initials, title: config.palmeiras.name },
