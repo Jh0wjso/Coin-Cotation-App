@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { View, Text, StatusBar, TouchableOpacity } from "react-native";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import styles from './styles';
+import config from '../../config';
 
 export default function HomeScreen({ navigation }){
 
@@ -37,12 +38,7 @@ export default function HomeScreen({ navigation }){
         setlastLiteCoinValue(litecoinValueResponse);
 
     }
-
-    function refresh(){
-        coinInfos();
-        alert('Valores atualizados');
-    }
-
+    
     useEffect(() => {
         coinInfos();
     });
@@ -56,17 +52,8 @@ export default function HomeScreen({ navigation }){
                     <View style={styles.logoName}>
                         <Ionicons name={'logo-bitcoin'} style={styles.coinIcon} size={25} color={'#fff'} />
                     </View>
-
                     <Text style={styles.messageUser}>CoinCotation</Text>
-
-                    <TouchableOpacity
-                    style={styles.buttonNotify}
-                    onPress={() => {
-                        refresh()
-                    }}
-                    >
-                        <Ionicons name={'refresh-outline'} style={styles.userIcon} size={25} color={'#fff'} />
-                    </TouchableOpacity>
+                    <View/>
                 </View>
 
                 <View style={styles.welcomeMessageContent}>
@@ -92,8 +79,8 @@ export default function HomeScreen({ navigation }){
                     <TouchableOpacity 
                         onPress={() => navigation.navigate('GenericCoinScreen',
                             {
-                                domainName: 'BTC',
-                                name: 'bitcoin'
+                                domainName: config.bitcoin.initials,
+                                name: config.bitcoin.name
                             }
                         )}
                         style={styles.cardCoinTop}
@@ -114,8 +101,8 @@ export default function HomeScreen({ navigation }){
                     <TouchableOpacity 
                         onPress={() => navigation.navigate('GenericCoinScreen',
                         {
-                            domainName: 'ETH',
-                            name: 'ethereum'
+                            domainName: config.ethetereum.initials,
+                            name: config.ethetereum.name
                         }
                         )}
                         style={styles.cardCoin}
@@ -135,8 +122,8 @@ export default function HomeScreen({ navigation }){
                     <TouchableOpacity 
                         onPress={() => navigation.navigate('GenericCoinScreen',
                         {
-                            domainName: 'LTC',
-                            name: 'liteCoin'
+                            domainName: config.litecoin.initials,
+                            name: config.litecoin.name
                         }
                         )}
                         style={styles.cardCoin}
