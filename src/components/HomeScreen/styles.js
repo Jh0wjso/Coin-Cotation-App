@@ -7,8 +7,9 @@ const styles = StyleSheet.create({
         flexDirection: "column"
     },
     header:{
-        backgroundColor: '#B22222',
+        backgroundColor: '#ffffff',
         width: '100%',
+        borderBottomRightRadius: 50
     },
     headerContent:{
         justifyContent: 'space-between',
@@ -24,8 +25,8 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     messageUser:{
-        color: '#ffffff',
-        fontSize: 25,
+        color: '#B22222',
+        fontSize: 30,
         fontWeight: 'bold'
     },
     buttonNotify:{
@@ -35,27 +36,34 @@ const styles = StyleSheet.create({
     },
     
     welcomeMessageContent:{
-        justifyContent: "flex-start",
+        display: "none",
+        width: '100%',
+        flexDirection: "row",
+        justifyContent: 'space-between',
         marginBottom: 10,
-        marginLeft: 20
+        paddingRight: 25
     },
     messageWelcome:{
-        color: '#ffffff',
+        color: '#FFA500',
         fontWeight: 'bold',
-        fontSize: 20
+        fontSize: 18
     },
     userIcon:{
         fontWeight: "bold"
     },
+    cardBackground:{
+        width: '100%',
+        backgroundColor: '#ffffff'
+    },
     card:{
+        backgroundColor: '#B22222',
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-between",
-        marginRight: 25,
-        marginLeft: 25,
-        marginTop: 10,
-        paddingLeft: 10,
-        height: 90,
+        borderTopLeftRadius: 50,
+        paddingRight: 25,
+        paddingLeft: 25,
+        paddingTop: 25
     },
     contentText:{
         justifyContent: "center",
@@ -67,7 +75,6 @@ const styles = StyleSheet.create({
     },
     
     cardCoinsContainer:{
-        marginTop: 10,
         paddingTop: 10,
         borderTopWidth: 1,
         borderColor: '#ffffff',
@@ -84,13 +91,14 @@ const styles = StyleSheet.create({
     strongText:{
         fontWeight: 'bold',
         fontSize: 20,
-        color: '#f7b365'
+        color: '#FFA500'
     },
     seeAllButtonText:{
-        color: '#ffffff',
+        color: '#FFA500',
         fontWeight: 'bold',
         fontStyle: "italic",
         fontSize: 20,
+        marginRight: 10
     },
     cardCoin:{
         padding: 10,
@@ -145,11 +153,12 @@ const styles = StyleSheet.create({
         fontWeight: '600'
     },
     infoText:{
+        display: "none",
         fontStyle: 'italic',
         fontSize: 12,
-        color: '#ffffff',
+        color: '#B22222',
         marginBottom: 10,
-        fontWeight: "600"
+        fontWeight: "bold"
     },
     
     messageWelcome2USer:{
@@ -159,11 +168,12 @@ const styles = StyleSheet.create({
         fontSize: 13
     },
     btnSeeMore:{
+        backgroundColor: "#ffffff",
+        borderRadius: 20,
+        padding: 10,
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
-        borderBottomWidth: 2,
-        borderColor: "#ffffff"
     },
     contentBtnSeeMore:{
         flex: 1,

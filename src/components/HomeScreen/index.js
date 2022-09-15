@@ -45,29 +45,30 @@ export default function HomeScreen({ navigation }){
 
     return(
         <View style={styles.container}>
-            <StatusBar backgroundColor='#B22222'barStyle={"light-content"} />
+            <StatusBar backgroundColor='#B22222' barStyle={"light-content"} />
             <View style={styles.header}>
                 <View style={styles.headerContent}>
                     
-                    <View style={styles.logoName}>
-                        <Ionicons name={'logo-bitcoin'} style={styles.coinIcon} size={25} color={'#fff'} />
-                    </View>
+                    <View style={styles.logoName}/>
                     <Text style={styles.messageUser}>CoinCotation</Text>
                     <View/>
                 </View>
 
                 <View style={styles.welcomeMessageContent}>
+                    <View/>
                     <Text style={styles.messageWelcome}>Bem vindo de volta!</Text>   
                 </View> 
             </View>
-            <View style={styles.card}>
-                <View style={styles.contentText}>
-                    <Text style={styles.messageWelcome2USer}>
-                        Veja informações da sua moeda preferida.
-                    </Text>
-                </View>
-                <View style={styles.imageCoin}>
-                    <Ionicons name={'logo-bitcoin'} style={styles.coinIcon} size={70} color={'#ffffff'} />
+            <View style={styles.cardBackground}>
+                <View style={styles.card}>
+                    <View style={styles.contentText}>
+                        <Text style={styles.messageWelcome2USer}>
+                            Veja informações da sua moeda preferida.
+                        </Text>
+                    </View>
+                    <View style={styles.imageCoin}>
+                        <Ionicons name={'logo-bitcoin'} style={styles.coinIcon} size={70} color={'#ffffff'} />
+                    </View>
                 </View>
             </View>
             <View style={styles.cardCoinsContainer}>
@@ -149,7 +150,7 @@ export default function HomeScreen({ navigation }){
                     <Text style={styles.seeAllButtonText}>
                         VER MAIS MOEDAS
                     </Text>
-                    <Ionicons name={'chevron-forward-outline'} size={30} color={'#ffffff'}/>
+                    <Ionicons name={'arrow-forward-circle'} size={30} color={'#FFA500'}/>
                 </TouchableOpacity>
             </View>
         </View>
