@@ -122,6 +122,11 @@ export default function SearchScreen({ navigation }){
                             { id: config.cartesi.initials, title: config.cartesi.name },
                             { id: config.civic.initials, title: config.civic.name },
                             { id: config.convex.initials, title: config.convex.name },
+                            { id: config.decentralGames.initials, title: config.decentralGames.name },
+                            { id: config.dia.initials, title: config.dia.name },
+                            { id: config.polkadot.initials, title: config.polkadot.name },
+                            { id: config.dpi.initials, title: config.dpi.name },
+                            { id: config.dydx.initials, title: config.dydx.name },
                             //
                             { id: config.corinthians.initials, title: config.corinthians.name },
                             { id: config.palmeiras.initials, title: config.palmeiras.name },
