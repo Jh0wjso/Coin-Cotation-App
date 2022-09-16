@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
     header:{
         backgroundColor: '#ffffff',
         width: '100%',
-        borderBottomRightRadius: 50
+        borderBottomLeftRadius: 50
     },
     headerContent:{
         justifyContent: 'space-between',
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-between",
-        borderTopLeftRadius: 50,
+        borderTopRightRadius: 75,
         paddingRight: 25,
         paddingLeft: 25,
         paddingTop: 25

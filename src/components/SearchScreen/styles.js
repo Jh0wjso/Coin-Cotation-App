@@ -2,20 +2,18 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor: "#B22222",
+        backgroundColor: "#ffffff",
         flex: 1,
         flexDirection: "column",
         alignItems: "center"
     },
     headerContent:{
-        justifyContent: 'space-between',
+        backgroundColor: '#ffffff',
+        justifyContent: 'center',
         alignItems: 'center',
         flexDirection: 'row',
-        marginRight: 20,
-        marginLeft: 20,
-        marginTop: 20,
-        marginBottom: 10,
-        top: 0
+        borderBottomLeftRadius: 75,
+        paddingTop: 20
     },
     header:{
         backgroundColor: '#B22222',
@@ -30,10 +28,9 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         paddingBottom: 5
-
     },
     tittleScreen:{
-        color: '#ffffff',
+        color: '#B22222',
         fontSize: 30,
         fontWeight: 'bold'
     },
@@ -41,9 +38,13 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         fontSize: 20,
         color: "#f29407",
-        fontStyle: 'italic'
+        fontStyle: 'italic',
+        paddingLeft: 60,
+        paddingBottom: 9
     },
     inputContainer:{
+        borderTopRightRadius: 75,
+        backgroundColor: "#B22222",
         flex: 1,
         flexDirection: 'column',
         justifyContent: "center",
@@ -53,8 +54,8 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         alignItems: 'center',
         justifyContent: "center",
-        width:"80%",
-        
+        width:"115%",
+        paddingRight: 30
     },
     searchButton:{
         backgroundColor: '#f29407',

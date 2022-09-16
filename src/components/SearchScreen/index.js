@@ -28,8 +28,8 @@ export default function SearchScreen({ navigation }){
             <View style={styles.header}>
                 <View style={styles.headerContent}>
                     <View style={styles.logoName}>
-                        <Text style={styles.tittleScreen}>Search</Text>
-                        <Text style={styles.strongText}>coins</Text>
+                        <Text style={styles.tittleScreen}>Procure</Text>
+                        <Text style={styles.strongText}>por moedas</Text>
                     </View>
                 </View>
             </View>
