@@ -19,6 +19,11 @@ export default function InfoScreen({ navigation }){
                 </TouchableOpacity>
             </View>
 
+            <Text
+                style={styles.infomationText}
+            >
+                Os Valores podem variar a partir de cada mecanismos de cotação.
+            </Text>
             <View style={styles.infoContainer}>
                 
                 <View style={styles.infoContent}>
@@ -26,8 +31,8 @@ export default function InfoScreen({ navigation }){
                     <Text style={styles.infomation}>A maior venda, representa a maior venda da moeda no dia até o momento da cotação.</Text>
                 </View>
                 <View style={styles.infoContent}>
-                    <Text style={styles.infoName}>Ultima Venda</Text>
-                    <Text style={styles.infomation}>A Ultima venda, representa a ultima venda da moeda no dia até o momento da cotação.</Text>
+                    <Text style={styles.infoName}>Ultima Cotação</Text>
+                    <Text style={styles.infomation}>A Ultima cotação, representa a ultima cotação da moeda no dia até o momento da cotação.</Text>
                 </View>
                 <View style={styles.infoContent}>
                     <Text style={styles.infoName}>Valor Abertura</Text>
@@ -37,7 +42,6 @@ export default function InfoScreen({ navigation }){
                     <Text style={styles.infoName}>Volume</Text>
                     <Text style={styles.infomation}>O volume, representa a quantidade negociada nas ultimas 24 horas até a cotação.</Text>
                 </View>
-
             </View>
         </View>
     )

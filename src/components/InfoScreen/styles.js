@@ -40,6 +40,13 @@ const styles = StyleSheet.create({
     lastInfoContent:{
         flexDirection: "column",
         alignItems: "center"
+    },
+    infomationText:{
+        fontSize: 16,
+        textAlign: "center",
+        color: "gray",
+        fontWeight: "bold",
+        fontStyle: "italic"
     }
 });
 

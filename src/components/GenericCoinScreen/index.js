@@ -105,7 +105,7 @@ export default function GenericCoinScreen({ navigation, route }){
                 
                <View style={styles.cardInfo}>
                     <Text style={styles.typeInfo}>
-                        Ultima Venda
+                        Ultima Cotação
                     </Text>
                     <Text style={styles.valueCoin}>
                         R$ {parseFloat(lastCoinSale).toFixed(2).replace('.', ',')}
