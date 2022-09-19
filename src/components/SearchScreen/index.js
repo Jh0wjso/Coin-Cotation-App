@@ -4,7 +4,7 @@ import {
     StatusBar, 
     Text, 
     TouchableOpacity, 
-    Pressable, 
+    Pressable,
     Keyboard,
     Vibration
 } from "react-native";
@@ -146,6 +146,13 @@ export default function SearchScreen({ navigation }){
                             { id: config.godsUnchained.initials, title: config.godsUnchained.name },
                             { id: config.graph.initials, title: config.graph.name },
                             { id: config.satoshiToken.initials, title: config.satoshiToken.name },
+                            { id: config.highstreet.initials, title: config.highstreet.name },
+                            { id: config.holo.initials, title: config.holo.name },
+                            { id: config.internetComputer.initials, title: config.internetComputer.name },
+                            { id: config.illuvium.initials, title: config.illuvium.name },
+                            { id: config.immutableX.initials, title: config.immutableX.name },
+                            { id: config.intermilan.initials, title: config.intermilan.name },
+                            { id: config.juventus.initials, title: config.juventus.name },
                             //
                             { id: config.corinthians.initials, title: config.corinthians.name },
                             { id: config.palmeiras.initials, title: config.palmeiras.name },
