@@ -74,10 +74,10 @@ export default function SearchScreen({ navigation }){
                         clearOnFocus={false}
                         closeOnBlur={true}
                         suggestionsListContainerStyle= {{
-                            backgroundColor: "#ffffff"
+                            backgroundColor: "#f29407"
                         }}
                         suggestionsListTextStyle={{
-                            color: "#B22222",
+                            color: "#ffffff",
                             fontWeight: "bold"
                         }}
                         onSelectItem={setSelectedItem}
@@ -153,7 +153,6 @@ export default function SearchScreen({ navigation }){
                             { id: config.immutableX.initials, title: config.immutableX.name },
                             { id: config.intermilan.initials, title: config.intermilan.name },
                             { id: config.juventus.initials, title: config.juventus.name },
-                            //
                             { id: config.corinthians.initials, title: config.corinthians.name },
                             { id: config.palmeiras.initials, title: config.palmeiras.name },
                             { id: config.manchesterCity.initials, title: config.manchesterCity.name },
@@ -162,7 +161,18 @@ export default function SearchScreen({ navigation }){
                             { id: config.bitcoin.initials, title: config.bitcoin.name },
                             { id: config.ethetereum.initials, title: config.ethetereum.name },
                             { id: config.litecoin.initials, title: config.litecoin.name },
-                            { id: config.doge.initials, title: config.doge.name }
+                            { id: config.doge.initials, title: config.doge.name },
+                            { id: config.metaVerse.initials, title: config.metaVerse.name },
+                            { id: config.portugal.initials, title: config.portugal.name },
+                            { id: config.power.initials, title: config.power.name },
+                            { id: config.psg.initials, title: config.psg.name },
+                            { id: config.quant.initials, title: config.quant.name },
+                            { id: config.radio.initials, title: config.radio.name },
+                            { id: config.interRS.initials, title: config.interRS.name },
+                            { id: config.sandBox.initials, title: config.sandBox.name },
+                            { id: config.spfc.initials, title: config.spfc.name },
+                            { id: config.ufc.initials, title: config.ufc.name },
+                            { id: config.dolar.initials, title: config.dolar.name }
                         ]}
                         inputContainerStyle={{
                             width: 250,
