@@ -172,7 +172,9 @@ export default function SearchScreen({ navigation }){
                             { id: config.sandBox.initials, title: config.sandBox.name },
                             { id: config.spfc.initials, title: config.spfc.name },
                             { id: config.ufc.initials, title: config.ufc.name },
-                            { id: config.dolar.initials, title: config.dolar.name }
+                            { id: config.dolar.initials, title: config.dolar.name },
+                            { id: config.santos.initials, title: config.santos.name },
+                            { id: config.vasco.initials, title: config.vasco.name }
                         ]}
                         inputContainerStyle={{
                             width: 250,
