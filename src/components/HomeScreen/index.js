@@ -67,7 +67,7 @@ export default function HomeScreen({ navigation }){
                         </Text>
                     </View>
                     <View style={styles.imageCoin}>
-                        <Ionicons name={'logo-bitcoin'} style={styles.coinIcon} size={70} color={'#ffffff'} />
+                        <Ionicons name={'logo-bitcoin'} style={styles.coinIcon} size={70} color={'#FFFFFF'} />
                     </View>
                 </View>
             </View>
@@ -91,7 +91,7 @@ export default function HomeScreen({ navigation }){
                                 {returnDate()}
                             </Text>
                             <View style={styles.nameLogoCoin}>
-                                <Ionicons name={'cash-outline'} size={30} color={'#B22222'}/>
+                                <Ionicons name={'cash-outline'} size={30} color={'#FFFFFF'}/>
                                 <Text style={styles.coinName}>Bitcoin</Text>
                             </View>
                         </View>
@@ -113,7 +113,7 @@ export default function HomeScreen({ navigation }){
                                 {returnDate()}
                             </Text>
                             <View style={styles.nameLogoCoin}>
-                                <Ionicons name={'cash-outline'} size={30} color={'#B22222'}/>
+                                <Ionicons name={'cash-outline'} size={30} color={'#FFFFFF'}/>
                                 <Text style={styles.coinName}>Ethereum</Text>
                             </View>
                         </View>
@@ -134,7 +134,7 @@ export default function HomeScreen({ navigation }){
                                 {returnDate()}
                             </Text>
                             <View style={styles.nameLogoCoin}>
-                                <Ionicons name={'cash-outline'} size={30} color={'#B22222'}/>
+                                <Ionicons name={'cash-outline'} size={30} color={'#FFFFFF'}/>
                                 <Text style={styles.coinName}>LiteCoin</Text>
                             </View>
                         </View>

@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
     },
     cardCoin:{
         padding: 10,
-        backgroundColor: '#ffffff',
+        backgroundColor: '#FFA500',
         height: 'auto',
         width: '40%',
         margin: 10,
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
     },
     cardCoinTop:{
         padding: 10,
-        backgroundColor: '#ffffff',
+        backgroundColor: '#FFA500',
         height: 'auto',
         width: '50%',
         margin: 10,
@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
     },
     dateToday:{
         fontWeight: 'bold',
-        color: '#B22222',
+        color: '#FFFFFF',
         fontStyle: "italic",
         fontSize: 13
     },
@@ -142,15 +142,14 @@ const styles = StyleSheet.create({
     },
     coinName:{
         fontSize: 17,
-        color: '#B22222',
+        color: '#FFFFFF',
         fontWeight: 'bold',
         marginLeft: 5
     },
     coinValue:{
         fontSize: 20,
-        margin: 5,
-        color: '#B22222',
-        fontWeight: '600'
+        color: '#FFFFFF',
+        fontWeight: 'bold'
     },
     infoText:{
         display: "none",
