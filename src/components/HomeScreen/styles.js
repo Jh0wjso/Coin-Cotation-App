@@ -120,6 +120,7 @@ const styles = StyleSheet.create({
         borderRadius: 15,
         flexDirection: 'column',
         alignItems: 'center',
+        justifyContent: "flex-start"
     },
     coincontainer:{
         flexDirection: 'column',

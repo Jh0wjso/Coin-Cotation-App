@@ -24,7 +24,7 @@ export default function HomeScreenStack(){
                     
                     return <Ionicons name={iconName} size={25} color={color} />;
                 },
-                tabBarActiveTintColor: '#B22222',
+                tabBarActiveTintColor: '#FFA500',
                 tabBarInactiveTintColor: 'gray',
                 tabBarActiveBackgroundColor: '#ffffff',
                 tabBarInactiveBackgroundColor: '#ffffff',
