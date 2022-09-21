@@ -146,6 +146,7 @@ export default function HomeScreen({ navigation }){
             <View style={styles.contentBtnSeeMore}>
                 <TouchableOpacity
                 style={styles.btnSeeMore}
+                onPress={() => navigation.navigate('MarketCoinScreen')}
                 >
                     <Text style={styles.seeAllButtonText}>
                         VER MAIS MOEDAS
