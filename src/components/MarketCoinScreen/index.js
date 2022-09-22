@@ -1,18 +1,22 @@
 import React from "react";
-import { View, StatusBar, Text } from "react-native";
+import { View, StatusBar, Text, TouchableOpacity } from "react-native";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import styles from "./styles";
 
 
-export default function MarketCoinScreen(){
+export default function MarketCoinScreen({navigation}){
     return(
         <View style={styles.container}>
             <StatusBar backgroundColor='#B22222' barStyle={"light-content"} />
             <View style={styles.header}>
                 <View style={styles.headerContent}>
-                    
+                    <TouchableOpacity
+                        onPress={() => navigation.navigate('HomeScreenStack')}
+                    >
+                        <Ionicons name={'arrow-back-outline'} style={styles.closeIcon} size={40} color={'#B22222'} />
+                    </TouchableOpacity>
                     <View style={styles.logoName}/>
-                    <Text style={styles.messageUser}>CoinCotation</Text>
+                        <Text style={styles.messageUser}>CoinCotation</Text>
                     <View/>
                 </View>
             </View>
@@ -24,11 +28,11 @@ export default function MarketCoinScreen(){
                                 Mercado Bitcoin
                             </Text>
                         </View>
-                        <Ionicons name={'logo-bitcoin'} style={styles.coinIcon} size={70} color={'#B22222'} />
+                        <Ionicons name={'logo-bitcoin'} style={styles.coinIcon} size={70} color={'#FFA500'} />
                     </View>
                 </View>
                 <View style={styles.card}>
-                    <Ionicons name={'logo-bitcoin'} style={styles.coinIcon} size={70} color={'#B22222'} />
+                    <Ionicons name={'logo-bitcoin'} style={styles.coinIcon} size={70} color={'#FFA500'} />
                     <View style={styles.contentText}>
                         <Text style={styles.messageWelcome2USer}>
                             Binance
@@ -41,10 +45,10 @@ export default function MarketCoinScreen(){
                             CoinGecko
                         </Text>
                     </View>
-                    <Ionicons name={'logo-bitcoin'} style={styles.coinIcon} size={70} color={'#B22222'} />
+                    <Ionicons name={'logo-bitcoin'} style={styles.coinIcon} size={70} color={'#FFA500'} />
                 </View>
                 <View style={styles.card}>
-                    <Ionicons name={'logo-bitcoin'} style={styles.coinIcon} size={70} color={'#B22222'} />
+                    <Ionicons name={'logo-bitcoin'} style={styles.coinIcon} size={70} color={'#FFA500'} />
                     <View style={styles.contentText}>
                         <Text style={styles.messageWelcome2USer}>
                             CoinBase
@@ -57,7 +61,7 @@ export default function MarketCoinScreen(){
                             NovaDAX
                         </Text>
                     </View>
-                    <Ionicons name={'logo-bitcoin'} style={styles.coinIcon} size={70} color={'#B22222'} />
+                    <Ionicons name={'logo-bitcoin'} style={styles.coinIcon} size={70} color={'#FFA500'} />
                 </View>
             </View>
         </View>

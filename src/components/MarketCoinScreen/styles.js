@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
         padding: 8
     },
     messageWelcome2USer:{
-        color: '#B22222',
+        color: '#FFA500',
         fontWeight: 'bold',
         fontStyle: "italic",
         fontSize: 20

@@ -149,7 +149,7 @@ export default function HomeScreen({ navigation }){
                 onPress={() => navigation.navigate('MarketCoinScreen')}
                 >
                     <Text style={styles.seeAllButtonText}>
-                        VER MAIS MOEDAS
+                        ONDE COMPAR
                     </Text>
                     <Ionicons name={'arrow-forward-circle'} size={30} color={'#FFA500'}/>
                 </TouchableOpacity>
