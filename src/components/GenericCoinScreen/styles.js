@@ -42,7 +42,6 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
     },
     date:{
-
         color: "#ffffff",
         fontWeight: "bold"
     },

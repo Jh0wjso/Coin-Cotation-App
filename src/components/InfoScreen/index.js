@@ -3,11 +3,6 @@ import { View, Text, TouchableOpacity } from "react-native";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import styles from "./styles";
 
-//Ultima venda
-//Maior Venda
-//Valor Abertura
-//Volume
-
 export default function InfoScreen({ navigation }){
     return(
         <View style={styles.container}>
