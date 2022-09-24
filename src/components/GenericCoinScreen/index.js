@@ -58,37 +58,39 @@ export default function GenericCoinScreen({ navigation, route }){
     return(
         <View style={styles.container}>
             <StatusBar backgroundColor='#B22222'barStyle={"light-content"} />
-            <View style={styles.header}>
-                <View style={styles.headerContent}>
-                    <TouchableOpacity
-                        onPress={() => navigation.navigate('HomeScreenStack')}
-                    >
-                        <Ionicons name={'close-outline'} style={styles.closeIcon} size={40} color={'#ffffff'} />
-                    </TouchableOpacity>
-                    <TouchableOpacity
-                        onPress={() => {refresh()}}
-                    >
-                        <Ionicons name={'refresh-outline'} style={styles.closeIcon} size={25} color={'#ffffff'} />
-                    </TouchableOpacity>
-                </View>
-                <View style={styles.basicInfos}>
-                    <View style={styles.nameContainer}>
-                        <Text style={styles.nameCoinHeader}>
-                            Mais Infos
-                        </Text>
-                        <Text style={styles.disclaimer}>
-                            Hora e data da cotação
-                        </Text>
+            <View style={styles.headerBackground}>
+                <View style={styles.header}>
+                    <View style={styles.headerContent}>
+                        <TouchableOpacity
+                            onPress={() => navigation.navigate('HomeScreenStack')}
+                        >
+                            <Ionicons name={'close-outline'} style={styles.closeIcon} size={40} color={'#ffffff'} />
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                            onPress={() => {refresh()}}
+                        >
+                            <Ionicons name={'refresh-outline'} style={styles.closeIcon} size={25} color={'#ffffff'} />
+                        </TouchableOpacity>
                     </View>
-                    <View style={styles.dateHourContent}>
-                        <Text style={styles.hour}>
-                            <Ionicons name={'alarm-outline'} style={styles.userIcon} size={15} color={'#fff'} />
-                            {returnHour()}
-                        </Text>
-                        <Text style={styles.date}>
-                            <Ionicons name={'calendar-outline'} style={styles.userIcon} size={15} color={'#fff'} />
-                            {returnDate()}
-                        </Text>
+                    <View style={styles.basicInfos}>
+                        <View style={styles.nameContainer}>
+                            <Text style={styles.nameCoinHeader}>
+                                Mais Infos
+                            </Text>
+                            <Text style={styles.disclaimer}>
+                                Hora e data da cotação
+                            </Text>
+                        </View>
+                        <View style={styles.dateHourContent}>
+                            <Text style={styles.hour}>
+                                <Ionicons name={'alarm-outline'} style={styles.userIcon} size={15} color={'#fff'} />
+                                {returnHour()}
+                            </Text>
+                            <Text style={styles.date}>
+                                <Ionicons name={'calendar-outline'} style={styles.userIcon} size={15} color={'#fff'} />
+                                {returnDate()}
+                            </Text>
+                        </View>
                     </View>
                 </View>
             </View>

@@ -2,14 +2,18 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor: '#d1d0d0',
+        backgroundColor: '#B22222',
         flex: 1,
         flexDirection: "column"
     },
+    headerBackground:{
+        backgroundColor: "#FFFFFF"
+    },
     header:{
         width: '100%',
-        padding: 10,
-        backgroundColor: "#B22222"
+        padding: 15,
+        backgroundColor: "#B22222",
+        borderBottomStartRadius: 50
     },
     headerContent:{
         justifyContent: "space-between",
@@ -53,7 +57,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: "#ffffff",
         padding: 20,
-        paddingTop: 60,
+        borderTopEndRadius: 50
     },
     coinNameContent:{
         justifyContent: "space-between",
@@ -70,24 +74,26 @@ const styles = StyleSheet.create({
         paddingTop: 10,
         marginBottom: 10,
         paddingBottom: 10,
-        borderBottomWidth: 0.5,
+        borderBottomWidth: 1,
         borderColor: '#55555577'
     },
     typeInfo:{
         fontWeight: "bold",
         fontSize: 17,
         padding: 10,
-        color: "gray",
+        color: "#FFA500",
         justifyContent: "center"
     },
     valueCoin:{
         fontWeight: "bold",
         fontSize: 18,
-        color: "#383737",
+        color: "#FFA500",
         justifyContent: "center"
     },
     coinName:{
-        fontSize: 30
+        fontSize: 30,
+        fontWeight: "bold",
+        color: "gray"
     },
     initialsCoin:{
         fontSize: 15,
