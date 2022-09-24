@@ -50,7 +50,8 @@ export default function HomeScreen({ navigation }){
                 <View style={styles.headerContent}>
                     
                     <View style={styles.logoName}/>
-                    <Text style={styles.messageUser}>CoinCotation</Text>
+                        <Text style={styles.title}>CoinCotation</Text>
+                        <Text style={styles.secondName}>App</Text>
                     <View/>
                 </View>
 

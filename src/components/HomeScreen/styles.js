@@ -12,19 +12,25 @@ const styles = StyleSheet.create({
         borderBottomLeftRadius: 50
     },
     headerContent:{
-        justifyContent: 'space-between',
+        backgroundColor: '#ffffff',
+        justifyContent: 'center',
         alignItems: 'center',
-        flexDirection: 'row',
-        marginRight: 20,
-        marginLeft: 20,
-        marginTop: 20,
-        marginBottom: 10,
+        flexDirection: 'column',
+        borderBottomLeftRadius: 100,
+        paddingTop: 20
     },
     logoName:{
-        flexDirection: 'row',
-        alignItems: "center",
+        flexDirection: "column"
     },
-    messageUser:{
+    secondName:{
+        fontWeight: "bold",
+        fontSize: 20,
+        color: "#f29407",
+        fontStyle: 'italic',
+        paddingLeft: 60,
+        paddingBottom: 9
+    },
+    title:{
         color: '#B22222',
         fontSize: 30,
         fontWeight: 'bold'
@@ -60,7 +66,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-between",
-        borderTopRightRadius: 75,
+        borderTopRightRadius: 70,
         paddingRight: 25,
         paddingLeft: 25,
         paddingTop: 25
