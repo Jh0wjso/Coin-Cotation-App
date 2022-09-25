@@ -75,10 +75,7 @@ export default function GenericCoinScreen({ navigation, route }){
                     <View style={styles.basicInfos}>
                         <View style={styles.nameContainer}>
                             <Text style={styles.nameCoinHeader}>
-                                Mais Infos
-                            </Text>
-                            <Text style={styles.disclaimer}>
-                                Hora e data da cotação
+                                Mais Informações
                             </Text>
                         </View>
                         <View style={styles.dateHourContent}>
@@ -89,6 +86,11 @@ export default function GenericCoinScreen({ navigation, route }){
                             <Text style={styles.date}>
                                 <Ionicons name={'calendar-outline'} style={styles.userIcon} size={15} color={'#fff'} />
                                 {returnDate()}
+                            </Text>
+                        </View>
+                        <View style={styles.infoText}>
+                            <Text style={styles.disclaimer}>
+                                Hora e data da cotação
                             </Text>
                         </View>
                     </View>

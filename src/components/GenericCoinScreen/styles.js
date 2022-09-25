@@ -39,7 +39,10 @@ const styles = StyleSheet.create({
     },
     disclaimer:{
         color: "#ffffff",
-        fontStyle: "italic"
+        fontStyle: "italic",
+        alignItems: "center",
+        justifyContent: "center",
+        fontWeight: "bold"
     },
     hour:{
         color: "#ffffff",
@@ -110,6 +113,9 @@ const styles = StyleSheet.create({
     helpContent:{
         flex: 1,
         justifyContent: "center",
+        alignItems: "center"
+    },
+    infoText:{
         alignItems: "center"
     }
 });
