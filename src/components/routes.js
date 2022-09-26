@@ -8,19 +8,18 @@ import MarketCoinScreen from "./MarketCoinScreen";
 
 const Stack = createStackNavigator();
 
-export default function Routes(){
-    return(
-        <Stack.Navigator
-
-            initialRouteName="HomeScreenStack"
-            screenOptions={{
-                headerShown: false
-            }}
-        >
-            <Stack.Screen name="HomeScreenStack" component={HomeScreenStack}/>
-            <Stack.Screen name="GenericCoinScreen" component={GenericCoinScreen}/>
-            <Stack.Screen name="MarketCoinScreen" component={MarketCoinScreen}/>
-            <Stack.Screen name="InfoScreen" component={InfoScreen}/>
-        </Stack.Navigator>
-    );
+export default function Routes() {
+  return (
+    <Stack.Navigator
+      initialRouteName="HomeScreenStack"
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
+      <Stack.Screen name="HomeScreenStack" component={HomeScreenStack} />
+      <Stack.Screen name="GenericCoinScreen" component={GenericCoinScreen} />
+      <Stack.Screen name="MarketCoinScreen" component={MarketCoinScreen} />
+      <Stack.Screen name="InfoScreen" component={InfoScreen} />
+    </Stack.Navigator>
+  );
 }
