@@ -28,8 +28,8 @@ export default function SearchScreen({ navigation }) {
       <View style={styles.header}>
         <View style={styles.headerContent}>
           <View style={styles.logoName}>
-            <Text style={styles.tittleScreen}>Procure</Text>
-            <Text style={styles.strongText}>por moedas</Text>
+            <Text style={styles.tittleScreen}>Escolha</Text>
+            <Text style={styles.strongText}>uma moeda</Text>
           </View>
         </View>
       </View>
@@ -216,7 +216,7 @@ export default function SearchScreen({ navigation }) {
               borderTopEndRadius: 0,
               borderBottomRightRadius: 0,
               height: 40,
-              backgroundColor: "#f6f6f6",
+              backgroundColor: "#ffffff",
               marginBottom: 10,
             }}
           />

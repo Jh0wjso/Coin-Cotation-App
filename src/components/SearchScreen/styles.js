@@ -23,12 +23,6 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     justifyContent: "flex-start",
   },
-  coinMessage: {
-    justifyContent: "flex-start",
-    flexDirection: "row",
-    alignItems: "center",
-    paddingBottom: 5,
-  },
   tittleScreen: {
     color: "#B22222",
     fontSize: 30,
