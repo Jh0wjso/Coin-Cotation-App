@@ -1,0 +1,378 @@
+{
+    "bitcoin":{
+        "initials" : "BTC",
+        "name": "Bitcoin"
+    },
+    "ethetereum":{
+        "initials": "ETH",
+        "name": "Ethereum"
+    },
+    "litecoin":{
+        "initials": "LTC",
+        "name": "Litecoin"
+    },
+    "aave":{
+        "initials": "AAVE", 
+        "name": "Aave"
+    },
+    "alchemypay":{
+        "initials": "ACH",
+        "name": "Alchemy Pay"
+    },
+    "acmilan":{
+        "initials": "ACMFT",
+        "name": "Ac Milan"
+    },
+    "cardano":{
+        "initials": "ADA",
+        "name": "Cardano"
+    },
+    "adshares":{
+        "initials": "ADS",
+        "name": "Adshares"
+    },
+    "singularityNET":{
+        "initials": "AGIX",
+        "name": "SingularityNET"
+    },
+    "aioz":{
+        "initials": "AIOZ",
+        "name": "Aioz"
+    },
+    "alchemix":{
+        "initials": "ALCX",
+        "name": "Alchemix"
+    },
+    "algorand":{
+        "initials": "ALGO",
+        "name": "Algorand"
+    },
+    "myNeighborAlice":{
+        "initials": "ALICE",
+        "name": "MyNeighborAlice"
+    },
+    "alliance":{
+        "initials": "ALLFT",
+        "name": "Alliance"
+    },
+    "alphaVentureDao":{
+        "initials": "ALPHA",
+        "name": "Alpha Venture Dao"
+    },
+    "astonMartin":{
+        "initials": "AMFT",
+        "name": "Aston Martin"
+    },
+    "amp":{
+        "initials": "AMP",
+        "name": "Amp"
+    },
+    "ankr":{
+        "initials": "ANKR",
+        "name": "ANKR"
+    },
+    "aragon":{
+        "initials": "ANT",
+        "name": "Aragon"
+    },
+    "apeCoin":{
+        "initials": "APE",
+        "name": "ApeCoin"
+    },
+    "argentina":{
+        "initials": "ARGFT",
+        "name": "Argentina F.A."
+    },
+    "roma":{
+        "initials": "ASRFT",
+        "name": "As Roma"
+    },
+    "atlas":{
+        "initials": "ATLAS",
+        "name": "Star Atlas"
+    },
+    "cosmos":{
+        "initials": "ATOM",
+        "name": "Cosmos"
+    },
+    "corinthians":{
+        "initials": "SCCPFT",
+        "name": "Corinthians"
+    },
+    "palmeiras":{
+        "initials": "VERDAO",
+        "name": "S.E Palmeiras"
+    },
+    "manchesterCity":{
+        "initials": "CITYFT",
+        "name": "Manchester City FC"
+    },
+    "flamengo":{
+        "initials": "MENGOFT",
+        "name": "Flamengo"
+    },
+    "barcelona":{
+        "initials": "BARFT",
+        "name": "FC Barcelona"
+    },
+    "doge":{
+        "initials": "DOGE",
+        "name": "DogeCoin"
+    },
+    "audius":{
+        "initials": "AUDIO",
+        "name": "Audius"
+    },
+    "avalanche":{
+        "initials": "AVAX",
+        "name": "Avalanche"
+    },
+    "axie":{
+        "initials": "AXS",
+        "name": "Axie Infinity"
+    },
+    "balancer":{
+        "initials": "BAL",
+        "name": "Balancer"
+    },
+    "badger":{
+        "initials": "BADGER",
+        "name": "Badger DAO"
+    },
+    "bitCash":{
+        "initials": "BCH",
+        "name": "Bitcoin Cash"
+    },
+    "bancor":{
+        "initials": "BNT",
+        "name": "Bancor"
+    },
+    "biconomy":{
+        "initials": "BICO",
+        "name": "Biconomy"
+    },
+    "bluzelle":{
+        "initials": "BLZ",
+        "name": "Bluzelle"
+    },
+    "braintrust":{
+        "initials": "BTRST",
+        "name": "Braintrust"
+    },
+    "ceek":{
+        "initials": "CEEK",
+        "name": "CEEK VR"
+    },
+    "chiliz":{
+        "initials": "CHZ",
+        "name": "Chiliz"
+    },
+    "clover":{
+        "initials": "CLV",
+        "name": "Clover Finance"
+    },
+    "compound":{
+        "initials": "COMP",
+        "name": "Compound"
+    },
+    "coti":{
+        "initials": "COTI",
+        "name": "COTI"
+    },
+    "curve":{
+        "initials": "CRV",
+        "name": "Curve Dao Token"
+    },
+    "cartesi":{
+        "initials": "CTSI",
+        "name": "Cartesi"
+    },
+    "civic":{
+        "initials": "CVC",
+        "name": "Civic"
+    },
+    "convex":{
+        "initials": "CVX",
+        "name": "Convex Finance"
+    },
+    "decentralGames":{
+        "initials": "DG",
+        "name": "Decentral Games"
+    },
+    "dia":{
+        "initials": "DIA",
+        "name": "DIA"
+    },
+    "polkadot":{
+        "initials": "DOT",
+        "name": "Polkadot"
+    },
+    "dpi":{
+        "initials": "DPI",
+        "name": "CiviDeFi Pulse"
+    },
+    "dydx":{
+        "initials": "DYDX",
+        "name": "dYdX"
+    },
+    "energia":{
+        "initials": "ENER01",
+        "name": "Token de Energia"
+    },
+    "energia2":{
+        "initials": "ENER02",
+        "name": "Energia 02"
+    },
+    "enjin":{
+        "initials": "ENJ",
+        "name": "Enjin Coin"
+    },
+    "ethereumService":{
+        "initials": "ENS",
+        "name": "Ethereum Service"
+    },
+    "ethernity":{
+        "initials": "ERN",
+        "name": "Ethernity"
+    },
+    "harvest":{
+        "initials": "FARM",
+        "name": "Harvest Finance"
+    },
+    "fetch":{
+        "initials": "FET",
+        "name": "Fetch.ai"
+    },
+    "filecoin":{
+        "initials": "FIL",
+        "name": "Filecoin"
+    },
+    "floki":{
+        "initials": "FLOKI",
+        "name": "Floki Inu"
+    },
+    "flow":{
+        "initials": "FLOW",
+        "name": "Flow"
+    },
+    "gala":{
+        "initials": "GALA",
+        "name": "Gala"
+    },
+    "galatasaray":{
+        "initials": "GALFT",
+        "name": "Galatasaray"
+    },
+    "cam":{
+        "initials": "GALOFT",
+        "name": "Atletico Mineiro"
+    },
+    "aavegotchi":{
+        "initials": "GHST",
+        "name": "Aavegotchi"
+    },
+    "stepn":{
+        "initials": "GMT",
+        "name": "STEPN"
+    },
+    "gnosis":{
+        "initials": "GNO",
+        "name": "Gnosis"
+    },
+    "godsUnchained":{
+        "initials": "GODS",
+        "name": "Gods Unchained"
+    },
+    "graph":{
+        "initials": "GRT",
+        "name": "The Graph"
+    },
+    "satoshiToken":{
+        "initials": "GST",
+        "name": "Satoshi Token"
+    },
+    "highstreet":{
+        "initials": "HIGH",
+        "name": "Highstreet"
+    },
+    "holo":{
+        "initials": "HOT",
+        "name": "Holo"
+    },
+    "internetComputer":{
+        "initials": "ICP",
+        "name": "Internet Computer"
+    },
+    "illuvium":{
+        "initials": "ILV",
+        "name": "Illuvium"
+    },
+    "immutableX":{
+        "initials": "IMX",
+        "name": "Immutable X'"
+    },
+    "intermilan":{
+        "initials": "INTERFT",
+        "name": "Inter Milan"
+    },
+    "jasmyCoin":{
+        "initials": "JASMY",
+        "name": "JasmyCoin"
+    },
+    "juventus":{
+        "initials": "JUVFT",
+        "name": "Juventus"
+    },
+    "metaVerse":{
+        "initials": "MVI",
+        "name": "Metaverse Index"
+    },
+    "portugal":{
+        "initials": "PORFT",
+        "name": "Portugal FT"
+    },
+    "power":{
+        "initials": "POWR",
+        "name": "Power Ledger"
+    },
+    "psg":{
+        "initials": "PSGFT",
+        "name": "Paris Saint-Germain"
+    },
+    "quant":{
+        "initials": "QNT",
+        "name": "Quant"
+    },
+    "radio":{
+        "initials": "RACA",
+        "name": "Radio Caca"
+    },
+    "interRS":{
+        "initials": "SACI",
+        "name": "SC Internacional"
+    },
+    "sandBox":{
+        "initials": "SAND",
+        "name": "The Sandbox"
+    },
+    "spfc":{
+        "initials": "SPFCFT",
+        "name": "São Paulo FC"
+    },
+    "ufc":{
+        "initials": "UFCFT",
+        "name": "UFC"
+    },
+    "dolar":{
+        "initials": "USDC",
+        "name": "Dolar"
+    },
+    "santos":{
+        "initials": "MBSANTOS01",
+        "name": "Santos FC"
+    },
+    "vasco":{
+        "initials": "MBVASCO01",
+        "name": "Vasco Token"
+    }
+}
