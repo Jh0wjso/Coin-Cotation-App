@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: "#f29407",
     fontStyle: "italic",
-    paddingLeft: 60,
+    paddingLeft: 110,
     paddingBottom: 9,
   },
   title: {
@@ -39,15 +39,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#B22222",
     padding: 5,
     borderRadius: 50,
-  },
-
-  welcomeMessageContent: {
-    display: "none",
-    width: "100%",
-    flexDirection: "row",
-    justifyContent: "space-between",
-    marginBottom: 10,
-    paddingRight: 25,
   },
   messageWelcome: {
     color: "#FFA500",
@@ -97,10 +88,12 @@ const styles = StyleSheet.create({
   strongText: {
     fontWeight: "bold",
     fontSize: 20,
-    color: "#FFA500",
+    color: "#FFFFFF",
+    fontStyle: "italic",
+    paddingBottom: 10
   },
   seeAllButtonText: {
-    color: "#FFA500",
+    color: "#FFFFFF",
     fontWeight: "bold",
     fontStyle: "italic",
     fontSize: 20,
@@ -108,7 +101,7 @@ const styles = StyleSheet.create({
   },
   cardCoin: {
     padding: 10,
-    backgroundColor: "#FFA500",
+    backgroundColor: "#FFFFFF",
     height: "auto",
     width: "40%",
     margin: 10,
@@ -119,7 +112,7 @@ const styles = StyleSheet.create({
   },
   cardCoinTop: {
     padding: 10,
-    backgroundColor: "#FFA500",
+    backgroundColor: "#FFFFFF",
     height: "auto",
     width: "50%",
     margin: 10,
@@ -138,7 +131,7 @@ const styles = StyleSheet.create({
   },
   dateToday: {
     fontWeight: "bold",
-    color: "#FFFFFF",
+    color: "#FFA500",
     fontStyle: "italic",
     fontSize: 13,
   },
@@ -149,13 +142,13 @@ const styles = StyleSheet.create({
   },
   coinName: {
     fontSize: 17,
-    color: "#FFFFFF",
+    color: "#FFA500",
     fontWeight: "bold",
     marginLeft: 5,
   },
   coinValue: {
     fontSize: 20,
-    color: "#FFFFFF",
+    color: "#FFA500",
     fontWeight: "bold",
   },
   infoText: {
@@ -174,7 +167,7 @@ const styles = StyleSheet.create({
     fontSize: 13,
   },
   btnSeeMore: {
-    backgroundColor: "#ffffff",
+    backgroundColor: "#FFA500",
     borderRadius: 20,
     padding: 10,
     flexDirection: "row",

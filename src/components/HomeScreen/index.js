@@ -58,12 +58,6 @@ export default function HomeScreen({ navigation }) {
           <View style={styles.logoName} />
           <Text style={styles.title}>CoinCotation</Text>
           <Text style={styles.secondName}>App</Text>
-          <View />
-        </View>
-
-        <View style={styles.welcomeMessageContent}>
-          <View />
-          <Text style={styles.messageWelcome}>Bem vindo de volta!</Text>
         </View>
       </View>
       <View style={styles.cardBackground}>
@@ -85,7 +79,7 @@ export default function HomeScreen({ navigation }) {
       </View>
       <View style={styles.cardCoinsContainer}>
         <View style={styles.contentTextCoins}>
-          <Text style={styles.strongText}>Moedas em Alta</Text>
+          <Text style={styles.strongText}>MOEDAS EM ALTA</Text>
         </View>
         <Text style={styles.infoText}>
           Aperte no card para mais informações.
@@ -103,7 +97,7 @@ export default function HomeScreen({ navigation }) {
             <View>
               <Text style={styles.dateToday}>{returnDate()}</Text>
               <View style={styles.nameLogoCoin}>
-                <Ionicons name={"cash-outline"} size={30} color={"#FFFFFF"} />
+                <Ionicons name={"cash-outline"} size={30} color={"#FFA500"} />
                 <Text style={styles.coinName}>Bitcoin</Text>
               </View>
             </View>
@@ -125,7 +119,7 @@ export default function HomeScreen({ navigation }) {
               <View>
                 <Text style={styles.dateToday}>{returnDate()}</Text>
                 <View style={styles.nameLogoCoin}>
-                  <Ionicons name={"cash-outline"} size={30} color={"#FFFFFF"} />
+                  <Ionicons name={"cash-outline"} size={30} color={"#FFA500"} />
                   <Text style={styles.coinName}>Ethereum</Text>
                 </View>
               </View>
@@ -146,7 +140,7 @@ export default function HomeScreen({ navigation }) {
               <View>
                 <Text style={styles.dateToday}>{returnDate()}</Text>
                 <View style={styles.nameLogoCoin}>
-                  <Ionicons name={"cash-outline"} size={30} color={"#FFFFFF"} />
+                  <Ionicons name={"cash-outline"} size={30} color={"#FFA500"} />
                   <Text style={styles.coinName}>LiteCoin</Text>
                 </View>
               </View>
@@ -163,7 +157,7 @@ export default function HomeScreen({ navigation }) {
           onPress={() => navigation.navigate("MarketCoinScreen")}
         >
           <Text style={styles.seeAllButtonText}>ONDE COMPAR</Text>
-          <Ionicons name={"arrow-forward-circle"} size={30} color={"#FFA500"} />
+          <Ionicons name={"arrow-forward-circle"} size={30} color={"#FFFFFF"} />
         </TouchableOpacity>
       </View>
     </View>
