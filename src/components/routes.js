@@ -6,6 +6,7 @@ import HomeScreenStack from "./HomeScreenStack";
 import InfoScreen from "./InfoScreen";
 import MarketCoinScreen from "./MarketCoinScreen";
 import LoginScreen from "./LoginScreen";
+import RegisterScreen from "./RegisterScreen";
 
 const Stack = createStackNavigator();
 
@@ -22,6 +23,7 @@ export default function Routes() {
       <Stack.Screen name="GenericCoinScreen" component={GenericCoinScreen} />
       <Stack.Screen name="MarketCoinScreen" component={MarketCoinScreen} />
       <Stack.Screen name="InfoScreen" component={InfoScreen} />
+      <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
     </Stack.Navigator>
   );
 }

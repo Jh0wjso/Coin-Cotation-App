@@ -11,7 +11,7 @@ import {
 import Ionicons from "react-native-vector-icons/Ionicons";
 import styles from "./style";
 
-export default function LoginScreen() {
+export default function LoginScreen({ navigation }) {
   const [userName, setUserName] = useState();
   const [password, SetPassword] = useState();
 
@@ -44,7 +44,10 @@ export default function LoginScreen() {
             <Text style={styles.textLogin}>Login</Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.registerButton}>
+        <TouchableOpacity
+          style={styles.registerButton}
+          onPress={() => {navigation.navigate('RegisterScreen')}}
+        >
           <Text style={styles.registerText}>Registre-se</Text>
         </TouchableOpacity>
       </View>
