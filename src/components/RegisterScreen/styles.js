@@ -31,6 +31,24 @@ const styles = StyleSheet.create({
         color: "#656464",
         fontStyle: "italic",
         fontSize: 13
+    },
+    form:{
+        flexDirection: "column",
+        marginTop: 35
+    },
+    inputContent:{
+        flexDirection: "row",
+        alignItems: "center",
+        marginLeft: 20,
+        marginRight: 20,
+        padding: 6,
+        borderWidth: 1,
+        borderRadius: 20
+    },
+    input:{
+        width: "70%",
+        height: 40,
+        marginLeft: 15
     }
 });
 

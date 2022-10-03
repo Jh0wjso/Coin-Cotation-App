@@ -28,8 +28,19 @@ export default function RegisterScreen({ navigation }){
                 <Text
                     style={styles.disclaimerText}
                 >
-                    Se cadastrando você consegue para atualização diárias das sua moeda favorita.
+                    Se cadastrando para receber atualizações da sua moeda favorita.
                 </Text>
+            </View>
+            <View style={styles.form}>
+                <View style={styles.inputContent}>
+                    <Ionicons
+                        name={"person-circle-outline"}
+                        style={styles.closeIcon}
+                        size={40}
+                        color={"#575555"}
+                    />
+                    <TextInput placeholder="Nome Completo" style={styles.input} />
+                </View>
             </View>
         </View>
     )
