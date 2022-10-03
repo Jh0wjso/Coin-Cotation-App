@@ -18,11 +18,6 @@ export default function LoginScreen() {
   return (
     <Pressable style={styles.container} onPress={Keyboard.dismiss}>
       <StatusBar backgroundColor="#B22222" barStyle={"light-content"} />
-      <View style={styles.headerBackground}>
-        <View style={styles.header}>
-          <Text style={styles.logoTextTest}>C</Text>
-        </View>
-      </View>
       <View style={styles.mainContainer}>
         <View style={styles.inputContent}>
           <Ionicons name={"person-outline"} size={40} color={"#FFFFFF"} />
@@ -30,7 +25,7 @@ export default function LoginScreen() {
             placeholder="username"
             style={styles.inputUsername}
             value={userName}
-            placeholderTextColor={"#FFFFFF"}
+            placeholderTextColor={"#FFFFFFba"}
           />
         </View>
         <View style={styles.inputContent}>
@@ -39,7 +34,9 @@ export default function LoginScreen() {
             placeholder="......"
             style={styles.inputUsername}
             value={userName}
-            placeholderTextColor={"#FFFFFF"}
+            placeholderTextColor={"#FFFFFFba"}
+            secureTextEntry={true}
+            passwordRules={true}
           />
         </View>
         <TouchableOpacity style={styles.buttonLogin}>
@@ -50,6 +47,11 @@ export default function LoginScreen() {
         <TouchableOpacity style={styles.registerButton}>
           <Text style={styles.registerText}>Registre-se</Text>
         </TouchableOpacity>
+      </View>
+      <View style={styles.headerBackground}>
+        <View style={styles.header}>
+          <Text style={styles.logoTextTest}>C</Text>
+        </View>
       </View>
     </Pressable>
   );

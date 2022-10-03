@@ -34,7 +34,8 @@ const styles = StyleSheet.create({
         paddingBottom: 0
     },
     mainContainer:{
-        flexDirection: "column"
+        flexDirection: "column",
+        marginTop: 15
     },
     inputContent:{
         flexDirection: "row",
@@ -50,7 +51,7 @@ const styles = StyleSheet.create({
         marginLeft: 10,
         height: 50,
         fontWeight: "bold",
-        fontSize: 25,
+        fontSize: 18,
         color: "#FFFFFF"
     },
     buttonLogin:{
