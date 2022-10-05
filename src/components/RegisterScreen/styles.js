@@ -34,21 +34,38 @@ const styles = StyleSheet.create({
     },
     form:{
         flexDirection: "column",
-        marginTop: 35
+        marginTop: 35,
+        justifyContent: "center",
+        alignItems: "center"
     },
     inputContent:{
         flexDirection: "row",
         alignItems: "center",
-        marginLeft: 20,
-        marginRight: 20,
         padding: 6,
         borderWidth: 1,
-        borderRadius: 20
+        borderRadius: 20,
+        marginBottom: 10
     },
     input:{
         width: "70%",
         height: 40,
         marginLeft: 15
+    },
+    registerButton:{
+        backgroundColor: "#FFFFFF",
+        borderWidth: 2,
+        borderColor: "#FFA500",
+        width: 200,
+        padding: 10,
+        borderRadius: 20,
+        alignItems: "center",
+        justifyContent: "center"
+    },
+    registerText:{
+        fontWeight: "bold",
+        fontSize: 20,
+        padding: 10,
+        color: "#FFA500"
     }
 });
 
