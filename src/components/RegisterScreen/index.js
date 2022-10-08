@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StatusBar, TouchableOpacity, Text, TextInput, Pressable, Keyboard, ScrollView, SafeAreaView } from "react-native";
+import { View, StatusBar, TouchableOpacity, Text, TextInput, Pressable, Keyboard, ScrollView } from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import styles from "./styles";
 
@@ -32,7 +32,7 @@ export default function RegisterScreen({ navigation }){
                     <Text
                         style={styles.disclaimerText}
                     >
-                        Se cadastrando para receber atualizações da sua moeda favorita.
+                        Cadastre-se para atualizações da sua moeda favorita.
                     </Text>
                 </View>
                 <View style={styles.form}>

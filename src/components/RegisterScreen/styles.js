@@ -52,9 +52,9 @@ const styles = StyleSheet.create({
         marginLeft: 15
     },
     registerButton:{
-        backgroundColor: "#FFFFFF",
+        backgroundColor: "gray",
         borderWidth: 2,
-        borderColor: "#FFA500",
+        borderColor: "gray",
         width: 200,
         padding: 10,
         borderRadius: 20,
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         fontSize: 20,
         padding: 10,
-        color: "#FFA500"
+        color: "#FFFFFF"
     }
 });
 
