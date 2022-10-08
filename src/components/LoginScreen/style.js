@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
         marginBottom: 40,
         borderColor: "#FFFFFF6b",
         borderWidth: 1,
-        padding: 30,
+        padding: 40,
         borderRadius: 150
     },
     logoTextTest:{
@@ -40,8 +40,6 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         borderBottomWidth: 1,
         alignItems: "center",
-        paddingLeft: 10,
-        paddingRight: 10,
         borderColor: "#FFFFFF",
         marginBottom: 30
     },

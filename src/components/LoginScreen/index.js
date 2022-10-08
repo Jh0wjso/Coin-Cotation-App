@@ -15,6 +15,7 @@ import styles from "./style";
 export default function LoginScreen({ navigation }) {
   const [userName, setUserName] = useState();
   const [password, SetPassword] = useState();
+  const [isVisiblePassword, setIsVisiblePassword] = useState(true);
 
   return (
     <Pressable style={styles.container} onPress={Keyboard.dismiss}>
@@ -44,9 +45,21 @@ export default function LoginScreen({ navigation }) {
               style={styles.inputUsername}
               value={userName}
               placeholderTextColor={"#FFFFFFba"}
-              secureTextEntry={true}
+              secureTextEntry={isVisiblePassword}
               passwordRules={true}
             />
+            <TouchableOpacity
+              onPress={() => {
+                setIsVisiblePassword(!isVisiblePassword)
+              }}
+            >
+              {
+                isVisiblePassword ? 
+                <Ionicons name={"eye-outline"} size={20} color={"#FFFFFF"} />
+                : 
+                <Ionicons name={"eye-off-outline"} size={20} color={"#FFFFFF"} />
+              }
+            </TouchableOpacity>
           </View>
           <TouchableOpacity 
             style={styles.buttonLogin}
