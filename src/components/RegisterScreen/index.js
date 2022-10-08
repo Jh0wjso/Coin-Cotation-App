@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { View, StatusBar, TouchableOpacity, Text, TextInput, Pressable, Keyboard, ScrollView } from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import styles from "./styles";
 
 export default function RegisterScreen({ navigation }){
+
+    const [isVisiblePassword, setIsVisiblePassword] = useState(true);
+    const [isVisiblePasswordConfirm, setIsVisiblePasswordConfirm] = useState(true);
+
     return(
         <Pressable 
             style={styles.container}
@@ -44,6 +48,7 @@ export default function RegisterScreen({ navigation }){
                             color={"#575555"}
                         />
                         <TextInput placeholder="Nome Completo" style={styles.input} />
+                        <Ionicons name={"eye-off-outline"} size={20} color={"#FFFFFF"} />
                     </View>
                     <View style={styles.inputContent}>
                         <Ionicons
@@ -57,6 +62,7 @@ export default function RegisterScreen({ navigation }){
                             style={styles.input}
                             keyboardType={"email-address"}
                         />
+                        <Ionicons name={"eye-off-outline"} size={20} color={"#FFFFFF"} />
                     </View>
                     <View style={styles.inputContent}>
                         <Ionicons
@@ -70,6 +76,7 @@ export default function RegisterScreen({ navigation }){
                             style={styles.input}
                             keyboardType={"email-address"}
                         />
+                        <Ionicons name={"eye-off-outline"} size={20} color={"#FFFFFF"} />
                     </View>
                     <View style={styles.inputContent}>
                         <Ionicons
@@ -81,10 +88,22 @@ export default function RegisterScreen({ navigation }){
                         <TextInput 
                             placeholder="Senha" 
                             style={styles.input} 
-                            secureTextEntry={true}
+                            secureTextEntry={isVisiblePassword}
                             passwordRules={true}
                             focusable={true}
                         />
+                        <TouchableOpacity
+                        onPress={() => {
+                            setIsVisiblePassword(!isVisiblePassword)
+                        }}
+                        >
+                        {
+                            isVisiblePassword ? 
+                            <Ionicons name={"eye-off-outline"} size={20} color={"#575555"} />
+                            : 
+                            <Ionicons name={"eye-outline"} size={20} color={"#575555"} />
+                        }
+                        </TouchableOpacity>
                     </View>
                     <View style={styles.inputContent}>
                         <Ionicons
@@ -96,12 +115,25 @@ export default function RegisterScreen({ navigation }){
                         <TextInput 
                             placeholder="Confirmar Senha" 
                             style={styles.input}
-                            secureTextEntry={true}
+                            secureTextEntry={isVisiblePasswordConfirm}
                             passwordRules={true}   
                         />
+                        <TouchableOpacity
+                            onPress={() => {
+                                setIsVisiblePasswordConfirm(!isVisiblePasswordConfirm)
+                            }}
+                        >
+                            {
+                                isVisiblePassword ? 
+                                <Ionicons name={"eye-off-outline"} size={20} color={"#575555"} />
+                                : 
+                                <Ionicons name={"eye-outline"} size={20} color={"#575555"} />
+                            }
+                        </TouchableOpacity>
                     </View>
                     <TouchableOpacity
                         style={styles.registerButton}
+                        onPress={() => navigation.navigate("HomeScreenStack")}
                     >
                         <Text
                             style={styles.registerText}
