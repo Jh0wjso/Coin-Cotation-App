@@ -99,9 +99,9 @@ export default function RegisterScreen({ navigation }){
                         >
                         {
                             isVisiblePassword ? 
-                            <Ionicons name={"eye-off-outline"} size={20} color={"#575555"} />
-                            : 
                             <Ionicons name={"eye-outline"} size={20} color={"#575555"} />
+                            : 
+                            <Ionicons name={"eye-off-outline"} size={20} color={"#575555"} />
                         }
                         </TouchableOpacity>
                     </View>
@@ -125,9 +125,9 @@ export default function RegisterScreen({ navigation }){
                         >
                             {
                                 isVisiblePassword ? 
-                                <Ionicons name={"eye-off-outline"} size={20} color={"#575555"} />
-                                : 
                                 <Ionicons name={"eye-outline"} size={20} color={"#575555"} />
+                                : 
+                                <Ionicons name={"eye-off-outline"} size={20} color={"#575555"} />
                             }
                         </TouchableOpacity>
                     </View>
