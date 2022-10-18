@@ -26,8 +26,8 @@ export default function GenericCoinScreen({ navigation, route }) {
     return (
       <Text>
         {" "}
-        {date.getDate() < 10 ? "0" + date.getDate() : date.getDate()}/
-        {date.getMonth() < 10 ? "0" + month : month}/{date.getFullYear()}{" "}
+        {date.getDate() < 10 ? "0" + date.getDate() : date.getDate()} / 
+        {month < 10 ? "0" + month : month} / {date.getFullYear()}{" "}
       </Text>
     );
   }
@@ -72,7 +72,7 @@ export default function GenericCoinScreen({ navigation, route }) {
               onPress={() => navigation.navigate("HomeScreenStack")}
             >
               <Ionicons
-                name={"close-outline"}
+                name={"arrow-back-outline"}
                 style={styles.closeIcon}
                 size={40}
                 color={"#ffffff"}
