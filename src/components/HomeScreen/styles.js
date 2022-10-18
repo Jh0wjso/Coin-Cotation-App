@@ -72,16 +72,14 @@ const styles = StyleSheet.create({
   },
 
   cardCoinsContainer: {
-    paddingTop: 10,
-    borderTopWidth: 1,
-    borderColor: "#ffffff",
+    paddingTop: 60,
     flexDirection: "column",
     marginRight: 10,
     marginLeft: 10,
   },
   contentTextCoins: {
     flexDirection: "row",
-    justifyContent: "space-between",
+    justifyContent: "center",
     margin: 0,
     alignItems: "center",
   },
@@ -114,15 +112,12 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: "#FFFFFF",
     height: "auto",
-    width: "50%",
     margin: 10,
-    borderRadius: 15,
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "flex-start",
+    borderRadius: 999,
+    flexDirection: "column"
   },
   coincontainer: {
-    flexDirection: "column",
+    flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
   },
@@ -142,7 +137,7 @@ const styles = StyleSheet.create({
   },
   coinName: {
     fontSize: 17,
-    color: "#FFA500",
+    color: "#FFFFFF",
     fontWeight: "bold",
     marginLeft: 5,
   },
@@ -179,6 +174,14 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
+  coinLogo:{
+    width: 75,
+    height: 75
+  },
+  cardCoinName:{
+    justifyContent: "center",
+    alignItems: "center"
+  }
 });
 
 export default styles;

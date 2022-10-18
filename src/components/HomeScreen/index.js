@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { View, Text, StatusBar, TouchableOpacity } from "react-native";
+import { View, Text, StatusBar, TouchableOpacity, Image } from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import styles from "./styles";
 import config from "../../config";
@@ -62,18 +62,15 @@ export default function HomeScreen({ navigation }) {
       </View>
       <View style={styles.cardBackground}>
         <View style={styles.card}>
+          <View style={styles.imageCoin}>
+            <Image source={require("../../../image/marketImages/coinImage.png")}
+              style={styles.coinLogo}
+            />
+          </View>
           <View style={styles.contentText}>
             <Text style={styles.messageWelcome2USer}>
               Veja informações da sua moeda preferida.
             </Text>
-          </View>
-          <View style={styles.imageCoin}>
-            <Ionicons
-              name={"logo-bitcoin"}
-              style={styles.coinIcon}
-              size={70}
-              color={"#FFFFFF"}
-            />
           </View>
         </View>
       </View>
@@ -81,32 +78,30 @@ export default function HomeScreen({ navigation }) {
         <View style={styles.contentTextCoins}>
           <Text style={styles.strongText}>MOEDAS EM ALTA</Text>
         </View>
-        <Text style={styles.infoText}>
-          Aperte no card para mais informações.
-        </Text>
         <View style={styles.coincontainer}>
-          <TouchableOpacity
-            onPress={() =>
-              navigation.navigate("GenericCoinScreen", {
-                domainName: config.bitcoin.initials,
-                name: config.bitcoin.name,
-              })
-            }
-            style={styles.cardCoinTop}
-          >
-            <View>
-              <Text style={styles.dateToday}>{returnDate()}</Text>
-              <View style={styles.nameLogoCoin}>
-                <Ionicons name={"cash-outline"} size={30} color={"#FFA500"} />
-                <Text style={styles.coinName}>Bitcoin</Text>
-              </View>
-            </View>
-            <Text style={styles.coinValue}>
-              R$ {parseFloat(lastBitCoinValue).toFixed(2).replace(".", ",")}
-            </Text>
-          </TouchableOpacity>
+          
+            <View
+              style={styles.cardCoinName}
+            >
+            <TouchableOpacity
+              onPress={() =>
+                navigation.navigate("GenericCoinScreen", {
+                  domainName: config.bitcoin.initials,
+                  name: config.bitcoin.name,
+                })
+              }
+              style={styles.cardCoinTop}
+            >
+              <Image source={require("../../../image/marketImages/bitcoin.png")}
+                style={styles.coinLogo}
+              />
+            </TouchableOpacity>
+            <Text style={styles.coinName}>Bitcoin</Text>
+          </View>
 
-          <View style={styles.containerBottom}>
+          <View
+            style={styles.cardCoinName}
+          >
             <TouchableOpacity
               onPress={() =>
                 navigation.navigate("GenericCoinScreen", {
@@ -114,40 +109,35 @@ export default function HomeScreen({ navigation }) {
                   name: config.ethetereum.name,
                 })
               }
-              style={styles.cardCoin}
+              style={styles.cardCoinTop}
             >
-              <View>
-                <Text style={styles.dateToday}>{returnDate()}</Text>
-                <View style={styles.nameLogoCoin}>
-                  <Ionicons name={"cash-outline"} size={30} color={"#FFA500"} />
-                  <Text style={styles.coinName}>Ethereum</Text>
-                </View>
-              </View>
-              <Text style={styles.coinValue}>
-                R$ {parseFloat(lastEthereumValue).toFixed(2).replace(".", ",")}
-              </Text>
+              <Image source={require("../../../image/marketImages/ethereum.png")}
+                style={styles.coinLogo}
+              />
             </TouchableOpacity>
+            <Text style={styles.coinName}>Ethereum</Text>
+          </View>
 
-            <TouchableOpacity
-              onPress={() =>
-                navigation.navigate("GenericCoinScreen", {
-                  domainName: config.litecoin.initials,
-                  name: config.litecoin.name,
-                })
-              }
-              style={styles.cardCoin}
+            <View
+              style={styles.cardCoinName}
             >
-              <View>
-                <Text style={styles.dateToday}>{returnDate()}</Text>
-                <View style={styles.nameLogoCoin}>
-                  <Ionicons name={"cash-outline"} size={30} color={"#FFA500"} />
-                  <Text style={styles.coinName}>LiteCoin</Text>
-                </View>
-              </View>
-              <Text style={styles.coinValue}>
-                R$ {parseFloat(lastLiteCoinValue).toFixed(2).replace(".", ",")}
-              </Text>
-            </TouchableOpacity>
+              <TouchableOpacity
+                onPress={() =>
+                  navigation.navigate("GenericCoinScreen", {
+                    domainName: config.litecoin.initials,
+                    name: config.litecoin.name,
+                  })
+                }
+                style={styles.cardCoinTop}
+              >
+                <Image source={require("../../../image/marketImages/Litecoin.png")}
+                  style={styles.coinLogo}
+                />
+              </TouchableOpacity>
+              <Text style={styles.coinName}>Litecoin</Text>
+            </View>
+
+          <View style={styles.containerBottom}>
           </View>
         </View>
       </View>
