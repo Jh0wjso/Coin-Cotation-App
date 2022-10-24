@@ -64,41 +64,22 @@ const styles = StyleSheet.create({
   suggestions: {
     flexDirection: "row",
     justifyContent: "space-around",
-    padding: 12,
+    paddingBottom: 20,
     alignItems: "center",
-    width: "70%",
+    width: "80%",
   },
   coinContent:{
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#ffffff",
     padding: 5,
-    borderRadius: 15
-  },
-  textSuggestion: {
-    padding: 5,
-    fontSize: 15,
-    borderRadius: 10,
-    fontWeight: "bold",
-    color: "#f29407",
-  },
-  disclaimerContariner: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  disclaimerText: {
-    fontStyle: "italic",
-    fontSize: 12,
-    color: "gray",
-    fontWeight: "bold",
+    borderRadius: 999
   },
   errorMessage: {
     paddingBottom: 15,
     fontWeight: "bold",
     color: "#e9dede",
-    fontSize: 18,
-    fontStyle: "italic",
+    fontSize: 18
   },
 });
 

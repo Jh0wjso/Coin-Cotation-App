@@ -77,6 +77,19 @@ export default function SearchScreen({ navigation }) {
               style={{width: 50, height: 50}}
             />
           </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() =>
+              navigation.navigate("GenericCoinScreen", {
+                domainName: config.aave.initials,
+                name: config.aave.name,
+              })
+            }
+            style={styles.coinContent}
+          >
+            <Image source={require("../../../image/marketImages/aave.png")}
+              style={{width: 50, height: 50}}
+            />
+          </TouchableOpacity>
         </View>
         <View style={styles.inputContent}>
           <AutocompleteDropdown
