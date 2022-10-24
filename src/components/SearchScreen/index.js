@@ -24,7 +24,6 @@ export default function SearchScreen({ navigation }) {
 
   return (
     <Pressable onPress={Keyboard.dismiss} style={styles.container}>
-      <StatusBar backgroundColor="#B22222" barStyle={"light-content"} />
       <View style={styles.header}>
         <View style={styles.headerContent}>
           <View style={styles.logoName}>

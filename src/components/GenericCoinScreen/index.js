@@ -64,7 +64,6 @@ export default function GenericCoinScreen({ navigation, route }) {
 
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor="#B22222" barStyle={"light-content"} />
       <View style={styles.headerBackground}>
         <View style={styles.header}>
           <View style={styles.headerContent}>

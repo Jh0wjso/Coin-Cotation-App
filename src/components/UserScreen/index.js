@@ -5,7 +5,6 @@ import styles from "./styles";
 export default function UserScreen() {
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor="#B22222" barStyle={"light-content"} />
       <View style={styles.header}>
         <View style={styles.headerContent}>
           <View style={styles.logoName} />
