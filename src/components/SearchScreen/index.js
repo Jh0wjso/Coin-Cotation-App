@@ -7,6 +7,7 @@ import {
   Pressable,
   Keyboard,
   Vibration,
+  Image
 } from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import styles from "./styles";
@@ -27,7 +28,7 @@ export default function SearchScreen({ navigation }) {
       <View style={styles.header}>
         <View style={styles.headerContent}>
           <View style={styles.logoName}>
-            <Text style={styles.tittleScreen}>Escolha</Text>
+            <Text style={styles.tittleScreen}>Procure</Text>
             <Text style={styles.strongText}>uma moeda</Text>
           </View>
         </View>
@@ -41,8 +42,12 @@ export default function SearchScreen({ navigation }) {
                 name: config.bitcoin.name,
               })
             }
+            style={styles.coinContent}
           >
-            <Text style={styles.textSuggestion}>bitcoin</Text>
+            
+            <Image source={require("../../../image/marketImages/bitcoin.png")}
+              style={{width: 50, height: 50}}
+            />
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -52,8 +57,11 @@ export default function SearchScreen({ navigation }) {
                 name: config.ethetereum.name,
               })
             }
+            style={styles.coinContent}
           >
-            <Text style={styles.textSuggestion}>ethetereum</Text>
+            <Image source={require("../../../image/marketImages/ethereum.png")}
+              style={{width: 50, height: 50}}
+            />
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -63,8 +71,11 @@ export default function SearchScreen({ navigation }) {
                 name: config.litecoin.name,
               })
             }
+            style={styles.coinContent}
           >
-            <Text style={styles.textSuggestion}>litecoin</Text>
+            <Image source={require("../../../image/marketImages/Litecoin.png")}
+              style={{width: 50, height: 50}}
+            />
           </TouchableOpacity>
         </View>
         <View style={styles.inputContent}>
@@ -215,6 +226,7 @@ export default function SearchScreen({ navigation }) {
               borderTopEndRadius: 0,
               borderBottomRightRadius: 0,
               height: 40,
+              alignItems: "center",
               backgroundColor: "#ffffff",
               marginBottom: 10,
             }}

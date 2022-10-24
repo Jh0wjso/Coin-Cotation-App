@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   inputContent: {
-    flexDirection: "row",
+    flexDirection: "row", 
     alignItems: "center",
     justifyContent: "center",
     width: "115%",
@@ -68,13 +68,19 @@ const styles = StyleSheet.create({
     alignItems: "center",
     width: "70%",
   },
+  coinContent:{
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#ffffff",
+    padding: 5,
+    borderRadius: 15
+  },
   textSuggestion: {
-    backgroundColor: "#f29407",
     padding: 5,
     fontSize: 15,
-    borderRadius: 5,
+    borderRadius: 10,
     fontWeight: "bold",
-    color: "#ffffff",
+    color: "#f29407",
   },
   disclaimerContariner: {
     flex: 1,
