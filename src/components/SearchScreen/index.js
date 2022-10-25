@@ -34,6 +34,11 @@ export default function SearchScreen({ navigation }) {
         </View>
       </View>
       <View style={styles.inputContainer}>
+        <Text
+          style={styles.quickAcess}
+        >
+          Acesso Rapido
+        </Text>
         <View style={styles.suggestions}>
           <TouchableOpacity
             onPress={() =>

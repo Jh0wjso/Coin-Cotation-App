@@ -80,6 +80,12 @@ const styles = StyleSheet.create({
     color: "#e9dede",
     fontSize: 18
   },
+  quickAcess:{
+    paddingBottom: 25,
+    color: "#ffffff",
+    fontWeight: "bold",
+    fontSize: 22
+  }
 });
 
 export default styles;
