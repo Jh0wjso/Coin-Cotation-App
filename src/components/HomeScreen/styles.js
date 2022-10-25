@@ -35,18 +35,10 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: "bold",
   },
-  buttonNotify: {
-    backgroundColor: "#B22222",
-    padding: 5,
-    borderRadius: 50,
-  },
   messageWelcome: {
     color: "#FFA500",
     fontWeight: "bold",
     fontSize: 18,
-  },
-  userIcon: {
-    fontWeight: "bold",
   },
   cardBackground: {
     width: "100%",
@@ -65,11 +57,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     width: "50%",
   },
-  coinIcon: {
-    padding: 7,
-    borderRadius: 10,
-  },
-
   cardCoinsContainer: {
     paddingTop: 60,
     flexDirection: "column",
@@ -96,17 +83,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     marginRight: 10,
   },
-  cardCoin: {
-    padding: 10,
-    backgroundColor: "#FFFFFF",
-    height: "auto",
-    width: "40%",
-    margin: 10,
-    borderRadius: 15,
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "space-between",
-  },
   cardCoinTop: {
     padding: 10,
     backgroundColor: "#FFFFFF",
@@ -115,7 +91,7 @@ const styles = StyleSheet.create({
     borderRadius: 999,
     flexDirection: "column"
   },
-  coincontainer: {
+  coinContainer: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
@@ -123,37 +99,12 @@ const styles = StyleSheet.create({
   containerBottom: {
     flexDirection: "row",
   },
-  dateToday: {
-    fontWeight: "bold",
-    color: "#FFA500",
-    fontStyle: "italic",
-    fontSize: 13,
-  },
-  nameLogoCoin: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "flex-start",
-  },
   coinName: {
     fontSize: 17,
     color: "#FFFFFF",
     fontWeight: "bold",
     marginLeft: 5,
   },
-  coinValue: {
-    fontSize: 20,
-    color: "#FFA500",
-    fontWeight: "bold",
-  },
-  infoText: {
-    display: "none",
-    fontStyle: "italic",
-    fontSize: 12,
-    color: "#B22222",
-    marginBottom: 10,
-    fontWeight: "bold",
-  },
-
   messageWelcome2USer: {
     color: "#ffffff",
     fontWeight: "bold",

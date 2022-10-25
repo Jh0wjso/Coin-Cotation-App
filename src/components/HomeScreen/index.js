@@ -1,55 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { View, Text, StatusBar, TouchableOpacity, Image } from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import styles from "./styles";
 import config from "../../config";
 
 export default function HomeScreen({ navigation }) {
-  const [lastBitCoinValue, setlastBitCoinSale] = useState();
-  const [lastEthereumValue, setlastEthereumValue] = useState();
-  const [lastLiteCoinValue, setlastLiteCoinValue] = useState();
-
-  let date = new Date();
-  let month = date.getMonth() + 1;
-
-  function returnDate() {
-    return (
-      <Text>
-        {" "}
-        {date.getDate() < 10 ? "0" + date.getDate() : date.getDate()}/
-        {date.getMonth() < 10 ? "0" + month : date.month}/{date.getFullYear()}{" "}
-      </Text>
-    );
-  }
-
-  async function coinInfos() {
-    const bitcoinResponse = await fetch(
-      `https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=brl`
-    );
-    const ethereumcoinResponse = await fetch(
-      `https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=brl`
-    );
-    const litecoinResponse = await fetch(
-      `https://api.coingecko.com/api/v3/simple/price?ids=litecoin&vs_currencies=brl`
-    );
-
-    const bitcoinResponseJson = await bitcoinResponse.json();
-    const lastBitCoinValueResponse = bitcoinResponseJson.bitcoin.brl;
-    setlastBitCoinSale(lastBitCoinValueResponse);
-
-    const ethereumcoinResponseJson = await ethereumcoinResponse.json();
-    const ethereumcoinValueResponse = ethereumcoinResponseJson.ethereum.brl;
-    setlastEthereumValue(ethereumcoinValueResponse);
-
-    const litecoinResponseJson = await litecoinResponse.json();
-    const litecoinValueResponse = litecoinResponseJson.litecoin.brl;
-    setlastLiteCoinValue(litecoinValueResponse);
-  }
-
-  useEffect(() => {
-    coinInfos();
-  });
-
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor="#B22222" barStyle={"light-content"} />
@@ -78,7 +33,7 @@ export default function HomeScreen({ navigation }) {
         <View style={styles.contentTextCoins}>
           <Text style={styles.strongText}>MOEDAS EM ALTA</Text>
         </View>
-        <View style={styles.coincontainer}>
+        <View style={styles.coinContainer}>
           
             <View
               style={styles.cardCoinName}
