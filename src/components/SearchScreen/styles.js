@@ -37,7 +37,6 @@ const styles = StyleSheet.create({
     paddingBottom: 9,
   },
   inputContainer: {
-    borderTopRightRadius: 75,
     backgroundColor: "#B22222",
     flex: 1,
     flexDirection: "column",
@@ -53,7 +52,7 @@ const styles = StyleSheet.create({
   },
   searchButton: {
     backgroundColor: "#f29407",
-    height: 40,
+    height: 50,
     alignItems: "center",
     justifyContent: "center",
     width: "15%",
@@ -66,7 +65,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
     paddingBottom: 20,
     alignItems: "center",
-    width: "80%",
+    width: "90%",
   },
   coinContent:{
     justifyContent: "center",

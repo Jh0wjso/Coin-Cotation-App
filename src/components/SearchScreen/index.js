@@ -238,10 +238,12 @@ export default function SearchScreen({ navigation }) {
               width: 250,
               borderTopEndRadius: 0,
               borderBottomRightRadius: 0,
-              height: 40,
+              height: 50,
               alignItems: "center",
               backgroundColor: "#ffffff",
+              zIndex: 1000,
               marginBottom: 10,
+              shadowColor: "#ffffff"
             }}
           />
           {selectedItem != null ? (
