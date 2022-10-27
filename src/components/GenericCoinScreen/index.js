@@ -26,7 +26,7 @@ export default function GenericCoinScreen({ navigation, route }) {
     return (
       <Text>
         {" "}
-        {date.getDate() < 10 ? "0" + date.getDate() : date.getDate()} / 
+        {date.getDate() < 10 ? "0" + date.getDate() : date.getDate()} /
         {month < 10 ? "0" + month : month} / {date.getFullYear()}{" "}
       </Text>
     );
@@ -77,46 +77,17 @@ export default function GenericCoinScreen({ navigation, route }) {
                 color={"#ffffff"}
               />
             </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => {
-                refresh();
-              }}
-            >
+            <View style={styles.nameContainer}>
+              <Text style={styles.nameCoinHeader}>Informações</Text>
+            </View>
+            <TouchableOpacity onPress={() => navigation.navigate("InfoScreen")}>
               <Ionicons
-                name={"refresh-outline"}
-                style={styles.closeIcon}
-                size={25}
+                name={"help-circle-outline"}
+                style={styles.userIcon}
+                size={40}
                 color={"#ffffff"}
               />
             </TouchableOpacity>
-          </View>
-          <View style={styles.basicInfos}>
-            <View style={styles.nameContainer}>
-              <Text style={styles.nameCoinHeader}>Mais Informações</Text>
-            </View>
-            <View style={styles.dateHourContent}>
-              <Text style={styles.hour}>
-                <Ionicons
-                  name={"alarm-outline"}
-                  style={styles.userIcon}
-                  size={15}
-                  color={"#fff"}
-                />
-                {returnHour()}
-              </Text>
-              <Text style={styles.date}>
-                <Ionicons
-                  name={"calendar-outline"}
-                  style={styles.userIcon}
-                  size={15}
-                  color={"#fff"}
-                />
-                {returnDate()}
-              </Text>
-            </View>
-            <View style={styles.infoText}>
-              <Text style={styles.disclaimer}>Hora e data da cotação</Text>
-            </View>
           </View>
         </View>
       </View>
@@ -127,41 +98,32 @@ export default function GenericCoinScreen({ navigation, route }) {
           <Text style={styles.initialsCoin}>({route.params.domainName})</Text>
         </View>
 
-        <View style={styles.cardInfo}>
-          <Text style={styles.typeInfo}>Ultima Cotação</Text>
-          <Text style={styles.valueCoin}>
-            R$ {parseFloat(lastCoinSale).toFixed(2).replace(".", ",")}
-          </Text>
+        <View style={styles.mainInfos}>
+          <View style={styles.cardInfo}>
+            <Text style={styles.typeInfo}>Ultima{'\n'}Cotação</Text>
+            <Text style={styles.valueCoin}>
+              R$ {parseFloat(lastCoinSale).toFixed(2).replace(".", ",")}
+            </Text>
+          </View>
+          <View style={styles.cardInfo}>
+            <Text style={styles.typeInfo}>Maior{'\n'}Venda/Hoje</Text>
+            <Text style={styles.valueCoin}>
+              R$ {parseFloat(highCoinSale).toFixed(2).replace(".", ",")}
+            </Text>
+          </View>
+          <View style={styles.cardInfo}>
+            <Text style={styles.typeInfo}>Valor{'\n'}Abertura</Text>
+            <Text style={styles.valueCoin}>
+              R$ {parseFloat(openValue).toFixed(2).replace(".", ",")}
+            </Text>
+          </View>
+          <View style={styles.cardInfoLast}>
+            <Text style={styles.typeInfo}>Volume{'\n'}Hoje</Text>
+            <Text style={styles.valueCoin}>
+              {parseFloat(last24Vol).toFixed(2).replace(".", ",")}
+            </Text>
+          </View>
         </View>
-        <View style={styles.cardInfo}>
-          <Text style={styles.typeInfo}>Maior Venda/Hoje</Text>
-          <Text style={styles.valueCoin}>
-            R$ {parseFloat(highCoinSale).toFixed(2).replace(".", ",")}
-          </Text>
-        </View>
-        <View style={styles.cardInfo}>
-          <Text style={styles.typeInfo}>Valor Abertura</Text>
-          <Text style={styles.valueCoin}>
-            R$ {parseFloat(openValue).toFixed(2).replace(".", ",")}
-          </Text>
-        </View>
-        <View style={styles.cardInfoLast}>
-          <Text style={styles.typeInfo}>Volume</Text>
-          <Text style={styles.valueCoin}>
-            {parseFloat(last24Vol).toFixed(2).replace(".", ",")}
-          </Text>
-        </View>
-        <TouchableOpacity
-          style={styles.helpContent}
-          onPress={() => navigation.navigate("InfoScreen")}
-        >
-          <Ionicons
-            name={"help-circle-outline"}
-            style={styles.userIcon}
-            size={40}
-            color={"gray"}
-          />
-        </TouchableOpacity>
       </View>
     </View>
   );

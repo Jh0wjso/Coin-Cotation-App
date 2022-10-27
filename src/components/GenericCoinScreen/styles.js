@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     width: "100%",
     padding: 15,
     backgroundColor: "#B22222",
-    borderBottomStartRadius: 50,
+    borderBottomStartRadius: 20,
   },
   headerContent: {
     justifyContent: "space-between",
@@ -59,33 +59,36 @@ const styles = StyleSheet.create({
   mainContentet: {
     flex: 1,
     backgroundColor: "#ffffff",
-    padding: 20,
-    borderTopEndRadius: 50,
+    borderTopEndRadius: 20,
+    flexDirection: "column",
+    justifyContent: "center"
   },
   coinNameContent: {
     justifyContent: "space-between",
     alignItems: "center",
     flexDirection: "row",
-    marginBottom: 5,
+    marginBottom: 40,
+    marginLeft: 10,
+    marginRight: 10
   },
   cardInfo: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: 3,
-    marginTop: 10,
-    paddingTop: 10,
+    padding: 10,
     marginBottom: 10,
     paddingBottom: 10,
-    borderBottomWidth: 1,
-    borderColor: "#55555577",
+    borderWidth: 2,
+    borderColor: "#FFA500",
+    backgroundColor: "#FFFFFF",
+    borderRadius: 5
   },
   typeInfo: {
     fontWeight: "bold",
     fontSize: 17,
-    padding: 10,
+    padding: 0,
     color: "#FFA500",
-    justifyContent: "center",
+    justifyContent: "center"
   },
   valueCoin: {
     fontWeight: "bold",
@@ -96,19 +99,24 @@ const styles = StyleSheet.create({
   coinName: {
     fontSize: 30,
     fontWeight: "bold",
-    color: "gray",
+    color: "#FFA500",
+    textTransform: "uppercase"
   },
   initialsCoin: {
     fontSize: 15,
-    color: "#383737",
-    fontWeight: "300",
+    color: "#FFA500",
+    fontWeight: "bold",
   },
   cardInfoLast: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: 3,
+    padding: 10,
     marginTop: 10,
+    borderWidth: 2,
+    borderColor: "#FFA500",
+    backgroundColor: "#FFFFFF",
+    borderRadius: 5
   },
   helpContent: {
     flex: 1,
@@ -118,6 +126,10 @@ const styles = StyleSheet.create({
   infoText: {
     alignItems: "center",
   },
+  mainInfos:{
+    padding: 5,
+    borderRadius: 10
+  }
 });
 
 export default styles;
