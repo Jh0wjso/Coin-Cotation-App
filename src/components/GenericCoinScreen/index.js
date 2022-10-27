@@ -38,7 +38,7 @@ export default function GenericCoinScreen({ navigation, route }) {
         <View style={styles.header}>
           <View style={styles.headerContent}>
             <TouchableOpacity
-              onPress={() => navigation.navigate("HomeScreenStack")}
+              onPress={() => navigation.goBack()}
             >
               <Ionicons
                 name={"arrow-back-outline"}

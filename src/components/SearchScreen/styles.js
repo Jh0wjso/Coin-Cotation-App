@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
   inputContainer: {
     backgroundColor: "#B22222",
     flex: 1,
+    width: "100%",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",

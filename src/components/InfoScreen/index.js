@@ -8,7 +8,7 @@ export default function InfoScreen({ navigation }) {
     <View style={styles.container}>
       <View style={styles.header}>
         <TouchableOpacity
-          onPress={() => navigation.navigate("HomeScreenStack")}
+          onPress={() => navigation.goBack()}
         >
           <Ionicons
             name={"close-outline"}
