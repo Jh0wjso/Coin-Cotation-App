@@ -64,7 +64,17 @@ export default function GenericCoinScreen({ navigation, route }) {
 
       <View style={styles.mainContentet}>
         <View style={styles.coinNameContent}>
-          <Text style={styles.coinName}>{route.params.name}</Text>
+          <View
+            style={styles.nameContent}
+          >
+            <Ionicons
+              name={"cash-outline"}
+              style={styles.userIcon}
+              size={30}
+              color={"#FFA500"}
+            />
+            <Text style={styles.coinName}>{route.params.name}</Text>
+          </View>
           <Text style={styles.initialsCoin}>({route.params.domainName})</Text>
         </View>
 

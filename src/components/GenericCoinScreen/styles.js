@@ -83,6 +83,13 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFFFFF",
     borderRadius: 5
   },
+  nameContent:{
+    flexDirection: "row",
+    alignItems: "center"
+  },
+  userIcon:{
+    marginRight: 8
+  },
   typeInfo: {
     fontWeight: "bold",
     fontSize: 17,
