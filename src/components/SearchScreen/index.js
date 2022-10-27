@@ -240,7 +240,7 @@ export default function SearchScreen({ navigation }) {
               { id: config.vasco.initials, title: config.vasco.name },
             ]}
             inputContainerStyle={{
-              width: 250,
+              width: 300,
               borderTopEndRadius: 0,
               borderBottomRightRadius: 0,
               height: 50,

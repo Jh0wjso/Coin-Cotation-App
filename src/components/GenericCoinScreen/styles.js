@@ -59,7 +59,6 @@ const styles = StyleSheet.create({
   mainContentet: {
     flex: 1,
     backgroundColor: "#ffffff",
-    borderTopEndRadius: 20,
     flexDirection: "column",
     justifyContent: "center"
   },

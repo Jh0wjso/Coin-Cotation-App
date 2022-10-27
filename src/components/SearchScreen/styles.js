@@ -49,7 +49,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     width: "115%",
-    paddingRight: 30,
   },
   searchButton: {
     backgroundColor: "#f29407",

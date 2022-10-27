@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
   },
   btnSeeMore: {
     backgroundColor: "#FFA500",
-    borderRadius: 20,
+    borderRadius: 10,
     padding: 10,
     flexDirection: "row",
     justifyContent: "center",
