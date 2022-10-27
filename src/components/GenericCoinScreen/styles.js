@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     padding: 10,
     marginBottom: 10,
     paddingBottom: 10,
-    borderWidth: 2,
+    borderBottomWidth: 2,
     borderColor: "#FFA500",
     backgroundColor: "#FFFFFF",
     borderRadius: 5
@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     padding: 10,
     marginTop: 10,
-    borderWidth: 2,
+    borderBottomWidth: 2,
     borderColor: "#FFA500",
     backgroundColor: "#FFFFFF",
     borderRadius: 5

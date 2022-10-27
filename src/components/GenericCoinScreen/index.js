@@ -68,7 +68,7 @@ export default function GenericCoinScreen({ navigation, route }) {
             style={styles.nameContent}
           >
             <Ionicons
-              name={"cash-outline"}
+              name={"logo-bitcoin"}
               style={styles.userIcon}
               size={30}
               color={"#FFA500"}
