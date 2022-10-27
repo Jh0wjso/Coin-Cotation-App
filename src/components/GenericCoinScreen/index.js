@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { View, Text, TouchableOpacity, StatusBar } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import styles from "./styles";
 
@@ -8,29 +8,6 @@ export default function GenericCoinScreen({ navigation, route }) {
   const [highCoinSale, setHighCoinSale] = useState();
   const [last24Vol, setLast24Vol] = useState();
   const [openValue, setOpenValue] = useState();
-
-  let date = new Date();
-  let month = date.getMonth() + 1;
-
-  function returnHour() {
-    return (
-      <Text>
-        {date.getHours() < 10 ? "0" + date.getHours() : date.getHours()}:
-        {date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes()}:
-        {date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds()}
-      </Text>
-    );
-  }
-
-  function returnDate() {
-    return (
-      <Text>
-        {" "}
-        {date.getDate() < 10 ? "0" + date.getDate() : date.getDate()} /
-        {month < 10 ? "0" + month : month} / {date.getFullYear()}{" "}
-      </Text>
-    );
-  }
 
   async function coinInfos() {
     const mercadoBitCoinResonse = await fetch(
@@ -49,13 +26,6 @@ export default function GenericCoinScreen({ navigation, route }) {
 
     const last24ChangeResponse = mercadoBitCoinResonseJson.ticker.open;
     setOpenValue(last24ChangeResponse);
-  }
-
-  function refresh() {
-    coinInfos();
-    returnDate();
-    returnHour();
-    alert("Valores atualizados");
   }
 
   useEffect(() => {
