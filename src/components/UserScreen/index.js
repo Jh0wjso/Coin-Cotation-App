@@ -8,7 +8,7 @@ export default function UserScreen() {
       <View style={styles.header}>
         <View style={styles.headerContent}>
           <View style={styles.logoName} />
-          <Text style={styles.title}>Opçoes</Text>
+          <Text style={styles.title}>Opções</Text>
           <Text style={styles.secondName}>De Usuario</Text>
         </View>
       </View>

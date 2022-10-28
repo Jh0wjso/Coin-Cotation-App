@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#B22222",
+    backgroundColor: "#292828",
     flex: 1,
     flexDirection: "column",
   },
@@ -25,8 +25,7 @@ const styles = StyleSheet.create({
   secondName: {
     fontWeight: "bold",
     fontSize: 20,
-    color: "#f29407",
-    fontStyle: "italic",
+    color: "#292828",
     paddingLeft: 110,
     paddingBottom: 9,
   },
@@ -45,7 +44,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#ffffff",
   },
   card: {
-    backgroundColor: "#B22222",
+    backgroundColor: "#292828",
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
@@ -77,7 +76,7 @@ const styles = StyleSheet.create({
     paddingBottom: 10
   },
   seeAllButtonText: {
-    color: "#FFFFFF",
+    color: "#B22222",
     fontWeight: "bold",
     fontStyle: "italic",
     fontSize: 20,
@@ -112,7 +111,7 @@ const styles = StyleSheet.create({
     fontSize: 13,
   },
   btnSeeMore: {
-    backgroundColor: "#FFA500",
+    backgroundColor: "#FFFFFF",
     borderRadius: 10,
     padding: 10,
     flexDirection: "row",

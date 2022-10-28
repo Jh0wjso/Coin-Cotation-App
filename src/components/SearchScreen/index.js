@@ -101,7 +101,7 @@ export default function SearchScreen({ navigation }) {
             clearOnFocus={false}
             closeOnBlur={true}
             suggestionsListContainerStyle={{
-              backgroundColor: "#f29407",
+              backgroundColor: "#292828",
             }}
             suggestionsListTextStyle={{
               color: "#ffffff",

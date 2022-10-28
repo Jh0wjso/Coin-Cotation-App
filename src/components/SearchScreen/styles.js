@@ -12,7 +12,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "row",
-    borderBottomLeftRadius: 75,
     paddingTop: 20,
   },
   header: {
@@ -31,7 +30,7 @@ const styles = StyleSheet.create({
   strongText: {
     fontWeight: "bold",
     fontSize: 20,
-    color: "#f29407",
+    color: "#292828",
     fontStyle: "italic",
     paddingLeft: 60,
     paddingBottom: 9,
@@ -43,6 +42,8 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    borderTopRightRadius: 50,
+    borderTopLeftRadius: 50,
   },
   inputContent: {
     flexDirection: "row", 
@@ -51,7 +52,7 @@ const styles = StyleSheet.create({
     width: "115%",
   },
   searchButton: {
-    backgroundColor: "#f29407",
+    backgroundColor: "#292828",
     height: 50,
     alignItems: "center",
     justifyContent: "center",

@@ -7,7 +7,7 @@ import config from "../../config";
 export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor="#B22222" barStyle={"light-content"} />
+      <StatusBar backgroundColor="#FFFFFF" barStyle={"dark-content"} />
       <View style={styles.header}>
         <View style={styles.headerContent}>
           <View style={styles.logoName} />
@@ -18,7 +18,7 @@ export default function HomeScreen({ navigation }) {
       <View style={styles.cardBackground}>
         <View style={styles.card}>
           <View style={styles.imageCoin}>
-            <Image source={require("../../../image/marketImages/coinImage.png")}
+            <Image source={require("../../../image/marketImages/bitcoin.png")}
               style={styles.coinLogo}
             />
           </View>
@@ -47,7 +47,7 @@ export default function HomeScreen({ navigation }) {
               }
               style={styles.cardCoinTop}
             >
-              <Image source={require("../../../image/marketImages/bitcoin.png")}
+              <Image source={require("../../../image/marketImages/coinImage.png")}
                 style={styles.coinLogo}
               />
             </TouchableOpacity>
@@ -102,7 +102,7 @@ export default function HomeScreen({ navigation }) {
           onPress={() => navigation.navigate("MarketCoinScreen")}
         >
           <Text style={styles.seeAllButtonText}>ONDE COMPAR</Text>
-          <Ionicons name={"arrow-forward-circle"} size={30} color={"#FFFFFF"} />
+          <Ionicons name={"arrow-forward-circle"} size={30} color={"#B22222"} />
         </TouchableOpacity>
       </View>
     </View>

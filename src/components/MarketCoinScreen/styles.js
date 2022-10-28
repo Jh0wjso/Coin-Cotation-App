@@ -8,13 +8,12 @@ const styles = StyleSheet.create({
   },
   headerBackground: {
     width: "100%",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#292828",
   },
   header: {
     backgroundColor: "#B22222",
     width: "100%",
-    borderBottomRightRadius: 70,
-    paddingRight: 10,
+    paddingRight: 5,
   },
   headerContent: {
     justifyContent: "space-between",
@@ -23,7 +22,7 @@ const styles = StyleSheet.create({
     marginRight: 20,
     marginLeft: 20,
     marginTop: 20,
-    marginBottom: 10,
+    marginBottom: 15,
   },
   logoName: {
     flexDirection: "row",
@@ -37,8 +36,7 @@ const styles = StyleSheet.create({
   marketsContainer: {
     flex: 1,
     justifyContent: "center",
-    backgroundColor: "#FFFFFF",
-    borderTopLeftRadius: 70,
+    backgroundColor: "#292828",
   },
   card: {
     borderColor: "#B22222",
@@ -48,9 +46,9 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     padding: 10,
     margin: 5,
-    marginRight: 20,
-    marginLeft: 20,
-    borderRadius: 50,
+    marginRight: 10,
+    marginLeft: 10,
+    borderRadius: 10,
     backgroundColor: "#B22222"
   },
   contentText: {
@@ -60,7 +58,6 @@ const styles = StyleSheet.create({
   messageWelcome2USer: {
     color: "#FFFFFF",
     fontWeight: "bold",
-    fontStyle: "italic",
     fontSize: 20,
   },
   centeredView: {
@@ -110,9 +107,9 @@ const styles = StyleSheet.create({
     width: 50,
   },
   logoMarket:{
-    width: 70,
-    height: 70,
-    borderRadius: 40,
+    width: 60,
+    height: 60,
+    borderRadius: 100,
     backgroundColor: "#FFFFFF"
   }
 });

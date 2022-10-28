@@ -24,8 +24,7 @@ const styles = StyleSheet.create({
   secondName: {
     fontWeight: "bold",
     fontSize: 20,
-    color: "#f29407",
-    fontStyle: "italic",
+    color: "#292828",
     paddingLeft: 110,
     paddingBottom: 9,
   },
