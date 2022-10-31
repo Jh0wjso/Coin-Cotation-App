@@ -105,7 +105,7 @@
     },
     "manchesterCity":{
         "initials": "CITYFT",
-        "name": "Manchester City FC"
+        "name": "Manchester City"
     },
     "flamengo":{
         "initials": "MENGOFT",
@@ -337,7 +337,7 @@
     },
     "psg":{
         "initials": "PSGFT",
-        "name": "Paris Saint-Germain"
+        "name": "PSG"
     },
     "quant":{
         "initials": "QNT",
