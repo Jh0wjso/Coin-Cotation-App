@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   strongText: {
-    fontWeight: "bold",
+    fontWeight: "800",
     fontSize: 20,
     color: "#292828",
     paddingLeft: 60,

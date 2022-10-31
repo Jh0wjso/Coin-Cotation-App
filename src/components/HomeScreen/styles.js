@@ -81,6 +81,7 @@ const styles = StyleSheet.create({
     fontStyle: "italic",
     fontSize: 20,
     marginRight: 10,
+    height: 30
   },
   cardCoinTop: {
     padding: 10,
@@ -117,6 +118,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
+    height: 50
   },
   contentBtnSeeMore: {
     flex: 1,

@@ -18,7 +18,7 @@ export default function HomeScreen({ navigation }) {
       <View style={styles.cardBackground}>
         <View style={styles.card}>
           <View style={styles.imageCoin}>
-            <Image source={require("../../../image/marketImages/bitcoin.png")}
+            <Image source={require("../../../image/marketImages/coinImage.png")}
               style={styles.coinLogo}
             />
           </View>
