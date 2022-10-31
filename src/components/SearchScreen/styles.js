@@ -13,9 +13,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexDirection: "row",
     paddingTop: 20,
+    borderBottomLeftRadius: 50
   },
   header: {
-    backgroundColor: "#B22222",
+    backgroundColor: "#292828",
     width: "100%",
   },
   logoName: {
@@ -31,32 +32,30 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 20,
     color: "#292828",
-    fontStyle: "italic",
     paddingLeft: 60,
     paddingBottom: 9,
   },
   inputContainer: {
-    backgroundColor: "#B22222",
+    backgroundColor: "#292828",
     flex: 1,
     width: "100%",
     flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    borderTopRightRadius: 50,
-    borderTopLeftRadius: 50,
+    justifyContent: "space-between",
+    alignItems: "center"
   },
   inputContent: {
     flexDirection: "row", 
     alignItems: "center",
     justifyContent: "center",
-    width: "115%",
+    width: "85%",
+    padding: 50
   },
   searchButton: {
-    backgroundColor: "#292828",
+    backgroundColor: "#B22222",
     height: 50,
     alignItems: "center",
     justifyContent: "center",
-    width: "15%",
+    width: "20%",
     borderTopRightRadius: 5,
     borderBottomRightRadius: 5,
     marginBottom: 10,

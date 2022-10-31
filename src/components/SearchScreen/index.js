@@ -7,7 +7,7 @@ import {
   Pressable,
   Keyboard,
   Vibration,
-  Image
+  Image,
 } from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import styles from "./styles";
@@ -34,74 +34,12 @@ export default function SearchScreen({ navigation }) {
         </View>
       </View>
       <View style={styles.inputContainer}>
-        <Text
-          style={styles.quickAcess}
-        >
-          Acesso Rapido
-        </Text>
-        <View style={styles.suggestions}>
-          <TouchableOpacity
-            onPress={() =>
-              navigation.navigate("GenericCoinScreen", {
-                domainName: config.bitcoin.initials,
-                name: config.bitcoin.name,
-              })
-            }
-            style={styles.coinContent}
-          >
-            
-            <Image source={require("../../../image/marketImages/bitcoin.png")}
-              style={{width: 50, height: 50}}
-            />
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            onPress={() =>
-              navigation.navigate("GenericCoinScreen", {
-                domainName: config.ethetereum.initials,
-                name: config.ethetereum.name,
-              })
-            }
-            style={styles.coinContent}
-          >
-            <Image source={require("../../../image/marketImages/ethereum.png")}
-              style={{width: 50, height: 50}}
-            />
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            onPress={() =>
-              navigation.navigate("GenericCoinScreen", {
-                domainName: config.litecoin.initials,
-                name: config.litecoin.name,
-              })
-            }
-            style={styles.coinContent}
-          >
-            <Image source={require("../../../image/marketImages/Litecoin.png")}
-              style={{width: 50, height: 50}}
-            />
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() =>
-              navigation.navigate("GenericCoinScreen", {
-                domainName: config.aave.initials,
-                name: config.aave.name,
-              })
-            }
-            style={styles.coinContent}
-          >
-            <Image source={require("../../../image/marketImages/aave.png")}
-              style={{width: 50, height: 50}}
-            />
-          </TouchableOpacity>
-        </View>
         <View style={styles.inputContent}>
           <AutocompleteDropdown
             clearOnFocus={false}
             closeOnBlur={true}
             suggestionsListContainerStyle={{
-              backgroundColor: "#292828",
+              backgroundColor: "#B22222",
             }}
             suggestionsListTextStyle={{
               color: "#ffffff",
@@ -240,7 +178,7 @@ export default function SearchScreen({ navigation }) {
               { id: config.vasco.initials, title: config.vasco.name },
             ]}
             inputContainerStyle={{
-              width: 300,
+              width: 250,
               borderTopEndRadius: 0,
               borderBottomRightRadius: 0,
               height: 50,
@@ -248,7 +186,7 @@ export default function SearchScreen({ navigation }) {
               backgroundColor: "#ffffff",
               zIndex: 1000,
               marginBottom: 10,
-              shadowColor: "#ffffff"
+              shadowColor: "#ffffff",
             }}
           />
           {selectedItem != null ? (
@@ -285,6 +223,67 @@ export default function SearchScreen({ navigation }) {
               />
             </TouchableOpacity>
           )}
+        </View>
+        <Text style={styles.quickAcess}>Acesso Rapido</Text>
+        <View style={styles.suggestions}>
+          <TouchableOpacity
+            onPress={() =>
+              navigation.navigate("GenericCoinScreen", {
+                domainName: config.bitcoin.initials,
+                name: config.bitcoin.name,
+              })
+            }
+            style={styles.coinContent}
+          >
+            <Image
+              source={require("../../../image/marketImages/bitcoin.png")}
+              style={{ width: 50, height: 50 }}
+            />
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            onPress={() =>
+              navigation.navigate("GenericCoinScreen", {
+                domainName: config.ethetereum.initials,
+                name: config.ethetereum.name,
+              })
+            }
+            style={styles.coinContent}
+          >
+            <Image
+              source={require("../../../image/marketImages/ethereum.png")}
+              style={{ width: 50, height: 50 }}
+            />
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            onPress={() =>
+              navigation.navigate("GenericCoinScreen", {
+                domainName: config.litecoin.initials,
+                name: config.litecoin.name,
+              })
+            }
+            style={styles.coinContent}
+          >
+            <Image
+              source={require("../../../image/marketImages/Litecoin.png")}
+              style={{ width: 50, height: 50 }}
+            />
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() =>
+              navigation.navigate("GenericCoinScreen", {
+                domainName: config.aave.initials,
+                name: config.aave.name,
+              })
+            }
+            style={styles.coinContent}
+          >
+            <Image
+              source={require("../../../image/marketImages/aave.png")}
+              style={{ width: 50, height: 50 }}
+            />
+          </TouchableOpacity>
         </View>
         <Text style={styles.errorMessage}>{errorMessage}</Text>
       </View>
