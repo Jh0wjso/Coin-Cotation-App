@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, StatusBar } from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import styles from "./styles";
 
@@ -34,6 +34,7 @@ export default function GenericCoinScreen({ navigation, route }) {
 
   return (
     <View style={styles.container}>
+      <StatusBar backgroundColor="#B22222" barStyle={"light-content"} />
       <View style={styles.headerBackground}>
         <View style={styles.header}>
           <View style={styles.headerContent}>
@@ -67,12 +68,6 @@ export default function GenericCoinScreen({ navigation, route }) {
           <View
             style={styles.nameContent}
           >
-            <Ionicons
-              name={"logo-bitcoin"}
-              style={styles.userIcon}
-              size={30}
-              color={"#FFA500"}
-            />
             <Text style={styles.coinName}>{route.params.name}</Text>
           </View>
           <Text style={styles.initialsCoin}>({route.params.domainName})</Text>

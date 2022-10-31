@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
   },
   headerBackground: {
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#292828",
   },
   header: {
     width: "100%",
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
   },
   mainContentet: {
     flex: 1,
-    backgroundColor: "#ffffff",
+    backgroundColor: "#292828",
     flexDirection: "column",
     justifyContent: "center"
   },
@@ -67,8 +67,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexDirection: "row",
     marginBottom: 40,
+    paddingLeft: 25,
+    paddingRight: 25,
     marginLeft: 10,
-    marginRight: 10
+    marginRight: 10,
+    borderBottomWidth: 2,
+    borderColor: "#FFFFFF",
+    borderRadius: 100
   },
   cardInfo: {
     flexDirection: "row",
@@ -78,13 +83,13 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     paddingBottom: 10,
     borderBottomWidth: 2,
-    borderColor: "#FFA500",
+    borderColor: "#B22222",
     backgroundColor: "#FFFFFF",
     borderRadius: 5
   },
   nameContent:{
     flexDirection: "row",
-    alignItems: "center"
+    alignItems: "flex-end"
   },
   userIcon:{
     marginRight: 8
@@ -93,24 +98,24 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 17,
     padding: 0,
-    color: "#FFA500",
+    color: "#B22222",
     justifyContent: "center"
   },
   valueCoin: {
     fontWeight: "bold",
     fontSize: 18,
-    color: "#FFA500",
+    color: "#B22222",
     justifyContent: "center",
   },
   coinName: {
-    fontSize: 30,
+    fontSize: 40,
     fontWeight: "bold",
-    color: "#FFA500",
+    color: "#FFFFFF",
     textTransform: "uppercase"
   },
   initialsCoin: {
     fontSize: 15,
-    color: "#FFA500",
+    color: "#FFFFFF",
     fontWeight: "bold",
   },
   cardInfoLast: {
@@ -120,7 +125,7 @@ const styles = StyleSheet.create({
     padding: 10,
     marginTop: 10,
     borderBottomWidth: 2,
-    borderColor: "#FFA500",
+    borderColor: "#B22222",
     backgroundColor: "#FFFFFF",
     borderRadius: 5
   },
