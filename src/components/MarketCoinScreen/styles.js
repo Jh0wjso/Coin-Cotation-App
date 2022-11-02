@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: "#B22222",
     flex: 1,
-    flexDirection: "column",
+    flexDirection: "column"
   },
   headerBackground: {
     width: "100%",
@@ -39,8 +39,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#292828",
   },
   card: {
-    borderColor: "#B22222",
-    borderWidth: 2,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
@@ -48,15 +46,15 @@ const styles = StyleSheet.create({
     margin: 5,
     marginRight: 10,
     marginLeft: 10,
-    borderRadius: 20,
-    backgroundColor: "#B22222"
+    borderRadius: 5,
+    backgroundColor: "#FFF"
   },
   contentText: {
     justifyContent: "center",
     padding: 8,
   },
   messageWelcome2USer: {
-    color: "#FFFFFF",
+    color: "#B22222",
     fontWeight: "bold",
     fontSize: 20,
   },

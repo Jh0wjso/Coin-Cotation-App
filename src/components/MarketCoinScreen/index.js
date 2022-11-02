@@ -1,46 +1,10 @@
 import React from "react";
-import { View, StatusBar, Text, TouchableOpacity, Alert, Image } from "react-native";
-import Ionicons from "react-native-vector-icons/Ionicons";
+import { View, Text, Image } from "react-native";
 import styles from "./styles";
 
-export default function MarketCoinScreen({ navigation }) {
-  const createThreeButtonAlert = () =>
-    Alert.alert(
-      "ATENÇÃO!!!",
-      "Esse App, não tem parceria com nenhum desses mercados de criptomoemas! Apenas serve para informar os usuários sobre sites confiáveis para a compra caso se interessem!",
-      [{ text: "OK" }]
-    );
-
-
+export default function MarketCoinScreen() {
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor="#B22222" barStyle={"light-content"} />
-      <View style={styles.headerBackground}>
-        <View style={styles.header}>
-          <View style={styles.headerContent}>
-            <TouchableOpacity
-              onPress={() => navigation.goBack()}
-            >
-              <Ionicons
-                name={"arrow-back-outline"}
-                style={styles.closeIcon}
-                size={40}
-                color={"#FFFFFF"}
-              />
-            </TouchableOpacity>
-            <View style={styles.logoName} />
-            <View />
-            <TouchableOpacity onPress={() => createThreeButtonAlert()}>
-              <Ionicons
-                name={"information-circle-outline"}
-                style={styles.closeIcon}
-                size={40}
-                color={"#FFFFFF"}
-              />
-            </TouchableOpacity>
-          </View>
-        </View>
-      </View>
       <View style={styles.marketsContainer}>
         <View style={styles.cardBackground}>
           <View style={styles.card}>

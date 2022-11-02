@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
-    borderBottomLeftRadius: 100,
+    borderBottomLeftRadius: 150,
     paddingTop: 20,
   },
   logoName: {
@@ -112,17 +112,20 @@ const styles = StyleSheet.create({
     fontStyle: "italic",
     fontSize: 15,
   },
-  btnSeeMore: {
+  contentSeeMore: {
     backgroundColor: "transparent",
     borderColor: "#FFFFFF",
-    borderWidth: 3,
+    borderBottomWidth: 3,
     paddingRight: 20,
     paddingLeft: 20,
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
     height: 50,
-    borderRadius: 3
+    borderRadius: 3,
+    width: "90%",
+    marginTop: 25,
+    marginBottom: 10
   },
   contentBtnSeeMore: {
     flex: 1,

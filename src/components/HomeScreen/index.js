@@ -4,9 +4,12 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import styles from "./styles";
 import config from "../../config";
 
+import MarketCoinScreen from "../MarketCoinScreen";
+import { ScrollView } from "react-native-gesture-handler";
+
 export default function HomeScreen({ navigation }) {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <StatusBar backgroundColor="#FFFFFF" barStyle={"dark-content"} />
       <View style={styles.header}>
         <View style={styles.headerContent}>
@@ -15,24 +18,12 @@ export default function HomeScreen({ navigation }) {
           <Text style={styles.secondName}>App</Text>
         </View>
       </View>
-      <View style={styles.cardBackground}>
-        <View style={styles.card}>
-          <View style={styles.contentText}>
-            <Text style={styles.messageWelcome2USer}>
-              Veja informações da sua moeda preferida.
-            </Text>
-          </View>
-        </View>
-      </View>
       <View style={styles.cardCoinsContainer}>
         <View style={styles.contentTextCoins}>
           <Text style={styles.strongText}>MOEDAS EM ALTA</Text>
         </View>
         <View style={styles.coinContainer}>
-          
-            <View
-              style={styles.cardCoinName}
-            >
+          <View style={styles.cardCoinName}>
             <TouchableOpacity
               onPress={() =>
                 navigation.navigate("GenericCoinScreen", {
@@ -42,16 +33,15 @@ export default function HomeScreen({ navigation }) {
               }
               style={styles.cardCoinTop}
             >
-              <Image source={require("../../../image/marketImages/coinImage.png")}
+              <Image
+                source={require("../../../image/marketImages/coinImage.png")}
                 style={styles.coinLogo}
               />
             </TouchableOpacity>
             <Text style={styles.coinName}>Bitcoin</Text>
           </View>
 
-          <View
-            style={styles.cardCoinName}
-          >
+          <View style={styles.cardCoinName}>
             <TouchableOpacity
               onPress={() =>
                 navigation.navigate("GenericCoinScreen", {
@@ -61,45 +51,101 @@ export default function HomeScreen({ navigation }) {
               }
               style={styles.cardCoinTop}
             >
-              <Image source={require("../../../image/marketImages/ethereum.png")}
+              <Image
+                source={require("../../../image/marketImages/ethereum.png")}
                 style={styles.coinLogo}
               />
             </TouchableOpacity>
             <Text style={styles.coinName}>Ethereum</Text>
           </View>
 
-            <View
-              style={styles.cardCoinName}
+          <View style={styles.cardCoinName}>
+            <TouchableOpacity
+              onPress={() =>
+                navigation.navigate("GenericCoinScreen", {
+                  domainName: config.litecoin.initials,
+                  name: config.litecoin.name,
+                })
+              }
+              style={styles.cardCoinTop}
             >
-              <TouchableOpacity
-                onPress={() =>
-                  navigation.navigate("GenericCoinScreen", {
-                    domainName: config.litecoin.initials,
-                    name: config.litecoin.name,
-                  })
-                }
-                style={styles.cardCoinTop}
-              >
-                <Image source={require("../../../image/marketImages/Litecoin.png")}
-                  style={styles.coinLogo}
-                />
-              </TouchableOpacity>
-              <Text style={styles.coinName}>Litecoin</Text>
-            </View>
-
-          <View style={styles.containerBottom}>
+              <Image
+                source={require("../../../image/marketImages/Litecoin.png")}
+                style={styles.coinLogo}
+              />
+            </TouchableOpacity>
+            <Text style={styles.coinName}>Litecoin</Text>
           </View>
+
+          <View style={styles.containerBottom}></View>
+        </View>
+        <View style={styles.coinContainer}>
+          <View style={styles.cardCoinName}>
+            <TouchableOpacity
+              onPress={() =>
+                navigation.navigate("GenericCoinScreen", {
+                  domainName: config.aave.initials,
+                  name: config.aave.name,
+                })
+              }
+              style={styles.cardCoinTop}
+            >
+              <Image
+                source={require("../../../image/marketImages/aave.png")}
+                style={styles.coinLogo}
+              />
+            </TouchableOpacity>
+            <Text style={styles.coinName}>AAVE</Text>
+          </View>
+
+          <View style={styles.cardCoinName}>
+            <TouchableOpacity
+              onPress={() =>
+                navigation.navigate("GenericCoinScreen", {
+                  domainName: config.apeCoin.initials,
+                  name: config.apeCoin.name,
+                })
+              }
+              style={styles.cardCoinTop}
+            >
+              <Image
+                source={require("../../../image/marketImages/apecoin.png")}
+                style={styles.coinLogo}
+              />
+            </TouchableOpacity>
+            <Text style={styles.coinName}>ApeCoin</Text>
+          </View>
+
+          <View style={styles.cardCoinName}>
+            <TouchableOpacity
+              onPress={() =>
+                navigation.navigate("GenericCoinScreen", {
+                  domainName: config.filecoin.initials,
+                  name: config.filecoin.name,
+                })
+              }
+              style={styles.cardCoinTop}
+            >
+              <Image
+                source={require("../../../image/marketImages/filecoin.png")}
+                style={styles.coinLogo}
+              />
+            </TouchableOpacity>
+            <Text style={styles.coinName}>Filecoin</Text>
+          </View>
+
+          <View style={styles.containerBottom}></View>
         </View>
       </View>
       <View style={styles.contentBtnSeeMore}>
-        <TouchableOpacity
-          style={styles.btnSeeMore}
-          onPress={() => navigation.navigate("MarketCoinScreen")}
+        <View
+          style={styles.contentSeeMore}
         >
           <Text style={styles.seeAllButtonText}>ONDE COMPAR</Text>
-          <Ionicons name={"arrow-forward-circle"} size={30} color={"#FFFFFF"} />
-        </TouchableOpacity>
+          <Ionicons name={"arrow-down-circle"} size={30} color={"#FFFFFF"} />
+        </View>
       </View>
-    </View>
+      <MarketCoinScreen />
+    </ScrollView>
   );
 }
