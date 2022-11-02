@@ -34,7 +34,7 @@ export default function GenericCoinScreen({ navigation, route }) {
 
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor="#B22222" barStyle={"light-content"} />
+      <StatusBar backgroundColor="#FFFFFF" barStyle={"dark-content"} />
       <View style={styles.headerBackground}>
         <View style={styles.header}>
           <View style={styles.headerContent}>
@@ -45,18 +45,15 @@ export default function GenericCoinScreen({ navigation, route }) {
                 name={"arrow-back-outline"}
                 style={styles.closeIcon}
                 size={40}
-                color={"#ffffff"}
+                color={"#292828"}
               />
             </TouchableOpacity>
-            <View style={styles.nameContainer}>
-              <Text style={styles.nameCoinHeader}>Informações</Text>
-            </View>
             <TouchableOpacity onPress={() => navigation.navigate("InfoScreen")}>
               <Ionicons
                 name={"help-circle-outline"}
                 style={styles.userIcon}
                 size={40}
-                color={"#ffffff"}
+                color={"#292828"}
               />
             </TouchableOpacity>
           </View>

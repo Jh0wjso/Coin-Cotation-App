@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   header: {
     width: "100%",
     padding: 15,
-    backgroundColor: "#B22222",
+    backgroundColor: "#FFFFFF",
     borderBottomStartRadius: 20,
   },
   headerContent: {
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     marginRight: 10,
     borderBottomWidth: 2,
     borderColor: "#FFFFFF",
-    borderRadius: 100
+    borderRadius: 100,
   },
   cardInfo: {
     flexDirection: "row",
@@ -85,12 +85,15 @@ const styles = StyleSheet.create({
     borderBottomWidth: 2,
     borderColor: "#B22222",
     backgroundColor: "#FFFFFF",
-    borderRadius: 5
+    borderRadius: 5,
+    marginLeft: 10,
+    marginRight: 10
   },
   nameContent:{
     flexDirection: "row",
-    alignItems: "flex-end"
-  },
+    alignItems: "flex-end",
+    width: "80%"
+    },
   userIcon:{
     marginRight: 8
   },
@@ -108,7 +111,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   coinName: {
-    fontSize: 40,
+    fontSize: 30,
     fontWeight: "bold",
     color: "#FFFFFF",
     textTransform: "uppercase"
@@ -117,17 +120,19 @@ const styles = StyleSheet.create({
     fontSize: 15,
     color: "#FFFFFF",
     fontWeight: "bold",
+    width: "20%"
   },
   cardInfoLast: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
     padding: 10,
-    marginTop: 10,
     borderBottomWidth: 2,
     borderColor: "#B22222",
     backgroundColor: "#FFFFFF",
-    borderRadius: 5
+    borderRadius: 5,
+    marginLeft: 10,
+    marginRight: 10
   },
   helpContent: {
     flex: 1,
