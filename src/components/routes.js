@@ -2,7 +2,7 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 
 import GenericCoinScreen from "./GenericCoinScreen";
-import HomeScreenStack from "./HomeScreenStack";
+import HomeScreenBottomTabs from "./HomeScreenBottomTabs";
 import InfoScreen from "./InfoScreen";
 import MarketCoinScreen from "./MarketCoinScreen";
 
@@ -11,12 +11,12 @@ const Stack = createStackNavigator();
 export default function Routes() {
   return (
     <Stack.Navigator
-      initialRouteName="HomeScreenStack"
+      initialRouteName="HomeScreenBottomTabs"
       screenOptions={{
         headerShown: false,
       }}
     >
-      <Stack.Screen name="HomeScreenStack" component={HomeScreenStack} />
+      <Stack.Screen name="HomeScreenBottomTabs" component={HomeScreenBottomTabs} />
       <Stack.Screen name="GenericCoinScreen" component={GenericCoinScreen} />
       <Stack.Screen name="MarketCoinScreen" component={MarketCoinScreen} />
       <Stack.Screen name="InfoScreen" component={InfoScreen} />

@@ -8,7 +8,7 @@ import HomeScreen from "../HomeScreen";
 
 const BottomTab = createBottomTabNavigator();
 
-export default function HomeScreenStack() {
+export default function HomeScreenBottomTabs() {
   return (
     <BottomTab.Navigator
       screenOptions={({ route }) => ({
@@ -21,12 +21,12 @@ export default function HomeScreenStack() {
 
           return <Ionicons name={iconName} size={25} color={color} />;
         },
-        tabBarActiveTintColor: "#B22222",
-        tabBarInactiveTintColor: "#292828",
-        tabBarActiveBackgroundColor: "#ffffff",
-        tabBarInactiveBackgroundColor: "#ffffff",
+        tabBarActiveTintColor: "#292828",
+        tabBarInactiveTintColor: "#B22222",
+        tabBarActiveBackgroundColor: "#FFFFFF",
+        tabBarInactiveBackgroundColor: "#FFFFFF",
         headerShown: false,
-        tabBarShowLabel: false,
+        tabBarShowLabel: true
       })}
     >
       <BottomTab.Screen name="Inicial" component={HomeScreen} />
