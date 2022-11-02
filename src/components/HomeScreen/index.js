@@ -17,11 +17,6 @@ export default function HomeScreen({ navigation }) {
       </View>
       <View style={styles.cardBackground}>
         <View style={styles.card}>
-          <View style={styles.imageCoin}>
-            <Image source={require("../../../image/marketImages/coinImage.png")}
-              style={styles.coinLogo}
-            />
-          </View>
           <View style={styles.contentText}>
             <Text style={styles.messageWelcome2USer}>
               Veja informações da sua moeda preferida.
@@ -102,7 +97,7 @@ export default function HomeScreen({ navigation }) {
           onPress={() => navigation.navigate("MarketCoinScreen")}
         >
           <Text style={styles.seeAllButtonText}>ONDE COMPAR</Text>
-          <Ionicons name={"arrow-forward-circle"} size={30} color={"#B22222"} />
+          <Ionicons name={"arrow-forward-circle"} size={30} color={"#FFFFFF"} />
         </TouchableOpacity>
       </View>
     </View>

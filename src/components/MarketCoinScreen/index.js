@@ -10,7 +10,8 @@ export default function MarketCoinScreen({ navigation }) {
       "Esse App, não tem parceria com nenhum desses mercados de criptomoemas! Apenas serve para informar os usuários sobre sites confiáveis para a compra caso se interessem!",
       [{ text: "OK" }]
     );
-    //70
+
+
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor="#B22222" barStyle={"light-content"} />
@@ -28,7 +29,6 @@ export default function MarketCoinScreen({ navigation }) {
               />
             </TouchableOpacity>
             <View style={styles.logoName} />
-            <Text style={styles.messageUser}>CoinCotation</Text>
             <View />
             <TouchableOpacity onPress={() => createThreeButtonAlert()}>
               <Ionicons

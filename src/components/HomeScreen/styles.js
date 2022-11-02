@@ -54,7 +54,8 @@ const styles = StyleSheet.create({
   },
   contentText: {
     justifyContent: "center",
-    width: "50%",
+    alignItems: "center",
+    width: "100%",
   },
   cardCoinsContainer: {
     paddingTop: 60,
@@ -76,7 +77,7 @@ const styles = StyleSheet.create({
     paddingBottom: 10
   },
   seeAllButtonText: {
-    color: "#B22222",
+    color: "#FFFFFF",
     fontWeight: "bold",
     fontStyle: "italic",
     fontSize: 20,
@@ -109,16 +110,19 @@ const styles = StyleSheet.create({
     color: "#ffffff",
     fontWeight: "bold",
     fontStyle: "italic",
-    fontSize: 13,
+    fontSize: 15,
   },
   btnSeeMore: {
-    backgroundColor: "#FFFFFF",
-    borderRadius: 10,
-    padding: 10,
+    backgroundColor: "transparent",
+    borderColor: "#FFFFFF",
+    borderWidth: 3,
+    paddingRight: 20,
+    paddingLeft: 20,
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    height: 50
+    height: 50,
+    borderRadius: 3
   },
   contentBtnSeeMore: {
     flex: 1,

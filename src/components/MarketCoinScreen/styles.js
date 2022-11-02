@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     margin: 5,
     marginRight: 10,
     marginLeft: 10,
-    borderRadius: 10,
+    borderRadius: 20,
     backgroundColor: "#B22222"
   },
   contentText: {
@@ -107,9 +107,9 @@ const styles = StyleSheet.create({
     width: 50,
   },
   logoMarket:{
-    width: 60,
-    height: 60,
-    borderRadius: 100,
+    width: 65,
+    height: 65,
+    borderRadius: 999,
     backgroundColor: "#FFFFFF"
   }
 });
