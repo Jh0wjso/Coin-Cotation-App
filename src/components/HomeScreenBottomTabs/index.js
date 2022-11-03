@@ -26,7 +26,7 @@ export default function HomeScreenBottomTabs() {
         tabBarActiveBackgroundColor: "#FFFFFF",
         tabBarInactiveBackgroundColor: "#FFFFFF",
         headerShown: false,
-        tabBarShowLabel: true
+        tabBarShowLabel: false
       })}
     >
       <BottomTab.Screen name="Inicial" component={HomeScreen} />

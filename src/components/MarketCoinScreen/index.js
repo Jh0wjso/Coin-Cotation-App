@@ -17,7 +17,9 @@ export default function MarketCoinScreen() {
             />
           </View>
         </View>
-        <View style={styles.card}>
+        <View 
+          style={styles.card}
+        >
           <Image
             source={require('../../../image/marketImages/binance.png')}
             style={styles.logoMarket}

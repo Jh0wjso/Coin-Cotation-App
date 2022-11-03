@@ -47,15 +47,17 @@ const styles = StyleSheet.create({
     marginRight: 10,
     marginLeft: 10,
     borderRadius: 5,
-    backgroundColor: "#FFF"
+    backgroundColor: "#FFF",
+    borderWidth: 3,
+    borderColor: "#B22222"
   },
   contentText: {
     justifyContent: "center",
     padding: 8,
   },
   messageWelcome2USer: {
-    color: "#B22222",
-    fontWeight: "bold",
+    color: "#292828",
+    fontWeight: "500",
     fontSize: 20,
   },
   centeredView: {
