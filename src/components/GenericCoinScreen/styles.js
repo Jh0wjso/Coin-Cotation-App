@@ -111,16 +111,17 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   coinName: {
-    fontSize: 30,
+    fontSize: 25,
     fontWeight: "bold",
     color: "#FFFFFF",
     textTransform: "uppercase"
   },
   initialsCoin: {
-    fontSize: 15,
+    fontSize: 13,
     color: "#FFFFFF",
     fontWeight: "bold",
-    width: "20%"
+    width: "20%",
+    marginLeft: 10
   },
   cardInfoLast: {
     flexDirection: "row",

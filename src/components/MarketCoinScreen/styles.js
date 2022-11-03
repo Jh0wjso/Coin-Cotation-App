@@ -2,31 +2,8 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#B22222",
     flex: 1,
-    flexDirection: "column"
-  },
-  headerBackground: {
-    width: "100%",
-    backgroundColor: "#292828",
-  },
-  header: {
-    backgroundColor: "#B22222",
-    width: "100%",
-    paddingRight: 5,
-  },
-  headerContent: {
-    justifyContent: "space-between",
-    alignItems: "center",
-    flexDirection: "row",
-    marginRight: 20,
-    marginLeft: 20,
-    marginTop: 20,
-    marginBottom: 15,
-  },
-  logoName: {
-    flexDirection: "row",
-    alignItems: "center",
+    flexDirection: "column",
   },
   messageUser: {
     color: "#FFFFFF",
@@ -47,16 +24,16 @@ const styles = StyleSheet.create({
     marginRight: 10,
     marginLeft: 10,
     borderRadius: 5,
-    backgroundColor: "#FFF",
+    backgroundColor: "#B22222",
     borderWidth: 3,
-    borderColor: "#B22222"
+    borderColor: "#B22222",
   },
   contentText: {
     justifyContent: "center",
     padding: 8,
   },
   messageWelcome2USer: {
-    color: "#292828",
+    color: "#FFF",
     fontWeight: "500",
     fontSize: 20,
   },
@@ -106,11 +83,62 @@ const styles = StyleSheet.create({
     height: 150,
     width: 50,
   },
-  logoMarket:{
+  logoMarket: {
     width: 65,
     height: 65,
     borderRadius: 999,
-    backgroundColor: "#FFFFFF"
+    backgroundColor: "#FFFFFF",
+  },
+  centeredView: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 22,
+  },
+  modalView: {
+    margin: 20,
+    backgroundColor: "white",
+    borderRadius: 10,
+    padding: 35,
+    alignItems: "center",
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 5,
+  },
+  button: {
+    borderRadius: 999,
+    padding: 10,
+    elevation: 2,
+  },
+  buttonOpen: {
+    backgroundColor: "transparent",
+    width: 70,
+    alignItems: "center",
+    justifyContent: "center",
+    height: 70,
+  },
+  buttonClose: {
+    backgroundColor: "#B22222",
+    width: 100,
+  },
+  textStyle: {
+    color: "white",
+    fontWeight: "bold",
+    textAlign: "center",
+  },
+  modalText: {
+    marginBottom: 15,
+    textAlign: "center",
+    fontWeight: "300",
+  },
+  disclaimerButton: {
+    justifyContent: "center",
+    alignItems: "center",
   }
 });
 

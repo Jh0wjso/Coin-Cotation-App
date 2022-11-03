@@ -1,60 +1,126 @@
-import React from "react";
-import { View, Text, Image } from "react-native";
+import React, { useState } from "react";
+import {
+  View,
+  Text,
+  Image,
+  TouchableOpacity,
+  Linking,
+  Modal,
+} from "react-native";
 import styles from "./styles";
+import Ionicons from "react-native-vector-icons/Ionicons";
 
 export default function MarketCoinScreen() {
+  const [modalVisible, setModalVisible] = useState(false);
   return (
     <View style={styles.container}>
       <View style={styles.marketsContainer}>
-        <View style={styles.cardBackground}>
+        <TouchableOpacity
+          style={styles.cardBackground}
+          onPress={() => {
+            Linking.openURL("https://www.mercadobitcoin.com.br/");
+          }}
+        >
           <View style={styles.card}>
             <View style={styles.contentText}>
               <Text style={styles.messageWelcome2USer}>Mercado Bitcoin</Text>
             </View>
             <Image
-              source={require('../../../image/marketImages/mercadoBitcoin.png')}
+              source={require("../../../image/marketImages/mercadoBitcoin.png")}
               style={styles.logoMarket}
             />
           </View>
-        </View>
-        <View 
+        </TouchableOpacity>
+        <TouchableOpacity
           style={styles.card}
+          onPress={() => {
+            Linking.openURL("https://www.binance.com/");
+          }}
         >
           <Image
-            source={require('../../../image/marketImages/binance.png')}
+            source={require("../../../image/marketImages/binance.png")}
             style={styles.logoMarket}
           />
           <View style={styles.contentText}>
             <Text style={styles.messageWelcome2USer}>Binance</Text>
           </View>
-        </View>
-        <View style={styles.card}>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() => {
+            Linking.openURL("https://www.coingecko.com/");
+          }}
+        >
           <View style={styles.contentText}>
             <Text style={styles.messageWelcome2USer}>CoinGecko</Text>
           </View>
           <Image
-            source={require('../../../image/marketImages/coinGecko.jpeg')}
+            source={require("../../../image/marketImages/coinGecko.jpeg")}
             style={styles.logoMarket}
           />
-        </View>
-        <View style={styles.card}>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() => {
+            Linking.openURL("https://www.coinbase.com/");
+          }}
+        >
           <Image
-            source={require('../../../image/marketImages/coinBase.png')}
+            source={require("../../../image/marketImages/coinBase.png")}
             style={styles.logoMarket}
           />
           <View style={styles.contentText}>
             <Text style={styles.messageWelcome2USer}>CoinBase</Text>
           </View>
-        </View>
-        <View style={styles.card}>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() => {
+            Linking.openURL("https://www.novadax.com/");
+          }}
+        >
           <View style={styles.contentText}>
             <Text style={styles.messageWelcome2USer}>NovaDAX</Text>
           </View>
           <Image
-            source={require('../../../image/marketImages/novaDax.png')}
+            source={require("../../../image/marketImages/novaDax.png")}
             style={styles.logoMarket}
           />
-        </View>
+        </TouchableOpacity>
+      </View>
+      <View style={styles.disclaimerButton}>
+        <Modal
+          animationType="slide"
+          transparent={true}
+          visible={modalVisible}
+          onRequestClose={() => {
+            Alert.alert(
+              "Esse app nao possui parceria com nenhum desses mercados de criptomoedas."
+            );
+            setModalVisible(!modalVisible);
+          }}
+        >
+          <View style={styles.centeredView}>
+            <View style={styles.modalView}>
+              <Text style={styles.modalText}>
+                Esse app nao possui parceria com nenhum desses mercados de
+                criptomoedas.
+              </Text>
+              <TouchableOpacity
+                style={[styles.button, styles.buttonClose]}
+                onPress={() => setModalVisible(!modalVisible)}
+              >
+                <Text style={styles.textStyle}>OK</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        </Modal>
+        <TouchableOpacity
+          style={[styles.button, styles.buttonOpen]}
+          onPress={() => setModalVisible(true)}
+        >
+          <Ionicons name={"help-circle-outline"} size={40} color={"#FFFFFF"} />
+        </TouchableOpacity>
       </View>
     </View>
   );
