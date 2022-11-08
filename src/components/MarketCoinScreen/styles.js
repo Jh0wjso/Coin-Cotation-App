@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
   },
   modalView: {
     margin: 20,
-    backgroundColor: "white",
+    backgroundColor: "#292929",
     borderRadius: 10,
     padding: 35,
     alignItems: "center",
@@ -116,14 +116,14 @@ const styles = StyleSheet.create({
     elevation: 2,
   },
   buttonOpen: {
-    backgroundColor: "transparent",
+    backgroundColor: "#940808",
     width: 70,
     alignItems: "center",
     justifyContent: "center",
     height: 70,
   },
   buttonClose: {
-    backgroundColor: "#B22222",
+    backgroundColor: "#940808",
     width: 100,
   },
   textStyle: {
@@ -134,7 +134,8 @@ const styles = StyleSheet.create({
   modalText: {
     marginBottom: 15,
     textAlign: "center",
-    fontWeight: "300",
+    color: "#fff",
+    fontSize: 15
   },
   disclaimerButton: {
     justifyContent: "center",

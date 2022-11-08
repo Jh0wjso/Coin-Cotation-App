@@ -1,5 +1,6 @@
 import React from "react";
-import { View, Text, StatusBar, TouchableOpacity, Image } from "react-native";
+import { View, Text, TouchableOpacity, Image } from "react-native";
+import { StatusBar } from "expo-status-bar";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import styles from "./styles";
 import config from "../../config";
@@ -10,7 +11,7 @@ import { ScrollView } from "react-native-gesture-handler";
 export default function HomeScreen({ navigation }) {
   return (
     <ScrollView style={styles.container}>
-      <StatusBar backgroundColor="#FFFFFF" barStyle={"dark-content"} />
+      <StatusBar backgroundColor="#FFFFFF" style="auto" />
       <View style={styles.header}>
         <View style={styles.headerContent}>
           <View style={styles.logoName} />

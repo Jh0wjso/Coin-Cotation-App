@@ -21,12 +21,13 @@ export default function HomeScreenBottomTabs() {
 
           return <Ionicons name={iconName} size={25} color={color} />;
         },
-        tabBarActiveTintColor: "#292828",
-        tabBarInactiveTintColor: "#B22222",
-        tabBarActiveBackgroundColor: "#FFFFFF",
-        tabBarInactiveBackgroundColor: "#FFFFFF",
+        tabBarActiveTintColor: "#1a1919",
+        tabBarInactiveTintColor: "#FFF",
+        tabBarActiveBackgroundColor: "#fff",
+        tabBarInactiveBackgroundColor: "#1a1919",
         headerShown: false,
-        tabBarShowLabel: false
+        tabBarShowLabel: false,
+        tabBarStyle: {backgroundColor: "#1a1919"}
       })}
     >
       <BottomTab.Screen name="Inicial" component={HomeScreen} />
