@@ -29,34 +29,24 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     paddingBottom: 15
   },
-  strongText: {
-    fontStyle: "italic",
-    fontSize: 20,
-    color: "#292828",
-    paddingLeft: 60,
-    paddingBottom: 9,
-  },
   inputContainer: {
     backgroundColor: "#292828",
     flex: 1,
     width: "100%",
     flexDirection: "column",
-    justifyContent: "space-between",
     alignItems: "center"
   },
   inputContent: {
     flexDirection: "row", 
     alignItems: "center",
-    justifyContent: "center",
-    width: "85%",
-    padding: 50
+    width: "100%",
   },
   searchButton: {
     backgroundColor: "#B22222",
     height: 50,
     alignItems: "center",
     justifyContent: "center",
-    width: "20%",
+    width: 50,
     borderTopRightRadius: 5,
     borderBottomRightRadius: 5,
     marginBottom: 10,
@@ -66,7 +56,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
     paddingBottom: 20,
     alignItems: "center",
-    width: "90%",
+    width: "85%",
   },
   coinContent:{
     justifyContent: "center",
@@ -76,7 +66,6 @@ const styles = StyleSheet.create({
     borderRadius: 999
   },
   errorMessage: {
-    paddingBottom: 15,
     fontWeight: "bold",
     color: "#e9dede",
     fontSize: 18
