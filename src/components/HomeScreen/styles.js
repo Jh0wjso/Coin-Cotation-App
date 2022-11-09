@@ -12,12 +12,11 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 50,
   },
   headerContent: {
-    backgroundColor: "#ffffff",
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
     borderBottomLeftRadius: 150,
-    paddingTop: 20,
+    paddingTop: 30,
   },
   logoName: {
     flexDirection: "column",
@@ -33,6 +32,7 @@ const styles = StyleSheet.create({
     color: "#B22222",
     fontSize: 30,
     fontWeight: "bold",
+    paddingBottom: 15
   },
   messageWelcome: {
     color: "#FFA500",

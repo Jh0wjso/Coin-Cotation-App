@@ -11,12 +11,11 @@ import { ScrollView } from "react-native-gesture-handler";
 export default function HomeScreen({ navigation }) {
   return (
     <ScrollView style={styles.container}>
-      <StatusBar backgroundColor="#FFFFFF" style="auto" />
+      <StatusBar backgroundColor="white" style="dark" />
       <View style={styles.header}>
         <View style={styles.headerContent}>
           <View style={styles.logoName} />
           <Text style={styles.title}>CoinCotation</Text>
-          <Text style={styles.secondName}>App</Text>
         </View>
       </View>
       <View style={styles.cardCoinsContainer}>

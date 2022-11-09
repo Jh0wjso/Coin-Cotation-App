@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "row",
-    paddingTop: 20,
+    paddingTop: 30,
     borderBottomLeftRadius: 50
   },
   header: {
@@ -27,9 +27,10 @@ const styles = StyleSheet.create({
     color: "#B22222",
     fontSize: 30,
     fontWeight: "bold",
+    paddingBottom: 15
   },
   strongText: {
-    fontWeight: "800",
+    fontStyle: "italic",
     fontSize: 20,
     color: "#292828",
     paddingLeft: 60,

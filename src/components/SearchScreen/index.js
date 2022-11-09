@@ -29,7 +29,6 @@ export default function SearchScreen({ navigation }) {
         <View style={styles.headerContent}>
           <View style={styles.logoName}>
             <Text style={styles.tittleScreen}>Procure</Text>
-            <Text style={styles.strongText}>uma moeda</Text>
           </View>
         </View>
       </View>
