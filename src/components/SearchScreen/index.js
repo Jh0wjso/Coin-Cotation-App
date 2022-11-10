@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {
   View,
-  StatusBar,
   Text,
   TouchableOpacity,
   Pressable,
@@ -310,24 +309,6 @@ export default function SearchScreen({ navigation }) {
             </TouchableOpacity>
             <Text style={styles.textCoinName}>Litecoin</Text>
           </View>
-
-          <View style={styles.contentButton}>
-            <TouchableOpacity
-              onPress={() =>
-                navigation.navigate("GenericCoinScreen", {
-                  domainName: config.aave.initials,
-                  name: config.aave.name,
-                })
-              }
-              style={styles.coinContent}
-            >
-              <Image
-                source={require("../../../image/marketImages/aave.png")}
-                style={{ width: 50, height: 50 }}
-              />
-            </TouchableOpacity>
-            <Text style={styles.textCoinName}>AAVE</Text>
-          </View>
         </View>
         <View style={styles.suggestions}>
           <View style={styles.contentButton}>
@@ -370,23 +351,6 @@ export default function SearchScreen({ navigation }) {
             <TouchableOpacity
               onPress={() =>
                 navigation.navigate("GenericCoinScreen", {
-                  domainName: config.litecoin.initials,
-                  name: config.litecoin.name,
-                })
-              }
-              style={styles.coinContent}
-            >
-              <Image
-                source={require("../../../image/marketImages/cardano.png")}
-                style={{ width: 50, height: 50 }}
-              />
-            </TouchableOpacity>
-            <Text style={styles.textCoinName}>Cardano</Text>
-          </View>
-          <View style={styles.contentButton}>
-            <TouchableOpacity
-              onPress={() =>
-                navigation.navigate("GenericCoinScreen", {
                   domainName: config.aave.initials,
                   name: config.aave.name,
                 })
@@ -394,11 +358,11 @@ export default function SearchScreen({ navigation }) {
               style={styles.coinContent}
             >
               <Image
-                source={require("../../../image/marketImages/metaVerse.png")}
+                source={require("../../../image/marketImages/aave.png")}
                 style={{ width: 50, height: 50 }}
               />
             </TouchableOpacity>
-            <Text style={styles.textCoinName}>Metaverse</Text>
+            <Text style={styles.textCoinName}>AAVE</Text>
           </View>
         </View>
       </View>
