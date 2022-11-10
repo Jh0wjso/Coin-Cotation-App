@@ -55,6 +55,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-around",
     paddingBottom: 20,
+    paddingTop: 20,
     alignItems: "center",
     width: "85%",
   },
@@ -75,6 +76,15 @@ const styles = StyleSheet.create({
     color: "#ffffff",
     fontWeight: "bold",
     fontSize: 22
+  },
+  contentButton:{
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "column"
+  },
+  textCoinName:{
+    color: "#fff",
+    fontWeight: "bold"
   }
 });
 
