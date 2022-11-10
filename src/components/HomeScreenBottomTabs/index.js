@@ -21,9 +21,9 @@ export default function HomeScreenBottomTabs() {
 
           return <Ionicons name={iconName} size={25} color={color} />;
         },
-        tabBarActiveTintColor: "#1a1919",
-        tabBarInactiveTintColor: "#FFF",
-        tabBarActiveBackgroundColor: "#fff",
+        tabBarActiveTintColor: "#FFFFFF",
+        tabBarInactiveTintColor: "#FFFFFF",
+        tabBarActiveBackgroundColor: "#5e0202",
         tabBarInactiveBackgroundColor: "#1a1919",
         headerShown: false,
         tabBarShowLabel: false,

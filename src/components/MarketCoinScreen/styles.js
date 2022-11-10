@@ -84,8 +84,8 @@ const styles = StyleSheet.create({
     width: 50,
   },
   logoMarket: {
-    width: 65,
-    height: 65,
+    width: 50,
+    height: 50,
     borderRadius: 999,
     backgroundColor: "#FFFFFF",
   },

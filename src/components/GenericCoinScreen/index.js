@@ -51,14 +51,6 @@ export default function GenericCoinScreen({ navigation, route }) {
                 color={"#292828"}
               />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => navigation.navigate("InfoScreen")}>
-              <Ionicons
-                name={"help-circle-outline"}
-                style={styles.userIcon}
-                size={40}
-                color={"#292828"}
-              />
-            </TouchableOpacity>
           </View>
         </View>
       </View>

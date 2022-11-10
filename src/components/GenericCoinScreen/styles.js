@@ -193,7 +193,7 @@ const styles = StyleSheet.create({
   modalText: {
     marginBottom: 15,
     textAlign: "center",
-    fontWeight: "300",
+    fontWeight: "600",
     color: "white"
   }
 });
