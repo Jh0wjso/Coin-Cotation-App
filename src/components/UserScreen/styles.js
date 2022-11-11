@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexDirection: "column",
     borderBottomLeftRadius: 100,
-    paddingTop: 20,
+    paddingTop: 30,
   },
   logoName: {
     flexDirection: "column",
@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
     color: "#B22222",
     fontSize: 30,
     fontWeight: "bold",
+    paddingBottom: 15
   }
 });
 

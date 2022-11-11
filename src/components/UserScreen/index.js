@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StatusBar, Text } from "react-native";
+import { View, Text } from "react-native";
 import styles from "./styles";
 
 export default function UserScreen() {
@@ -9,7 +9,6 @@ export default function UserScreen() {
         <View style={styles.headerContent}>
           <View style={styles.logoName} />
           <Text style={styles.title}>Opções</Text>
-          <Text style={styles.secondName}>De Usuario</Text>
         </View>
       </View>
     </View>
