@@ -20,7 +20,7 @@ export default function HomeScreen({ navigation }) {
       </View>
       <View style={styles.cardCoinsContainer}>
         <View style={styles.contentTextCoins}>
-          <Text style={styles.strongText}>MOEDAS EM ALTA</Text>
+          <Text style={styles.strongText}>Acesso Rapido</Text>
         </View>
         <View style={styles.coinContainer}>
           <View style={styles.cardCoinName}>

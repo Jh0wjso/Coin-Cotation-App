@@ -19,7 +19,7 @@ export default function SearchScreen({ navigation }) {
 
   function alertUser() {
     Vibration.vibrate();
-    setErrorMessage("*Preencha o campo a cima!");
+    setErrorMessage("*Escolha uma moeda!");
   }
 
   return (

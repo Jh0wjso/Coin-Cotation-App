@@ -74,7 +74,8 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: "#FFFFFF",
     fontStyle: "italic",
-    paddingBottom: 10
+    paddingBottom: 10,
+    textTransform: "uppercase"
   },
   seeAllButtonText: {
     color: "#FFFFFF",
@@ -96,9 +97,8 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-  },
-  containerBottom: {
-    flexDirection: "row",
+    marginTop: 15,
+    marginBottom: 15
   },
   coinName: {
     fontSize: 17,
@@ -133,8 +133,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   coinLogo:{
-    width: 75,
-    height: 75
+    width: 50,
+    height: 50
   },
   cardCoinName:{
     justifyContent: "center",
