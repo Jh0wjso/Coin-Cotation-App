@@ -3,7 +3,6 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Ionicons from "react-native-vector-icons/Ionicons";
 
 import SearchScreen from "../SearchScreen";
-import UserSreen from "../UserScreen";
 import HomeScreen from "../HomeScreen";
 
 const BottomTab = createBottomTabNavigator();
@@ -14,7 +13,6 @@ export default function HomeScreenBottomTabs() {
       screenOptions={({ route }) => ({
         tabBarIcon: ({ color }) => {
           let iconName;
-
           if (route.name === "Inicial") iconName = "home-outline";
           else if (route.name === "Procurar") iconName = "search-outline";
           else if (route.name === "Login") iconName = "person-outline";
@@ -24,7 +22,7 @@ export default function HomeScreenBottomTabs() {
         tabBarActiveTintColor: "#FFFFFF",
         tabBarInactiveTintColor: "#FFFFFF",
         tabBarActiveBackgroundColor: "#5e0202",
-        tabBarInactiveBackgroundColor: "#1a1919",
+        tabBarInactiveBackgroundColor: "#000000",
         headerShown: false,
         tabBarShowLabel: false,
         tabBarStyle: {backgroundColor: "#1a1919"}
@@ -32,7 +30,6 @@ export default function HomeScreenBottomTabs() {
     >
       <BottomTab.Screen name="Inicial" component={HomeScreen} />
       <BottomTab.Screen name="Procurar" component={SearchScreen} />
-      <BottomTab.Screen name="Login" component={UserSreen} />
     </BottomTab.Navigator>
   );
 }
