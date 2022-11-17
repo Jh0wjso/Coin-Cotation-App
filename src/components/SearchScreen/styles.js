@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#ffffff",
     padding: 5,
-    borderRadius: 999
+    borderRadius: 15
   },
   errorMessage: {
     fontWeight: "bold",

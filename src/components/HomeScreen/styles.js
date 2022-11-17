@@ -80,11 +80,11 @@ const styles = StyleSheet.create({
     height: 30
   },
   cardCoinTop: {
-    padding: 10,
+    padding: 4,
     backgroundColor: "#FFFFFF",
     height: "auto",
     margin: 10,
-    borderRadius: 999,
+    borderRadius: 15,
     flexDirection: "column"
   },
   coinContainer: {
@@ -127,8 +127,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   coinLogo:{
-    width: 50,
-    height: 50
+    width: 60,
+    height: 60
   },
   cardCoinName:{
     justifyContent: "center",
