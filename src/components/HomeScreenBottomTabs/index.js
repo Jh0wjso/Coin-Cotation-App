@@ -21,8 +21,8 @@ export default function HomeScreenBottomTabs() {
         },
         tabBarActiveTintColor: "#FFFFFF",
         tabBarInactiveTintColor: "#FFFFFF",
-        tabBarActiveBackgroundColor: "#5e0202",
-        tabBarInactiveBackgroundColor: "#000000",
+        tabBarActiveBackgroundColor: "#740101",
+        tabBarInactiveBackgroundColor: "#131111",
         headerShown: false,
         tabBarShowLabel: false,
         tabBarStyle: {backgroundColor: "#1a1919"}

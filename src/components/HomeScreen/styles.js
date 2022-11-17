@@ -21,13 +21,6 @@ const styles = StyleSheet.create({
   logoName: {
     flexDirection: "column",
   },
-  secondName: {
-    fontWeight: "bold",
-    fontSize: 20,
-    color: "#292828",
-    paddingLeft: 110,
-    paddingBottom: 9,
-  },
   title: {
     color: "#B22222",
     fontSize: 30,
@@ -60,8 +53,9 @@ const styles = StyleSheet.create({
   cardCoinsContainer: {
     paddingTop: 60,
     flexDirection: "column",
-    marginRight: 10,
-    marginLeft: 10,
+    justifyContent: "center",
+    width: "100%",
+    marginLeft: 15
   },
   contentTextCoins: {
     flexDirection: "row",
