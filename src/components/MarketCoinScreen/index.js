@@ -27,7 +27,12 @@ export default function MarketCoinScreen() {
             </View>
             <Image
               source={require("../../../image/marketImages/mercadoBitcoin.png")}
-              style={styles.logoMarket}
+              style={{
+                width: 50,
+                height: 50,
+                backgroundColor: "#FFF",
+                borderRadius: 10
+              }}
             />
           </View>
         </TouchableOpacity>
