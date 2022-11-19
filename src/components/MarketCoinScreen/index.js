@@ -29,9 +29,7 @@ export default function MarketCoinScreen() {
               source={require("../../../image/marketImages/mercadoBitcoin.png")}
               style={{
                 width: 50,
-                height: 50,
-                backgroundColor: "#FFF",
-                borderRadius: 10
+                height: 55,
               }}
             />
           </View>

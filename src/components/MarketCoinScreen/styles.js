@@ -24,16 +24,17 @@ const styles = StyleSheet.create({
     marginRight: 10,
     marginLeft: 10,
     borderRadius: 5,
-    backgroundColor: "#5e0202"
+    backgroundColor: "#FFFFFF"
   },
   contentText: {
     justifyContent: "center",
     padding: 8,
   },
   messageWelcome2USer: {
-    color: "#FFF",
-    fontWeight: "500",
-    fontSize: 20,
+    color: "#B22",
+    fontWeight: "700",
+    fontSize: 17,
+    textTransform: "capitalize",
   },
   centeredView: {
     flex: 1,
@@ -82,8 +83,8 @@ const styles = StyleSheet.create({
     width: 50,
   },
   logoMarket: {
-    width: 50,
-    height: 50,
+    width: 55,
+    height: 55,
     borderRadius: 999,
     backgroundColor: "#FFFFFF",
   },
