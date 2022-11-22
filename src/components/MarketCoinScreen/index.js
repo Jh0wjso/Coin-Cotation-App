@@ -118,12 +118,15 @@ export default function MarketCoinScreen() {
             </View>
           </View>
         </Modal>
-        <TouchableOpacity
-          style={[styles.button, styles.buttonOpen]}
-          onPress={() => setModalVisible(true)}
-        >
-          <Ionicons name={"help-circle-outline"} size={40} color={"#FFFFFF"} />
-        </TouchableOpacity>
+        <View style={styles.contentDisclaimer}>
+          <TouchableOpacity
+            style={[styles.button, styles.buttonOpen]}
+            onPress={() => setModalVisible(true)}
+          >
+            <Ionicons name={"help-circle"} size={40} color={"#FFFFFF"} />
+          </TouchableOpacity>
+          <Text style={styles.aboutText}>Atenção</Text>
+        </View>
       </View>
     </View>
   );

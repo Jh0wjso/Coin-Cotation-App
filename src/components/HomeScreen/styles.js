@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#292828",
+    backgroundColor: "#2c2c2c",
     flex: 1,
     flexDirection: "column",
   },
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     justifyContent: "center",
     width: "100%",
-    marginLeft: 15
+    alignItems: "center"
   },
   contentTextCoins: {
     flexDirection: "row",
@@ -65,10 +65,9 @@ const styles = StyleSheet.create({
   },
   strongText: {
     fontWeight: "bold",
-    fontSize: 20,
+    fontSize: 25,
     color: "#FFFFFF",
-    fontStyle: "italic",
-    paddingBottom: 10,
+    marginBottom: 40,
     textTransform: "uppercase"
   },
   seeAllButtonText: {
@@ -83,7 +82,8 @@ const styles = StyleSheet.create({
     padding: 4,
     backgroundColor: "#FFFFFF",
     height: "auto",
-    margin: 10,
+    marginRight: 20,
+    marginLeft: 20,
     borderRadius: 15,
     flexDirection: "column"
   },

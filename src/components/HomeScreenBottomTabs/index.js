@@ -13,9 +13,8 @@ export default function HomeScreenBottomTabs() {
       screenOptions={({ route }) => ({
         tabBarIcon: ({ color }) => {
           let iconName;
-          if (route.name === "Inicial") iconName = "home-outline";
-          else if (route.name === "Procurar") iconName = "search-outline";
-          else if (route.name === "Login") iconName = "person-outline";
+          if (route.name === "Inicial") iconName = "home";
+          else if (route.name === "Procurar") iconName = "search";
 
           return <Ionicons name={iconName} size={25} color={color} />;
         },
@@ -23,7 +22,7 @@ export default function HomeScreenBottomTabs() {
         tabBarInactiveTintColor: "#8d8d8d",
         headerShown: false,
         tabBarShowLabel: false,
-        tabBarStyle: {backgroundColor: "#131313", height: 42}
+        tabBarStyle: {backgroundColor: "#111111", height: 42}
       })}
     >
       <BottomTab.Screen name="Inicial" component={HomeScreen} />

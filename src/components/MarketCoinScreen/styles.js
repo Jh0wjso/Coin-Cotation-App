@@ -115,11 +115,11 @@ const styles = StyleSheet.create({
     elevation: 2,
   },
   buttonOpen: {
-    backgroundColor: "#940808",
-    width: 60,
+    backgroundColor: "#570505",
+    width: 50,
     alignItems: "center",
     justifyContent: "center",
-    height: 60,
+    height: 50,
     padding: 5
   },
   buttonClose: {
@@ -138,9 +138,17 @@ const styles = StyleSheet.create({
     fontSize: 15
   },
   disclaimerButton: {
-    justifyContent: "flex-end",
-    alignItems: "flex-end",
-    padding: 15
+    margin: 15,
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  contentDisclaimer:{
+    alignItems: "center",
+    flexDirection: "column"
+  },
+  aboutText:{
+    color: "#FFFFFF",
+    fontWeight: "bold"
   }
 });
 
