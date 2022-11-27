@@ -40,9 +40,8 @@ export default function HomeScreen({ navigation }) {
     const mercadoBitCoinLiteResonseJson =
       await mercadoBitCoinLiteResonse.json();
 
-    const lastLiteCoinValueResponse =
-      mercadoBitCoinLiteResonseJson.ticker.last;
-      setlastCoinSaleLite(lastLiteCoinValueResponse);
+    const lastLiteCoinValueResponse = mercadoBitCoinLiteResonseJson.ticker.last;
+    setlastCoinSaleLite(lastLiteCoinValueResponse);
   }
 
   useEffect(() => {
@@ -61,7 +60,15 @@ export default function HomeScreen({ navigation }) {
       <View style={styles.cardCoinsContainer}>
         <View style={styles.coinContainer}>
           <View style={styles.cardCoinName}>
-            <View style={styles.cardCoinTop}>
+            <TouchableOpacity
+              style={styles.cardCoinTop}
+              onPress={() =>
+                navigation.navigate("GenericCoinScreen", {
+                  domainName: config.bitcoin.initials,
+                  name: config.bitcoin.name,
+                })
+              }
+            >
               <View
                 style={{
                   alignItems: "center",
@@ -85,19 +92,27 @@ export default function HomeScreen({ navigation }) {
                 <Text
                   style={{
                     fontSize: 18,
-                    color: "#292828",
+                    color: "#FFFFFF",
                     fontWeight: "bold",
                     fontStyle: "italic",
                   }}
                 >
-                  Ultimo Valor
+                  Ultima Cotação
                 </Text>
                 <Text style={styles.coinName}>
                   R$ {parseFloat(lastCoinSale).toFixed(2).replace(".", ",")}{" "}
                 </Text>
               </View>
-            </View>
-            <View style={styles.cardCoinTop}>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.cardCoinTop}
+              onPress={() =>
+                navigation.navigate("GenericCoinScreen", {
+                  domainName: config.ethetereum.initials,
+                  name: config.ethetereum.name,
+                })
+              }
+            >
               <View
                 style={{
                   alignItems: "center",
@@ -121,15 +136,15 @@ export default function HomeScreen({ navigation }) {
                 <Text
                   style={{
                     fontSize: 18,
-                    color: "#292828",
+                    color: "#FFFFFF",
                     fontWeight: "bold",
                     fontStyle: "italic",
                   }}
                 >
-                  Ultimo Valor
+                  Ultima Cotação
                 </Text>
                 <Text
-                  style={{ fontSize: 20, color: "#292828", fontWeight: "bold" }}
+                  style={{ fontSize: 20, color: "#FFFFFF", fontWeight: "bold" }}
                 >
                   R${" "}
                   {parseFloat(lastCoinSaleEthereum)
@@ -137,8 +152,16 @@ export default function HomeScreen({ navigation }) {
                     .replace(".", ",")}{" "}
                 </Text>
               </View>
-            </View>
-            <View style={styles.cardCoinTop}>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.cardCoinTop}
+              onPress={() =>
+                navigation.navigate("GenericCoinScreen", {
+                  domainName: config.litecoin.initials,
+                  name: config.litecoin.name,
+                })
+              }
+            >
               <View
                 style={{
                   alignItems: "center",
@@ -162,21 +185,18 @@ export default function HomeScreen({ navigation }) {
                 <Text
                   style={{
                     fontSize: 18,
-                    color: "#292828",
+                    color: "#FFFFFF",
                     fontWeight: "bold",
                     fontStyle: "italic",
                   }}
                 >
-                  Ultimo Valor
+                  Ultima Cotação
                 </Text>
                 <Text style={styles.coinName}>
-                  R${" "}
-                  {parseFloat(lastCoinSaleLite)
-                    .toFixed(2)
-                    .replace(".", ",")}{" "}
+                  R$ {parseFloat(lastCoinSaleLite).toFixed(2).replace(".", ",")}{" "}
                 </Text>
               </View>
-            </View>
+            </TouchableOpacity>
           </View>
         </View>
       </View>

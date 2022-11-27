@@ -22,7 +22,7 @@ export default function HomeScreenBottomTabs() {
         tabBarInactiveTintColor: "#8d8d8d",
         headerShown: false,
         tabBarShowLabel: false,
-        tabBarStyle: {backgroundColor: "#111111", height: 42}
+        tabBarStyle: {backgroundColor: "#700303", height: 42}
       })}
     >
       <BottomTab.Screen name="Inicial" component={HomeScreen} />

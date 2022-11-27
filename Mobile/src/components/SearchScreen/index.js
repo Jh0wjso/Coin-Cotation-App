@@ -315,8 +315,8 @@ export default function SearchScreen({ navigation }) {
             <TouchableOpacity
               onPress={() =>
                 navigation.navigate("GenericCoinScreen", {
-                  domainName: config.bitcoin.initials,
-                  name: config.bitcoin.name,
+                  domainName: config.apeCoin.initials,
+                  name: config.apeCoin.name,
                 })
               }
               style={styles.coinContent}

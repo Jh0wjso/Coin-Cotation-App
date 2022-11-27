@@ -79,8 +79,10 @@ const styles = StyleSheet.create({
     height: 30
   },
   cardCoinTop: {
-    padding: 5,
-    backgroundColor: "#FFFFFF",
+    padding: 0,
+    paddingTop: 10,
+    paddingBottom: 10,
+    backgroundColor: "#850505",
     height: "auto",
     borderRadius: 10,
     flexDirection: "row",
@@ -98,12 +100,12 @@ const styles = StyleSheet.create({
   },
   coinName: {
     fontSize: 20,
-    color: "#292828",
+    color: "#FFFFFF",
     fontWeight: "bold"
   },
   coinNameEthereum:{
     fontSize: 20,
-    color: "#292828",
+    color: "#FFFFFF",
     fontWeight: "bold"
   },
   messageWelcome2USer: {
@@ -134,7 +136,9 @@ const styles = StyleSheet.create({
   },
   coinLogo:{
     width: 60,
-    height: 60
+    height: 60,
+    backgroundColor: "#FFF",
+    borderRadius: 999
   },
   cardCoinName:{
     justifyContent: "center",
