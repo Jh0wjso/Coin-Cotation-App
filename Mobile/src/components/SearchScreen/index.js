@@ -254,7 +254,7 @@ export default function SearchScreen({ navigation }) {
           </View>
           <Text style={styles.errorMessage}>{errorMessage}</Text>
         </View>
-        <Text style={styles.quickAcess}>Acesso Rapido</Text>
+        <Text style={styles.quickAcess}>Acesso Rápido</Text>
         <View style={styles.suggestions}>
           <View style={styles.contentButton}>
             <TouchableOpacity

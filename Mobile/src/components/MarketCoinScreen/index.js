@@ -98,7 +98,7 @@ export default function MarketCoinScreen() {
           visible={modalVisible}
           onRequestClose={() => {
             Alert.alert(
-              "Esse app nao possui parceria com nenhum desses mercados de criptomoedas."
+              "Esse app não possui parceria com nenhum desses mercados de criptomoedas."
             );
             setModalVisible(!modalVisible);
           }}
@@ -106,7 +106,7 @@ export default function MarketCoinScreen() {
           <View style={styles.centeredView}>
             <View style={styles.modalView}>
               <Text style={styles.modalText}>
-                Esse app nao possui parceria com nenhum desses mercados de
+                Esse app não possui parceria com nenhum desses mercados de
                 criptomoedas.
               </Text>
               <TouchableOpacity
