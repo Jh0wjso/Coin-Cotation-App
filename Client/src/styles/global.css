@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-600 text-zinc-50;
+  -webkit-font-smoothinf: antialiased;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #292828;
+  background: #ffffff;
+}
+
+::selection {
+  color: #292828;
+  background: #ffffff;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #888;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #111010;
+}
