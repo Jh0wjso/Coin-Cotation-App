@@ -14,22 +14,22 @@ export default function Footer() {
         </Link>
         <ul className="flex text-center flex-wrap items-center mb-6 text-sm sm:mb-0">
           <li>
-            <Link to="/" className="mr-4 hover:text-gray-500 md:mr-6 ">
+            <Link to="/" className="mr-4 hover:text-red-600 md:mr-6 ">
               Início
             </Link>
           </li>
           <li>
-            <Link to="/" className="mr-4 hover:text-gray-500 md:mr-6">
+            <Link to="/" className="mr-4 hover:text-red-600 md:mr-6">
               Download
             </Link>
           </li>
           <li>
-            <Link to="#" className="mr-4 hover:text-gray-500 md:mr-6 ">
+            <Link to="#" className="mr-4 hover:text-red-600 md:mr-6 ">
               Sobre
             </Link>
           </li>
           <li>
-            <Link to="/" className="hover:text-gray-500">
+            <Link to="/" className="hover:text-red-600">
               Contato
             </Link>
           </li>
@@ -39,7 +39,7 @@ export default function Footer() {
         <hr className="my-6 sm:mx-auto lg:my-8" />
         <span className="block text-sm sm:text-center dark:text-gray-400">
           © 2022{" "}
-          <Link to="/" className="hover:underline hover:text-gray-500">
+          <Link to="/" className="hover:underline hover:text-red-600">
             CoinCotation
           </Link>
         </span>
