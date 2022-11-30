@@ -3,34 +3,34 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gray-600 text-zinc-50;
+  @apply bg-gray-100 text-gray-600;
   -webkit-font-smoothinf: antialiased;
 }
 
 ::-moz-selection {
   /* Code for Firefox */
-  color: #292828;
-  background: #ffffff;
+  background: #610000;
+  color: #f1f1f1; 
 }
 
 ::selection {
-  color: #292828;
-  background: #ffffff;
+  background: #610000;
+  color: #f1f1f1;
 }
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #888;
+  background: #29282800;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #f1f1f1;
+  background: #292828;
 }
 
 /* Handle on hover */
