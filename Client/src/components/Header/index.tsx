@@ -1,20 +1,23 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+import Logo from "../../images/Logo.png";
+
 export default function Header() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full bg-gray-600 shadow">
+    <nav className="w-full bg-gray-600 text-white shadow">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link to="/" className="flex flex-row">
-              <h1 className="text-3xl text-white font-bold">WATCHBALL</h1>
+            <Link to="/" className="flex flex-row items-center">
+            <img src={Logo} width={50} />
+              <h1 className="text-3xl text-white font-bold">CoinCotation</h1>
             </Link>
             <div className="md:hidden">
               <button
-                className="p-2 text-white rounded-md outline-none focus:border-gray-400 focus:border"
+                className="p-2 rounded-md outline-none focus:border-gray-400 focus:border"
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
@@ -56,18 +59,26 @@ export default function Header() {
               navbar ? "block" : "hidden"
             }`}
           >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li className="text-white hover:text-gray-500 transition-colors">
-                <Link to="/">Inicio</Link>
+            <ul className="flex text-center flex-wrap items-center mb-6 text-sm sm:mb-0">
+              <li>
+                <Link to="/" className="mr-4 hover:text-gray-500 md:mr-6 ">
+                  Início
+                </Link>
               </li>
-              <li className="text-white hover:text-gray-500 transition-colors">
-                <Link to="/animes">Animes</Link>
+              <li>
+                <Link to="/" className="mr-4 hover:text-gray-500 md:mr-6">
+                  Download
+                </Link>
               </li>
-              <li className="text-white hover:text-gray-500 transition-colors">
-                <Link to="/filmes">Filmes</Link>
+              <li>
+                <Link to="#" className="mr-4 hover:text-gray-500 md:mr-6 ">
+                  Sobre
+                </Link>
               </li>
-              <li className="text-white hover:text-gray-500 transition-colors">
-                <Link to="/noticias">Noticias</Link>
+              <li>
+                <Link to="/" className="hover:text-gray-500">
+                  Contato
+                </Link>
               </li>
             </ul>
           </div>
