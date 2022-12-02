@@ -13,7 +13,7 @@ export default function Header() {
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link to="/" className="flex flex-row items-center">
             <img src={Logo} width={50} />
-              <h1 className="text-3xl text-white font-bold">CoinCotation</h1>
+              <h1 className="text-xl md:text-3xl text-white font-bold">CoinCotation</h1>
             </Link>
             <div className="md:hidden">
               <button
@@ -66,17 +66,17 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link to="/" className="mr-4 hover:text-red-600 md:mr-6">
+                <Link to="/download" className="mr-4 hover:text-red-600 md:mr-6">
                   Download
                 </Link>
               </li>
               <li>
-                <Link to="#" className="mr-4 hover:text-red-600 md:mr-6 ">
+                <Link to="/about" className="mr-4 hover:text-red-600 md:mr-6 ">
                   Sobre
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-red-600">
+                <Link to="/contact" className="hover:text-red-600">
                   Contato
                 </Link>
               </li>
