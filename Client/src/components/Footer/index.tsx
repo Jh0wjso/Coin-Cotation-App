@@ -5,7 +5,7 @@ import "./styles.css";
 
 export default function Footer() {
   return (
-    <footer className="p-4 flex flex-col w-full justify-center items-center text-white bg-gray-600 shadow md:px-6 md:py-8">
+    <footer className="p-4 flex flex-col w-full justify-center items-center text-white bg-gray-700 shadow md:px-6 md:py-8">
       <div className="footerContent container md:flex items-center md:flex-row md:items-center justify-center md:justify-between">
         <Link to="/" className="flex items-center mx-3 mb-2 sm:mb-0">
           <img src={Logo} width={50} />
