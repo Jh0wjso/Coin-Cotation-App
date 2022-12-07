@@ -1,7 +1,12 @@
+import DownloadComponent from "../../components/DowloadComponent";
+import ImageApp from "../../images/IndexApp.jpeg";
+import "./styles.css";
+
 export default function DownloadScreen() {
   return (
-    <section className="container w-full h-screen flex items-center justify-center">
-      <p className="text-5xl text-center">Download</p>
+    <section className="w-full my-20 bg-gray-600 p-11 flex flex-col justify-center items-center text-white">
+      <h1 className="text-center text-4xl font-bold mb-5">Faça o download do App</h1>
+      <DownloadComponent/>
     </section>
   );
 }
