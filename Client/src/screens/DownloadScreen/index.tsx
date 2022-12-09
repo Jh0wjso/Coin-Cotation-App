@@ -4,9 +4,11 @@ import "./styles.css";
 
 export default function DownloadScreen() {
   return (
-    <section className="w-full my-20 bg-gray-600 p-11 flex flex-col justify-center items-center text-white">
-      <h1 className="text-center text-4xl font-bold mb-5">Faça o download do App</h1>
-      <DownloadComponent/>
+    <section className="downloadContent w-full p-11 flex flex-col justify-center items-center text-white">
+      <div className="bg-[#292828c0] container rounded md:rounded-2xl w-full">
+        <DownloadComponent/>
+      </div>
+      
     </section>
   );
 }
