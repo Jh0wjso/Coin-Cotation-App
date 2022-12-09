@@ -7,7 +7,7 @@ export default function ContactScreen() {
           Entre em contato para sugestões, parcerias, etc.
         </h1>
       </div>
-      <section className="dark:bg-gray-900">
+      <section className="bg-gray-100 w-full">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
             Tem um problema técnico? Deseja enviar feedback sobre um recurso?
