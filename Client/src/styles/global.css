@@ -5,6 +5,8 @@
 body {
   @apply bg-gray-100 text-gray-600;
   -webkit-font-smoothinf: antialiased;
+  background-image: url("../images/bgImage.jpg");
+  background-attachment: fixed;
 }
 
 ::-moz-selection {
