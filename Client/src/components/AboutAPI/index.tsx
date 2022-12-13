@@ -9,8 +9,8 @@ export default function AboutAPI() {
       <h1 className="text-center font-bold text-3xl md:text-4xl pb-5">
         API usada
       </h1>
-      <div className="flex flex-col text-center items-center md:flex-row justify-between w-[100%] md:w-[90%] border-b pb-8 md:px-8">
-        <p className="w-full text-justify md:w-[40%] text-xl">
+      <div className="flex flex-col text-center items-center md:flex-row justify-between w-[100%] md:w-[90%] border-b-2 pb-8 md:px-8">
+        <p className="w-full text-center md:w-[45%] text-xl">
           Coincotation é um aplicativo desenvolvido para buscar cotações de
           criptomoedas, o aplicativo faz uso da API provida pelo Mercadobitcoin,
           a API retorna informações da respectiva moeda, dentre essas
@@ -19,7 +19,6 @@ export default function AboutAPI() {
           informação(em Era Unix). Todas essas respectivas informações são
           baseadas nas ultimas 24 horas até a busca.
         </p>
-        <div className="border-r-0 md:border-r h-[100%]" />
         <div className="flex flex-col items-center justify-end pt-10 md:pt-0 md:w-[40%] w-full">
           <img src={LogoMb} width={500} />
           <a
