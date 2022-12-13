@@ -3,7 +3,7 @@ import LogoMb from "../../images/logoMB.png";
 export default function AboutAPI() {
   return (
     <section className="bg-gray-600 w-full items-center container rounded flex flex-col p-14">
-      <h1 className="text-center font-bold text-3xl md:text-4xl pb-5 md:pb-28">
+      <h1 className="text-center font-bold text-3xl md:text-5xl uppercase pb-5 md:pb-28">
         Informações do aplicativo
       </h1>
       <h1 className="text-center font-bold text-3xl md:text-4xl pb-5">
