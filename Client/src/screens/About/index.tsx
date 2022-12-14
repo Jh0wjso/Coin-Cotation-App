@@ -1,5 +1,6 @@
 import AboutAPI from "../../components/AboutAPI";
 import AboutAPP from "../../components/AboutAPP";
+import AboutCoation from "../../components/AboutCoation";
 import AboutSearch from "../../components/AboutSearch";
 
 export default function About() {
@@ -8,6 +9,7 @@ export default function About() {
       <AboutAPI />
       <AboutAPP />
       <AboutSearch />
+      <AboutCoation />
     </section>
   );
 }
