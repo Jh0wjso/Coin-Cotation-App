@@ -2,7 +2,7 @@ import SearchScreen from "../../images/SearchScreen.jpeg";
 
 export default function AboutSearch() {
   return (
-    <section className="bg-gray-600 w-full items-center container rounded flex flex-col p-14">
+    <section className="bg-gray-600 w-full items-center container flex flex-col p-14">
       <h1 className="text-center font-bold text-3xl md:text-4xl pb-5">
         Tela Busca
       </h1>

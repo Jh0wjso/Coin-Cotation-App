@@ -2,11 +2,11 @@ import Index from "../../images/IndexApp.jpeg";
 
 export default function AboutCoation() {
   return (
-    <section className="bg-gray-600 w-full items-center container rounded flex flex-col p-14">
+    <section className="bg-gray-600 w-full items-center container flex flex-col p-14">
       <h1 className="text-center font-bold text-3xl md:text-4xl pb-5">
         Tela de Cotação
       </h1>
-      <div className="flex flex-col text-center items-center md:flex-row justify-between w-[100%] md:w-[90%] border-b-2 pb-8 md:px-8">
+      <div className="flex flex-col text-center items-center md:flex-row justify-between w-[100%] md:w-[90%] pb-8 md:px-8">
         <div className="flex flex-col items-center justify-end pt-10 md:pt-0 md:w-[40%] w-full">
           <img src={Index} width={250} className="rounded" />
         </div>
