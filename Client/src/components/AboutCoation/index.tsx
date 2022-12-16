@@ -2,7 +2,7 @@ import Index from "../../images/IndexApp.jpeg";
 
 export default function AboutCoation() {
   return (
-    <section className="bg-gray-600 w-full items-center container flex flex-col p-14">
+    <section className="bg-gray-600 w-full items-center container flex flex-col p-14 rounded-b-lg">
       <h1 className="text-center font-bold text-3xl md:text-4xl pb-5">
         Tela de Cotação
       </h1>

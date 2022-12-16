@@ -3,8 +3,8 @@ import "./styles.css";
 
 export default function Inicio() {
   return (
-    <section className="w-full flex items-center justify-center">
-      <p className="text-5xl text-center">
+    <section className="bg-gray-600 bg-opacity-50 w-full min-h-screen flex items-center justify-center">
+      <p className="text-5xl text-center text-white">
         Inicio
       </p>
     </section>

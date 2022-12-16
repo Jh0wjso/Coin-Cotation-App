@@ -12,7 +12,7 @@ export default function DownloadComponent() {
           <h1 className="text-xl md:text-3xl md:mb-0 mb-5 text-white md:uppercase font-medium">Faça o download do app</h1>
           <div className="mt-3">
             <a href={"/"} target="_blank" >
-              <img src={GooglePlay} className="hover:opacity-70" width={300} />
+              <img src={GooglePlay} className="hover:opacity-90" width={300} />
             </a>
             <p className="text-center font-bold">Clique aqui para baixar</p>
           </div>
