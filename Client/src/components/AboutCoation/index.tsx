@@ -1,4 +1,4 @@
-import Index from "../../images/IndexApp.jpeg";
+import Index from "../../images/cotationScreen.png";
 
 export default function AboutCoation() {
   return (

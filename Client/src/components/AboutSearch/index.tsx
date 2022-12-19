@@ -1,4 +1,4 @@
-import SearchScreen from "../../images/SearchScreen.jpeg";
+import SearchScreen from "../../images/searchScreenTemplate.png";
 
 export default function AboutSearch() {
   return (

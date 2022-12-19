@@ -1,4 +1,4 @@
-import Index from "../../images/IndexApp.jpeg";
+import Index from "../../images/homeTemplate.png";
 
 export default function AboutAPP() {
   return (
