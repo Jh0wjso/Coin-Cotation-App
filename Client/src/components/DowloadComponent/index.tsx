@@ -1,7 +1,6 @@
-import ImageApp from "../../images/IndexApp.jpeg";
+import ImageApp from "../../images/homeTemplate.png";
 import GooglePlay from "../../images/googlePlay.png";
 import "./styles.css";
-import { Link } from "react-router-dom";
 
 export default function DownloadComponent() {
   return (
@@ -17,7 +16,7 @@ export default function DownloadComponent() {
             <p className="text-center font-bold">Clique aqui para baixar</p>
           </div>
         </div>
-        <img src={ImageApp} width={250} className="rounded imgApp" />
+        <img src={ImageApp} width={350} className="rounded imgApp rotate-2" />
       </div>
     </div>
   );
