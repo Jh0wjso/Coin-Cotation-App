@@ -77,7 +77,7 @@ export default function HomeScreen({ navigation }) {
                 }}
               >
                 <Image
-                  source={require("../../../image/marketImages/coinImage.png")}
+                  source={require("../../../image/marketImages/bitcoin.png")}
                   style={styles.coinLogo}
                 />
                 <Text style={styles.coinName}>Bitcoin</Text>

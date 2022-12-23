@@ -267,7 +267,7 @@ export default function SearchScreen({ navigation }) {
               style={styles.coinContent}
             >
               <Image
-                source={require("../../../image/marketImages/coinImage.png")}
+                source={require("../../../image/marketImages/bitcoin.png")}
                 style={{ width: 50, height: 50 }}
               />
             </TouchableOpacity>
