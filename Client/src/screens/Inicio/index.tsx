@@ -49,7 +49,7 @@ export default function Inicio() {
 
             <div className="flex flex-col items-center">
               <p className="font-bold text-xl">Tela de Cotatção.</p>
-              <img src={CotationScreen} width={300} />
+              <img src={CotationScreen} width={340} />
             </div>
           </div>
         </section>
