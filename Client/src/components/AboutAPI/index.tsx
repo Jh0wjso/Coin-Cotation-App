@@ -12,7 +12,7 @@ export default function AboutAPI() {
       <div className="flex flex-col text-center items-center md:flex-row justify-between w-[100%] md:w-[90%] border-b-2 pb-8 md:px-8">
         <p className="w-full text-center md:w-[45%] text-xl">
           Coincotation é um aplicativo desenvolvido para buscar cotações de
-          criptomoedas, o aplicativo faz uso da API provida pelo Mercadobitcoin,
+          cripto moedas, o aplicativo faz uso da API provida pelo Mercadobitcoin,
           a API retorna informações da respectiva moeda, dentre essas
           informações estão, o maior valor, o menor, o volume (a quantidade
           negociada), a última venda, a maior oferta a menor oferta e a data da

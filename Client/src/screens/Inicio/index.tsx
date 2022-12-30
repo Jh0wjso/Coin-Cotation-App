@@ -15,7 +15,7 @@ export default function Inicio() {
         <div className="flex flex-col justify-center items-center w-[70%] my-7 border-b-2">
           <p className="font-bold text-xl text-center">
             CoinCation é uma app grátis para android apenas por hora, o app
-            basicamente serve para buscar cotação de criptomoedas, algumas das
+            basicamente serve para buscar cotação de cripto moedas, algumas das
             moedas mais famosas do mercado. Você acha que falta alguma moeda?
             Entre em contato conosco na nossa área de contato, ou clicando no
             botão à baixo.
@@ -48,8 +48,8 @@ export default function Inicio() {
             </div>
 
             <div className="flex flex-col items-center">
-              <p className="font-bold text-xl">Tela de Cotatção.</p>
-              <img src={CotationScreen} width={340} />
+              <p className="font-bold text-xl">Tela de Cotação.</p>
+              <img src={CotationScreen} width={310} />
             </div>
           </div>
         </section>

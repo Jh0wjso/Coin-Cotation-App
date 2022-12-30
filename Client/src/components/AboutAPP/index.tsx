@@ -13,10 +13,10 @@ export default function AboutAPP() {
         <p className="w-full text-center md:w-[45%] text-xl">
           A aplicação é dividida em duas telas, a primeira é a tela inicial
           apresenta primeiramente as moedas que estão em alta, e sua cotação
-          atual. Após isso temos possiveis mercados de criptomoedas, dentre
+          atual. Após isso temos possíveis mercados de cripto moedas, dentre
           eles, o Mercado Bitcoin, Binance, Coingecko, Coinbase e Novadax (O
-          coincotation é um app que não possui parceria com nenhum desses
-          mercados de criptomoedas).
+          Coincotation é um app que não possui parceria com nenhum desses
+          mercados de cripto moedas).
         </p>
       </div>
     </section>

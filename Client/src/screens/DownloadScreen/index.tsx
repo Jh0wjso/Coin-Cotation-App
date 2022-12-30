@@ -1,4 +1,4 @@
-import DownloadComponent from "../../components/DowloadComponent";
+import DownloadComponent from "../../components/DownloadComponent";
 import ImageApp from "../../images/IndexApp.jpeg";
 import "./styles.css";
 

@@ -1,6 +1,6 @@
 import Index from "../../images/cotationScreen.png";
 
-export default function AboutCoation() {
+export default function AboutCotation() {
   return (
     <section className="bg-gray-600 w-full items-center container flex flex-col p-14 rounded-b-lg">
       <h1 className="text-center font-bold text-3xl md:text-4xl pb-5">
