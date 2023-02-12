@@ -10,6 +10,8 @@ This code is the website where there is online documentation for users to better
 
 * [ReactJs](https://reactjs.org/docs/getting-started.html) - The web framework used
 * [TypeScript](https://www.typescriptlang.org/docs/) - Programming language
+* [TailwindCSS](https://tailwindcss.com/) - CSS Framework
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - CSS Framework
 
 ## 📱 Mobile
 
