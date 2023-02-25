@@ -13,6 +13,9 @@ export default function Routes() {
       initialRouteName="HomeScreenBottomTabs"
       screenOptions={{
         headerShown: false,
+        cardStyle: {
+          backgroundColor: "#292828"
+        }
       }}
     >
       <Stack.Screen name="HomeScreenBottomTabs" component={HomeScreenBottomTabs} />
