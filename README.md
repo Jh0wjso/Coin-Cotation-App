@@ -21,6 +21,7 @@ This app is used to look for cryptocurrency quotes and information about them, i
 
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Programming language
 * [Expo](https://docs.expo.dev/) - The framework used
+* [ReactNative](https://reactnative.dev/) - The framework used
 * [MercadoBitcoinAPI](https://www.mercadobitcoin.com.br/api-doc/) - API
 * [CoinGecko](https://www.coingecko.com/en/api/documentation) - API
 
