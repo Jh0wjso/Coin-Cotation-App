@@ -2,9 +2,10 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#B22222",
     flex: 1,
     flexDirection: "column",
+    flexDirection: "column",
+    justifyContent: "center"
   },
   headerBackground: {
     backgroundColor: "#292828",
@@ -57,7 +58,7 @@ const styles = StyleSheet.create({
     width: 150,
     height: 150,
   },
-  mainContentet: {
+  mainContent: {
     flex: 1,
     backgroundColor: "#292828",
     flexDirection: "column",
@@ -83,7 +84,7 @@ const styles = StyleSheet.create({
     padding: 10,
     marginBottom: 10,
     paddingBottom: 10,
-    borderBottomWidth: 2,
+    borderBottomWidth: 3,
     borderColor: "#B22222",
     backgroundColor: "#FFFFFF",
     borderRadius: 5,

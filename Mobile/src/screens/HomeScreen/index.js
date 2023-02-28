@@ -24,7 +24,7 @@ export default function HomeScreen({ navigation }) {
 
     //
     const mercadoBitCoinEthereumResonse = await fetch(
-      `https://www.mercadobitcoin.net/api/${config.ethetereum.initials}/ticker/`
+      `https://www.mercadobitcoin.net/api/${config.ethereum.initials}/ticker/`
     );
     const mercadoBitCoinEthereumResonseJson =
       await mercadoBitCoinEthereumResonse.json();
@@ -108,8 +108,8 @@ export default function HomeScreen({ navigation }) {
               style={styles.cardCoinTop}
               onPress={() =>
                 navigation.navigate("GenericCoinScreen", {
-                  domainName: config.ethetereum.initials,
-                  name: config.ethetereum.name,
+                  domainName: config.ethereum.initials,
+                  name: config.ethereum.name,
                 })
               }
             >

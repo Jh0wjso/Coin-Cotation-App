@@ -55,12 +55,12 @@ export default function GenericCoinScreen({ navigation, route }) {
         </View>
       </View>
 
-      <View style={styles.mainContentet}>
+      <View style={styles.mainContent}>
         <View style={styles.coinNameContent}>
           <View style={styles.nameContent}>
             <Text style={styles.coinName}>{route.params.name}</Text>
           </View>
-          <Text style={styles.initialsCoin}>({route.params.domainName})</Text>
+          <Text style={styles.initialsCoin}>{route.params.domainName}</Text>
         </View>
 
         <View style={styles.mainInfos}>
