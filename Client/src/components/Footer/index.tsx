@@ -39,7 +39,7 @@ export default function Footer() {
       <div className="container">
         <hr className="my-6 sm:mx-auto lg:my-8" />
         <span className="block text-sm text-center dark:text-gray-400">
-          © 2022{" "}
+          © 20223{" "}
           <Link to="/" className="hover:underline hover:text-red-600">
             CoinCotation
           </Link>

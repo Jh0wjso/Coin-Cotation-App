@@ -26,12 +26,6 @@ export default function Inicio() {
           >
             Contato
           </Link>
-          <Link
-            to="/download"
-            className="hover:bg-red-700 bg-red-600 font-bold p-5 text-3xl my-5 rounded text-center"
-          >
-            Download
-          </Link>
         </div>
         <section className="w-[100%] justify-center items-center my-10 flex flex-col">
           <h1 className="text-5xl font-bold text-center">Imagens de exemplo</h1>
