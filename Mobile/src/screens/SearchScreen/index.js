@@ -186,8 +186,8 @@ export default function SearchScreen({ navigation }) {
                 { id: config.barcelona.initials, title: config.barcelona.name },
                 { id: config.bitcoin.initials, title: config.bitcoin.name },
                 {
-                  id: config.ethetereum.initials,
-                  title: config.ethetereum.name,
+                  id: config.ethereum.initials,
+                  title: config.ethereum.name,
                 },
                 { id: config.litecoin.initials, title: config.litecoin.name },
                 { id: config.doge.initials, title: config.doge.name },
@@ -278,8 +278,8 @@ export default function SearchScreen({ navigation }) {
             <TouchableOpacity
               onPress={() =>
                 navigation.navigate("GenericCoinScreen", {
-                  domainName: config.ethetereum.initials,
-                  name: config.ethetereum.name,
+                  domainName: config.ethereum.initials,
+                  name: config.ethereum.name,
                 })
               }
               style={styles.coinContent}
@@ -289,7 +289,7 @@ export default function SearchScreen({ navigation }) {
                 style={{ width: 50, height: 50 }}
               />
             </TouchableOpacity>
-            <Text style={styles.textCoinName}>Ethetereum</Text>
+            <Text style={styles.textCoinName}>Ethereum</Text>
           </View>
 
           <View style={styles.contentButton}>
@@ -333,8 +333,8 @@ export default function SearchScreen({ navigation }) {
             <TouchableOpacity
               onPress={() =>
                 navigation.navigate("GenericCoinScreen", {
-                  domainName: config.ethetereum.initials,
-                  name: config.ethetereum.name,
+                  domainName: config.ethereum.initials,
+                  name: config.ethereum.name,
                 })
               }
               style={styles.coinContent}
